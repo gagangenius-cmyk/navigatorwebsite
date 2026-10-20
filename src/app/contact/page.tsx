@@ -8,6 +8,7 @@ import {
   TrustSection,
 } from '@/components/seo/PageSeoSections';
 import { createSubmissionReference } from '@/lib/formatting';
+import { submitLead } from '@/lib/submitLead';
 import { coreSeoPages } from '@/lib/marketingSeo';
 import { brandPhoneDisplay } from '@/lib/contactInfo';
 
@@ -265,6 +266,12 @@ const ContactUsPage: React.FC = () => {
         })
       }));
 
+      submitLead({
+        name: generalForm.name,
+        email: generalForm.email,
+        phone: generalForm.phone,
+        ImmigrationType: generalForm.service,
+      });
       setGeneralReferenceId(createSubmissionReference('GEN'));
       setGeneralSubmitted(true);
       window.setTimeout(() => {

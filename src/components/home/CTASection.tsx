@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { useState } from 'react';
+import { submitLead } from '@/lib/submitLead';
 
 const CTASection = () => {
   const [formData, setFormData] = useState({
@@ -46,6 +47,7 @@ const CTASection = () => {
       if (response.ok) {
         const result = await response.json();
         if (result.success) {
+          submitLead({ name: formData.name, email: formData.email, phone: formData.phone });
           setSubmitted(true);
           setSubmitting(false);
           setTimeout(() => {

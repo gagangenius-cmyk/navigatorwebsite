@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Phone, Mail, User, MessageSquare, Send, CheckCircle } from 'lucide-react';
 import { createSubmissionReference } from '@/lib/formatting';
+import { submitLead } from '@/lib/submitLead';
 
 interface FormData {
   name: string;
@@ -76,6 +77,12 @@ const QuickAssessmentForm: React.FC<QuickAssessmentFormProps> = ({
       const result = await response.json();
 
       if (result.success) {
+        submitLead({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          ImmigrationType: formData.service,
+        });
         setReferenceId(createSubmissionReference('QAS'));
         setIsSubmitted(true);
         setIsSubmitting(false);
