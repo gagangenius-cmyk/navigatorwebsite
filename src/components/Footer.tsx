@@ -50,7 +50,7 @@ const Footer = () => {
               {coreSeoPages.home.localBlock}
             </p>
             <div className="flex space-x-3 sm:space-x-4">
-              <a href="https://www.instagram.com/navigatorimmigrationconsultant/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <a href="https://www.instagram.com/navigator_global/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <Instagram className="w-5 h-5 text-[#ffffff] hover:text-surface-light transition-colors duration-300" />
               </a>
               <a href="https://www.facebook.com/profile.php?id=61588288162608" target="_blank" rel="noopener noreferrer" aria-label="Facebook">

@@ -20,7 +20,7 @@ const businessInfo = [
 ];
 
 const socialLinks = [
-  { icon: Instagram, href: 'https://www.instagram.com/navigatorimmigrationconsultant/', label: 'Instagram' },
+  { icon: Instagram, href: 'https://www.instagram.com/navigator_global/', label: 'Instagram' },
   { icon: Facebook, href: 'https://www.facebook.com/profile.php?id=61588288162608', label: 'Facebook' },
   { icon: Linkedin, href: 'https://www.linkedin.com/in/navigator-immigration-consultant-3747573ab/', label: 'LinkedIn' },
   { icon: TikTokIcon, href: 'https://www.tiktok.com/@navigator.immigration', label: 'TikTok' },

@@ -87,7 +87,7 @@ export const businessInfo = {
     'New Zealand',
   ],
   sameAs: [
-    'https://www.instagram.com/navigatorimmigrationconsultant/',
+    'https://www.instagram.com/navigator_global/',
     'https://www.facebook.com/profile.php?id=61588288162608',
     'https://www.linkedin.com/in/navigator-immigration-consultant-3747573ab/',
     'https://www.tiktok.com/@navigator.immigration',
