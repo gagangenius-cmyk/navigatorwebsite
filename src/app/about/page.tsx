@@ -32,7 +32,7 @@ export default function About() {
   ];
 
   return (
-    <div className="min-h-screen" style={{
+    <div className="min-h-screen overflow-x-hidden" style={{
       background: '#f5f5dc',
       backgroundImage: `
         radial-gradient(circle at 15% 85%, rgba(67, 97, 117, 0.06) 0%, transparent 50%),
@@ -115,21 +115,13 @@ export default function About() {
             >
               <h2 className="text-3xl font-bold text-[#436175] mb-6">Our Story</h2>
               <p className="text-lg text-[#585a5e] mb-6">
-                Founded in 2015, Navigator Immigration has grown from a small Dubai consultancy 
-                to one of the most trusted immigration service providers in the industry. 
-                Our journey began with a simple mission: to help individuals and families 
-                achieve their dreams of living, working, and studying abroad.
+                Founded in Dubai in 2015, Navigator Immigration advises people exploring study, work, visitor, and residence options abroad. Our focus is to explain the process, help clients organize application information, and set clear expectations about decisions made by institutions and government authorities.
               </p>
               <p className="text-lg text-[#585a5e] mb-6">
-                Over the years, we&apos;ve helped thousands of clients successfully navigate 
-                the complex immigration processes of Canada, Australia, EU countries, 
-                and other popular destinations. Our success is built on expertise, 
-                integrity, and a genuine commitment to our clients&apos; success.
+                Immigration rules differ by destination and can change. We help clients compare relevant routes, identify documents to check, and plan questions for the institutions or authorities responsible for their applications.
               </p>
               <p className="text-lg text-[#585a5e]">
-                Today, Navigator Immigration stands as a trusted source of guidance 
-                for those seeking new opportunities abroad, combining cutting-edge 
-                technology with personalized service to deliver exceptional results.
+                Today, our Dubai team provides consultation support across several immigration and study categories. Each client&apos;s circumstances are different, and final admission and visa decisions rest with the relevant institution or government authority.
               </p>
             </motion.div>
             
@@ -142,12 +134,12 @@ export default function About() {
               <div className="bg-blue-50 rounded-xl p-8">
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-[#436175] mb-2">15+</div>
-                    <p className="text-[#585a5e]">Years of Guidance</p>
+                    <div className="text-3xl font-bold text-[#436175] mb-2">2015</div>
+                    <p className="text-[#585a5e]">Founded in Dubai</p>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-[#436175] mb-2">15+</div>
-                    <p className="text-[#585a5e]">Countries Served</p>
+                    <div className="text-3xl font-bold text-[#436175] mb-2">Multi</div>
+                    <p className="text-[#585a5e]">Destination Guidance</p>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-[#436175] mb-2">5</div>
@@ -336,11 +328,11 @@ export default function About() {
                 <div className="space-y-4 mb-6">
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-[#585a5e]">15+ years of immigration expertise</span>
+                    <span className="text-[#585a5e]">Dubai-based consultation support</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-[#585a5e]">15+ years of immigration guidance</span>
+                    <span className="text-[#585a5e]">Guidance across several application categories</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
@@ -348,7 +340,7 @@ export default function About() {
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-[#585a5e]">Services for 15+ countries</span>
+                    <span className="text-[#585a5e]">Options across multiple destinations</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />

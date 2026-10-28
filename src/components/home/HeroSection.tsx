@@ -1,46 +1,17 @@
-'use client';
-
-import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, Users, Award, CheckCircle } from 'lucide-react';
 import { coreSeoPages } from '@/lib/marketingSeo';
-import HeroVideoBackground from './HeroVideoBackground';
+import HeroVideoLoader from './HeroVideoLoader';
 import LazyEnquiryForm from './LazyEnquiryForm';
 import heroPoster from '../../../public/videoScreenshots/11300218-uhd_3840_2160_24fps.jpg';
 
 const HeroSection = () => {
   const homeSeo = coreSeoPages.home;
-  const [shouldLoadVideo, setShouldLoadVideo] = useState(false);
-
-  const loadVideo = () => {
-    if (shouldLoadVideo) {
-      return;
-    }
-
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      return;
-    }
-
-    setShouldLoadVideo(true);
-  };
-
-  const handleMouseEnter = () => {
-    if (window.matchMedia('(min-width: 1024px)').matches) {
-      loadVideo();
-    }
-  };
-
-  const handleTouchStart = () => {
-    loadVideo();
-  };
 
   return (
     <section
-      suppressHydrationWarning
-      className="relative isolate flex min-h-screen items-center justify-center overflow-hidden pt-40 lg:pt-32"
-      onMouseEnter={handleMouseEnter}
-      onTouchStart={handleTouchStart}
+      className="home-hero relative isolate flex min-h-screen items-center justify-center overflow-hidden"
     >
       <Image
         src={heroPoster}
@@ -53,7 +24,7 @@ const HeroSection = () => {
         sizes="100vw"
         className="absolute inset-0 h-full w-full object-cover"
       />
-      <HeroVideoBackground enabled={shouldLoadVideo} poster={heroPoster.src} />
+      <HeroVideoLoader poster={heroPoster.src} />
 
       <div className="absolute inset-0">
         <div
@@ -113,7 +84,7 @@ const HeroSection = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Award className="h-4 w-4 flex-shrink-0 text-white sm:h-5 sm:w-5" />
-                <span className="text-xs text-white sm:text-sm">15+ Years Experience</span>
+                <span className="text-xs text-white sm:text-sm">Dubai-Based Consultation</span>
               </div>
             </div>
           </div>

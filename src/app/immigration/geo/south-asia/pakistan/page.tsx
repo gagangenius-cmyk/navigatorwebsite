@@ -6,15 +6,15 @@ export const dynamic = "force-dynamic"
 
 
 export const metadata: Metadata = {
-  title: 'Immigration Consultants in Pakistan',
-  description: 'Study abroad and visa guidance for students from Pakistan, provided by Navigator Immigration Consultant in Dubai.',
-  keywords: ['immigration consultant Dubai', 'pakistan study abroad', 'study visa from pakistan', 'pakistan immigration consultant', 'Navigator Immigration Dubai'],
+  title: "Study Abroad from Pakistan | Navigator Immigration Dubai",
+  description: "Students from Pakistan can get help comparing courses and preparing university and visa applications. Navigator Immigration Consultant is based in Dubai.",
+  keywords: ['study abroad from Pakistan', 'study visa from Pakistan', 'university applications from Pakistan', 'Navigator Immigration Dubai'],
   alternates: {
     canonical: `${siteUrl}/immigration/geo/south-asia/pakistan`,
   },
   openGraph: {
-    title: 'Immigration Consultants in Pakistan | Navigator Immigration Dubai',
-    description: 'Expert study abroad and visa guidance for students from Pakistan. Trusted immigration consultant in Dubai.',
+    title: 'Study Abroad from Pakistan | Navigator Immigration Dubai',
+    description: 'Students from Pakistan can get help comparing study options and organizing university and visa applications. Navigator Immigration Consultant is based in Dubai.',
     url: `${siteUrl}/immigration/geo/south-asia/pakistan`,
     siteName,
     type: 'website',
@@ -27,25 +27,25 @@ export default function PakistanPage() {
     <GeoPage
       name="Pakistan"
       region="south-asia"
-      description="Pakistan is a major source of international students, particularly for Canada, UK, and Australia. Students from Pakistan benefit from strong English skills and growing scholarship opportunities. Navigator Immigration Consultant is a trusted immigration consultant in Pakistan, specializing in study abroad guidance and visa support for students across Karachi, Lahore, and Islamabad."
-      overview="Pakistan has emerged as one of the fastest-growing sources of international students globally, with over 80,000 Pakistani students studying abroad annually. Canada, the UK, and Australia are the top destinations, with Canada's SDS program being particularly attractive for its fast 20-day processing time. Pakistani students are known for their strong English language skills, rigorous academic preparation, and high performance in STEM fields. Cities like Karachi, Lahore, Islamabad, and Rawalpindi have thriving study abroad ecosystems with numerous test preparation centres, education consultancies, and regular university recruitment events. Navigator Immigration Consultant Pakistan provides expert guidance to students navigating this process, helping with university selection, application support, and visa documentation. The Higher Education Commission of Pakistan also provides scholarships for doctoral and postgraduate studies abroad."
+      description="Students from Pakistan can get help comparing overseas programs and preparing admissions, funding and destination-visa documents."
+      overview="Choose a program that fits your previous studies and explain the connection clearly in the application. Collect records from the relevant school board or university, check whether the destination requests translations or additional verification, and keep passport details consistent. If your plan includes family funding, a loan or a scholarship, identify the source and timing of each contribution. For immigration steps, use the destination government’s current instructions for your passport and application location."
       benefits={[
-        'Pakistan is an SDS-eligible country for Canada, offering fast 20-day study permit processing for qualified applicants meeting enhanced requirements.',
-        'English is widely spoken and taught in Pakistan, giving students a strong foundation for language proficiency tests like IELTS and PTE.',
-        'The Higher Education Commission of Pakistan offers scholarships for PhD and master\'s programs at top international universities.',
-        'Major Pakistani cities have well-developed study abroad infrastructure with test preparation centres, visa consultancies, and education loan providers.',
-        'Active diaspora communities in Canada, the UK, and Australia provide strong support networks for Pakistani students arriving abroad.',
+        "Check that course prerequisites match your subjects, grades and qualification.",
+        "Gather complete academic records and confirm the required format with the university.",
+        "Document the source and availability of family, scholarship or loan funds.",
+        "Check language-test rules for the specific course and destination visa route.",
+        "Confirm application-office jurisdiction and required steps through official sources.",
       ]}
       scholarships={[
-        'Higher Education Commission (HEC) Pakistan — offers scholarships for PhD, master\'s, and undergraduate studies at top international universities, covering tuition, living expenses, and travel.',
-        'Commonwealth Scholarships — available for Pakistani students for master\'s and PhD programs in the UK, covering full tuition, living costs, and airfare.',
-        'Chevening Scholarships — UK government scholarship for one-year master\'s programs, highly competitive among Pakistani applicants with leadership potential.',
+        "Check current public scholarship notices, including any HEC programs, for eligible courses, institutions and applicant conditions.",
+        "Review university awards for international students and note separate application deadlines.",
+        "Confirm the award amount, duration, renewal rules and covered living costs before relying on it.",
       ]}
-      loanInfo="Major Pakistani banks including HBL (Habib Bank), MCB, UBL (United Bank Limited), and National Bank of Pakistan offer education loans for overseas study. The State Bank of Pakistan has a refinancing scheme for education loans that encourages banks to offer competitive rates. Loans typically cover tuition, living expenses, and travel. The HEC also provides interest-free loans for eligible students at partner universities abroad. Financial documentation from Pakistani banks requires maintaining funds for 4-6 months before visa application."
+      loanInfo="Compare any education loan’s approved amount, release schedule, fees, collateral and repayment terms. If family support is also part of the plan, document it as a separate source. Check the destination’s current proof-of-funds guidance to confirm the evidence it accepts."
       faqs={[
-        { q: 'Can Pakistani students apply for Canada SDS?', a: 'Yes, Pakistan is an SDS-eligible country. Requirements include IELTS Academic 6.0 in each band and a GIC of CAD $20,635. SDS applications are processed within 20 calendar days.' },
-        { q: 'What education loans are available for Pakistani students?', a: 'Major Pakistani banks including HBL, MCB, and UBL offer education loans for study abroad. The HEC also provides interest-free loans for eligible students at partner universities.' },
-        { q: 'Which destinations are most popular for Pakistani students?', a: 'Canada is the top choice due to SDS fast processing and clear PR pathways. The UK and Australia are also very popular. The USA attracts many students for graduate programs in engineering and technology.' },
+        { q: "Can Pakistani students apply for a Canada study permit?", a: "Yes, if they meet IRCC’s current requirements. New applications use Canada’s regular study permit process; the former Student Direct Stream ended on November 8, 2024." },
+        { q: "Where can I check whether a scholarship is open?", a: "Use the current notice from the official scholarship sponsor or university. Confirm eligible citizenship, course, institution, deadlines, funding amount and any renewal or service conditions." },
+        { q: "What should I check before accepting a university offer?", a: "Verify the institution and course directly, review the full fee schedule and refund terms, and make sure the program fits your academic plan. Then check the destination government’s current student-visa requirements." },
       ]}
     />
   )

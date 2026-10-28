@@ -3,9 +3,13 @@
 import dynamic from 'next/dynamic';
 import { useEffect, useState } from 'react';
 
-const ChatBot = dynamic(() => Promise.resolve(require('./ChatBot').default), {
+const ChatBot = dynamic(
+  // @ts-expect-error Next resolves this extensionless TSX import for the client chunk.
+  () => import('./ChatBot'),
+  {
   ssr: false,
-});
+  },
+);
 
 type WindowWithIdleCallback = Window & {
   requestIdleCallback?: (

@@ -11,14 +11,14 @@ export const dynamic = "force-dynamic"
 
 export const metadata: Metadata = {
   title: 'Canada Study Visa Guide 2026 | Navigator',
-  description: 'Canada study visa requirements, SDS, PGWP, costs, and PR pathways for students applying from Dubai and the UAE.',
-  keywords: ['Canada study visa', 'Canada study permit', 'SDS Canada', 'study in Canada from Dubai', 'immigration consultant Dubai'],
+  description: 'Canada study permit requirements, current proof of funds, PGWP, costs, and PR pathways for students applying from Dubai and the UAE.',
+  keywords: ['Canada study visa', 'Canada study permit', 'Canada SDS ended', 'study in Canada from Dubai', 'immigration consultant Dubai'],
   alternates: {
     canonical: `${siteUrl}/immigration/canada-study-visa`,
   },
   openGraph: {
     title: 'Canada Study Visa Guide 2026 | Navigator',
-    description: 'Complete Canada study visa guide for 2026. SDS stream, study permit requirements, PGWP, cost of living, and PR pathways.',
+    description: 'Complete Canada study permit guide for 2026. Current regular-stream requirements, proof of funds, PGWP, costs, and PR pathways.',
     url: `${siteUrl}/immigration/canada-study-visa`,
     siteName,
     type: 'website',
@@ -33,7 +33,7 @@ export default function CanadaStudyVisaPillar() {
     <div className="min-h-screen bg-gray-500">
       <ImmigrationHero
         heading="Canada Study Visa"
-        description="Your complete resource for studying in Canada — from SDS and study permit requirements to PGWP and permanent residency pathways."
+        description="A practical guide to Canada's study permit process, financial evidence, study planning, and options some graduates may be eligible to explore."
         primaryCta={{ label: 'Free Eligibility Check', href: '/contact' }}
         secondaryCta={{ label: 'View Canada Guides', href: '/immigration/blog' }}
       />
@@ -43,16 +43,16 @@ export default function CanadaStudyVisaPillar() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-[#436175] mb-6">Canada Study Permit Overview</h2>
             <p className="text-[#e5e7eb] mb-6 leading-relaxed">
-              Canada is one of the most popular study destinations globally, welcoming over 800,000 international students each year. The country offers world-class education at competitive costs, a welcoming multicultural society, and one of the most generous post-study work programs anywhere. Indian students make up the single largest international student group in Canada, with over 320,000 choosing Canadian universities and colleges annually.
+              Canada offers programs at universities, colleges, and other designated learning institutions. Compare each program's admission requirements, total cost, location, and career relevance rather than relying on general rankings or averages. Tuition and living costs vary by institution, program, province, and personal circumstances.
             </p>
             <p className="text-[#e5e7eb] mb-6 leading-relaxed">
-              To study in Canada, most international students need a study permit. The application process requires acceptance from a Designated Learning Institution, proof of financial support, a clean criminal record, and in some cases, a medical examination. The Student Direct Stream offers faster 20-day processing for applicants from select countries including India, Pakistan, the Philippines, and Vietnam.
+              Most foreign nationals need a study permit to study in Canada. Applicants generally need a letter of acceptance from a designated learning institution, proof of financial support, and any additional documents listed for their situation. A provincial or territorial attestation letter may also be required, subject to current exemptions. IRCC ended the Student Direct Stream on November 8, 2024; new applications use the regular process. See the current <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents.html" target="_blank" rel="noreferrer">IRCC study permit document guide</a> and <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html" target="_blank" rel="noreferrer">proof-of-funds rules</a> before applying. Also check IRCC's current <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/work-off-campus.html" target="_blank" rel="noreferrer">off-campus work rules</a> and <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html" target="_blank" rel="noreferrer">PGWP eligibility</a> before choosing a program.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
               {[
-                { icon: DollarSign, label: 'Annual Tuition', value: 'CAD $25,000-$50,000' },
-                { icon: Clock, label: 'Processing Time', value: '20 days (SDS) / 8-12 weeks (Regular)' },
-                { icon: GraduationCap, label: 'Work During Study', value: '24 hours/week off-campus' },
+                { icon: DollarSign, label: 'Tuition', value: 'Set by institution and program' },
+                { icon: Clock, label: 'Processing Time', value: 'Check current IRCC estimates' },
+                { icon: GraduationCap, label: 'Work During Study', value: 'Up to 24 hours/week off campus when eligible' },
               ].map(item => (
                 <div key={item.label} className="bg-white rounded-xl p-5 text-center">
                   <item.icon className="w-8 h-8 text-[#436175] mx-auto mb-3" />
@@ -68,31 +68,31 @@ export default function CanadaStudyVisaPillar() {
       <section className="py-16 bg-gray-500 [&_h1]:[color:white] [&_h2]:[color:white] [&_th]:[color:white]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-[#436175] mb-6">Top Canadian Universities for International Students</h2>
+            <h2 className="text-3xl font-bold text-[#436175] mb-6">Examples of Canadian Institutions</h2>
             <p className="text-[#e5e7eb] mb-6 leading-relaxed">
-              Canada is home to some of the world&apos;s top-ranked universities and colleges. Here are the leading institutions commonly chosen by international students from the UAE, India, and the Gulf region:
+              These examples illustrate the range of institutions students may compare. Check each school's official course catalogue, designated learning institution status, admission criteria, and current international tuition before applying.
             </p>
             <div className="overflow-x-auto rounded-xl">
               <table className="w-full text-sm text-left">
                 <thead className="bg-[#436175] text-white">
                   <tr>
                     <th className="p-3 font-semibold">University</th>
-                    <th className="p-3 font-semibold">QS Ranking 2026</th>
-                    <th className="p-3 font-semibold">Popular Programs</th>
-                    <th className="p-3 font-semibold">Est. Tuition (CAD/yr)</th>
+                    <th className="p-3 font-semibold">Location</th>
+                    <th className="p-3 font-semibold">Institution Type</th>
+                    <th className="p-3 font-semibold">Tuition information</th>
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-[#f5f5dc]">
                   {[
-                    ['University of Toronto', '#21', 'Engineering, Business, CS', '$45,000-$60,000'],
-                    ['University of British Columbia', '#34', 'Arts, Sciences, Commerce', '$35,000-$55,000'],
-                    ['McGill University', '#30', 'Medicine, Law, Engineering', '$30,000-$50,000'],
-                    ['University of Alberta', '#96', 'Engineering, Science, Business', '$25,000-$40,000'],
-                    ['University of Waterloo', '#115', 'CS, Engineering, Math', '$35,000-$55,000'],
-                    ['University of Montreal', '#118', 'Health, Arts, Science', '$22,000-$35,000'],
-                    ['Simon Fraser University', '#323', 'Business, CS, Arts', '$25,000-$35,000'],
-                    ['Humber College', '—', 'Diplomas, Degrees, PG Cert', '$14,000-$22,000'],
-                    ['Seneca College', '—', 'Diplomas, Graduate Certificates', '$14,000-$20,000'],
+                    ['University of Toronto', 'Toronto, Ontario', 'University', 'Check current program fees'],
+                    ['University of British Columbia', 'Vancouver, BC', 'University', 'Check current program fees'],
+                    ['McGill University', 'Montreal, Quebec', 'University', 'Check current program fees'],
+                    ['University of Alberta', 'Edmonton, Alberta', 'University', 'Check current program fees'],
+                    ['University of Waterloo', 'Waterloo, Ontario', 'University', 'Check current program fees'],
+                    ['University of Montreal', 'Montreal, Quebec', 'University', 'Check current program fees'],
+                    ['Simon Fraser University', 'Burnaby, BC', 'University', 'Check current program fees'],
+                    ['Humber Polytechnic', 'Toronto, Ontario', 'Polytechnic', 'Check current program fees'],
+                    ['Seneca Polytechnic', 'Toronto, Ontario', 'Polytechnic', 'Check current program fees'],
                   ].map(row => (
                     <tr key={row[0]} className="hover:bg-gray-200">
                       {row.map((cell, i) => (
@@ -110,28 +110,28 @@ export default function CanadaStudyVisaPillar() {
       <section className="py-16 bg-[#f5f5dc]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-[#436175] mb-6">Cost of Living in Canada</h2>
+            <h2 className="text-3xl font-bold text-[#436175] mb-6">Building a Canada Study Budget</h2>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Understanding living costs is crucial for financial planning. Below is a monthly breakdown for international students in major Canadian cities:
+              Build a personal budget using your institution's fee schedule and current local housing, transport, food, and insurance costs. For immigration purposes, IRCC sets a separate minimum living-expense amount that depends on the application date, province, and family size; it is not a full estimate of every student's actual spending.
             </p>
             <div className="overflow-x-auto rounded-xl">
               <table className="w-full text-sm text-left">
                 <thead className="bg-[#436175] text-white">
                   <tr>
-                    <th className="p-3 font-semibold">Expense</th>
-                    <th className="p-3 font-semibold">Toronto (CAD/month)</th>
-                    <th className="p-3 font-semibold">Vancouver (CAD/month)</th>
-                    <th className="p-3 font-semibold">Smaller Cities (CAD/month)</th>
+                    <th className="p-3 font-semibold">Budget item</th>
+                    <th className="p-3 font-semibold">What to include</th>
+                    <th className="p-3 font-semibold">Where to verify</th>
+                    <th className="p-3 font-semibold">Notes</th>
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-[#f5f5dc]">
                   {[
-                    ['Rent (shared apt)', '$800-$1,400', '$850-$1,500', '$500-$800'],
-                    ['Groceries & Food', '$400-$600', '$400-$600', '$300-$500'],
-                    ['Transport (monthly pass)', '$130', '$100', '$80-$100'],
-                    ['Health Insurance', '$65-$100', '$65-$100', '$65-$100'],
-                    ['Phone & Internet', '$80-$120', '$80-$120', '$70-$100'],
-                    ['Miscellaneous', '$200-$400', '$200-$400', '$150-$300'],
+                    ['Tuition and mandatory fees', 'Program tuition, deposits, and institution fees', 'Institution fee schedule', 'Amount varies by program and study load'],
+                    ['Housing and utilities', 'Residence or rent, utilities, and deposits', 'Institution housing office and local listings', 'Costs vary by city and housing choice'],
+                    ['Daily expenses', 'Food, local transport, phone, and personal needs', 'Build a budget for your own circumstances', 'No single estimate fits every student'],
+                    ['Health coverage', 'Provincial coverage rules or private insurance', 'Province and institution guidance', 'Coverage and waiting periods differ'],
+                    ['Travel and arrival', 'Travel, initial accommodation, and set-up costs', 'Your itinerary and accommodation plan', 'Keep these separate from tuition and living funds'],
+                    ['Proof of funds', 'Tuition plus required living funds and travel', 'Current IRCC financial-support page', 'Check the current amount for your family size'],
                   ].map(row => (
                     <tr key={row[0]} className="hover:bg-gray-200">
                       {row.map((cell, i) => (
@@ -151,21 +151,21 @@ export default function CanadaStudyVisaPillar() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-[#436175] mb-6">Scholarships & Financial Aid for Canada</h2>
             <p className="text-[#e5e7eb] mb-6 leading-relaxed">
-              Several scholarships help reduce the cost of studying in Canada for international students. These awards are merit-based, need-based, or program-specific:
+              Funding may come from the institution, department, research supervisor, or an external organization. Availability, eligibility, award value, and deadlines vary; verify details directly with the provider and do not count on an award until it is confirmed in writing.
             </p>
             <div className="space-y-4">
               {[
-                { name: 'Lester B. Pearson International Scholarship', amount: 'Full tuition + living costs', eligibility: 'University of Toronto — exceptional academic achievement' },
-                { name: 'UBC International Leader of Tomorrow Award', amount: 'Up to full tuition', eligibility: 'UBC — demonstrated leadership and academic excellence' },
-                { name: 'McGill University Entrance Scholarships', amount: '$8,500-$12,000 CAD', eligibility: 'McGill — automatic consideration for first-year applicants' },
-                { name: 'Vanier Canada Graduate Scholarship', amount: '$50,000 CAD/year', eligibility: 'PhD students — Canadian and international' },
-                { name: 'Ontario Trillium Scholarship', amount: '$40,000 CAD/year', eligibility: 'PhD students at Ontario universities' },
-                { name: 'Provincial Health Care Coverage', amount: 'Varies by province', eligibility: 'International students with valid study permits' },
+                { name: 'University entrance awards', amount: 'Varies by institution and award', eligibility: "Check the school's current eligibility rules, deadline, and application process" },
+                { name: 'Faculty and program awards', amount: 'Set by the award provider', eligibility: 'Review the program-specific criteria and whether a separate application is required' },
+                { name: 'Graduate research funding', amount: 'Depends on program and funding offer', eligibility: 'Ask the department or supervisor about assistantships, grants, and funding conditions' },
+                { name: 'External scholarships', amount: 'Varies by organization', eligibility: 'Check citizenship, residency, field-of-study, and deadline restrictions' },
+                { name: 'Provincial and community awards', amount: 'Varies; availability may be restricted', eligibility: 'Confirm that international students are eligible for the specific award' },
+                { name: 'Employer or sponsor funding', amount: 'Depends on the agreement', eligibility: 'Check whether funds are available for tuition, living costs, or both' },
               ].map(s => (
                 <div key={s.name} className="bg-white rounded-xl p-5">
                   <h3 className="font-semibold text-[#436175] mb-1">{s.name}</h3>
-                  <p className="text-sm text-gray-700"><span className="font-medium">Amount:</span> {s.amount}</p>
-                  <p className="text-sm text-gray-700"><span className="font-medium">Eligibility:</span> {s.eligibility}</p>
+                  <p className="text-sm text-gray-700"><span className="font-medium">Typical award:</span> {s.amount}</p>
+                  <p className="text-sm text-gray-700"><span className="font-medium">What to check:</span> {s.eligibility}</p>
                 </div>
               ))}
             </div>
@@ -181,14 +181,14 @@ export default function CanadaStudyVisaPillar() {
               {[
                 { icon: FileText, text: 'Valid passport (must be valid for entire study period)' },
                 { icon: FileText, text: 'Letter of acceptance from a Designated Learning Institution' },
-                { icon: FileText, text: 'Proof of financial support (bank statements, GIC certificate)' },
-                { icon: FileText, text: 'IELTS/PTE/CAEL/TOEFL language test results' },
-                { icon: FileText, text: 'Statement of purpose explaining study plans' },
+                { icon: FileText, text: 'Proof of financial support (bank statements, loans, scholarships, or GIC where applicable)' },
+                { icon: FileText, text: 'Language test evidence if required by the institution, program, or application checklist' },
+                { icon: FileText, text: 'A letter of explanation or study plan if requested or relevant to your application' },
                 { icon: FileText, text: 'Academic transcripts and certificates' },
                 { icon: FileText, text: 'Medical examination report (if applicable)' },
-                { icon: FileText, text: 'Police clearance certificate' },
-                { icon: FileText, text: 'Digital passport-sized photographs' },
-                { icon: FileText, text: 'Visa application fee receipt (CAD $150)' },
+                { icon: FileText, text: 'Police certificate or other admissibility documents if requested' },
+                { icon: FileText, text: 'Photograph and biometrics as instructed for your application' },
+                { icon: FileText, text: 'Proof of fee payment and biometrics fee, if applicable, at the current listed rate' },
               ].map(item => (
                 <div key={item.text} className="flex items-start gap-3 bg-white rounded-xl p-4 shadow-sm">
                   <item.icon className="w-5 h-5 text-[#436175] shrink-0 mt-0.5" />
@@ -205,15 +205,15 @@ export default function CanadaStudyVisaPillar() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-[#436175] mb-6">Common Reasons for Canada Study Permit Refusal</h2>
             <p className="text-[#e5e7eb] mb-6 leading-relaxed">
-              Understanding common reasons for study permit refusals can help you prepare a stronger application. Here are the most frequent rejection causes and how to address them:
+              A study permit application is assessed on its own facts. Review the decision letter if an application is refused, and use the points below as general checks rather than a ranking of refusal reasons.
             </p>
             <div className="space-y-4">
               {[
-                { reason: 'Insufficient Financial Proof', solution: 'Ensure bank statements cover first-year tuition + CAD $20,635 living costs. For SDS, the GIC is mandatory. Maintain funds for at least 4 months before applying.' },
-                { reason: 'Weak Ties to Home Country', solution: 'Demonstrate family connections, property ownership, employment prospects, or business ties in your home country. A strong statement of purpose explaining your intent to return is essential.' },
+                { reason: 'Insufficient Financial Proof', solution: 'Show funds for first-year tuition, living expenses, and transportation. For applications on or after September 1, 2026, IRCC lists CAD $23,448 for one applicant outside Quebec, excluding tuition and transportation. A GIC is one possible proof-of-funds document, not a universal requirement.' },
+                { reason: 'Study plan is unclear', solution: 'Explain why the course and institution fit your background and goals, and show that you understand the conditions of temporary status. Officers assess the whole application; no single document guarantees approval.' },
                 { reason: 'Incomplete or Inconsistent Documents', solution: 'Double-check all required documents. Ensure name consistency across all documents, translate non-English documents, and provide clear bank transaction histories.' },
-                { reason: 'Purpose of Visit Not Clear', solution: 'Write a compelling statement of purpose connecting your chosen program to your career goals. Explain why this specific program at this specific institution.' },
-                { reason: 'Low IELTS or Academic Scores', solution: 'Retake the IELTS to meet minimum requirements (6.0 each band for SDS). Consider enrolling in a preparatory program if your academic scores fall short.' },
+                { reason: 'Information does not align', solution: 'Check that the dates, education history, finances, and statements in your application are consistent and supported by the documents requested for your case.' },
+                { reason: 'Admissibility or medical requirements', solution: 'Follow any medical, biometrics, or police-document instructions that apply to your circumstances. Check the current IRCC checklist rather than assuming every applicant has the same requirements.' },
               ].map(item => (
                 <div key={item.reason} className="bg-white rounded-xl p-5">
                   <h3 className="font-semibold text-[#436175] mb-2">{item.reason}</h3>
@@ -230,15 +230,15 @@ export default function CanadaStudyVisaPillar() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-[#436175] mb-6">Canada Study Visa Application Timeline</h2>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Planning ahead is key to a smooth application process. Below is the recommended timeline for a September intake:
+              Use these stages as a planning outline for a September intake. Deadlines vary by institution and visa office, so work back from the dates that apply to your course and location.
             </p>
             <div className="space-y-4">
               {[
                 { month: 'January-February', tasks: 'Research universities and programs. Begin IELTS/PTE preparation. Contact shortlisted universities for program details.' },
                 { month: 'March-April', tasks: 'Take English language tests. Start university applications. Gather academic transcripts and prepare statement of purpose.' },
-                { month: 'May-June', tasks: 'Receive acceptance letters. Open GIC account for SDS. Arrange financial documents. Apply for study permit through IRCC.' },
-                { month: 'July-August', tasks: 'Attend visa interview if required. Book flights and accommodation. Purchase health insurance. Register for orientation.' },
-                { month: 'September', tasks: 'Arrive in Canada up to 4 weeks before program start. Activate GIC. Open bank account. Attend orientation.' },
+                { month: 'May-June', tasks: 'Receive acceptance letters. Arrange current financial documents and proof of funds. Apply for the study permit through IRCC using the regular stream.' },
+                { month: 'July-August', tasks: 'Respond to any further IRCC instructions. Finalize travel and accommodation only after checking your decision documents, entry requirements, and institution guidance.' },
+                { month: 'September', tasks: 'Arrive in Canada according to your permit and institution instructions. Settle your banking and accommodation, then attend orientation.' },
               ].map(item => (
                 <div key={item.month} className="flex gap-4 bg-white rounded-xl p-5 shadow-sm">
                   <div className="w-28 shrink-0">
@@ -260,9 +260,9 @@ export default function CanadaStudyVisaPillar() {
               {[
                 { step: '1', title: 'Research and Choose Your Program', body: 'Identify Canadian universities or colleges that offer programs aligned with your academic background and career goals. Consider factors like tuition fees, location, program duration, and post-graduation work eligibility.' },
                 { step: '2', title: 'Apply to a Designated Learning Institution', body: 'Submit applications to your chosen DLIs. Once accepted, the institution will issue a letter of acceptance that you need for your study permit application.' },
-                { step: '3', title: 'Gather Required Documents', body: 'Prepare your passport, acceptance letter, proof of financial support (bank statements, GIC of CAD $20,635 for SDS), academic transcripts, language test scores (IELTS 6.0 each band for SDS), and a statement of purpose.' },
-                { step: '4', title: 'Submit Study Permit Application', body: 'Apply online through the IRCC website. If eligible for SDS, processing takes about 20 calendar days. Regular applications take 8-12 weeks from India and 10-14 weeks from the UAE.' },
-                { step: '5', title: 'Prepare for Departure', body: 'Once your permit is approved, arrange accommodation, book flights, purchase health insurance, and plan your arrival. You can enter Canada up to 4 weeks before your program starts.' },
+                { step: '3', title: 'Gather Required Documents', body: 'Prepare your passport, acceptance letter, proof of financial support, academic transcripts, any institution-required language test results, and a statement of purpose. Use the current IRCC financial-capacity table for the application date and family size.' },
+                { step: '4', title: 'Submit Study Permit Application', body: 'Apply online through the IRCC website using the regular study permit stream. Check the current IRCC processing-time tool for the application type and location; the former SDS 20-day standard no longer applies.' },
+                { step: '5', title: 'Prepare for Departure', body: "Once your permit is approved, arrange accommodation, book flights, purchase health insurance, and plan your arrival. Travel only within the dates and conditions shown in your documents, and check IRCC's current arrival guidance before departure." },
               ].map(item => (
                 <div key={item.step} className="flex gap-4 bg-white rounded-xl p-6 shadow-sm">
                   <div className="w-10 h-10 rounded-full bg-[#436175] text-white flex items-center justify-center font-bold shrink-0">{item.step}</div>
@@ -283,9 +283,9 @@ export default function CanadaStudyVisaPillar() {
             <h2 className="text-3xl font-bold text-[#436175] mb-8 text-center">Post-Study Work & PR Pathways</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { icon: Clock, title: 'PGWP (Post-Graduation Work Permit)', body: 'Graduates from eligible Canadian DLIs can obtain an open work permit valid for up to 3 years, depending on program duration. The PGWP allows you to work for any employer anywhere in Canada.' },
-                { icon: FileText, title: 'Canadian Experience Class', body: 'One year of skilled work experience in Canada qualifies you for Express Entry through the Canadian Experience Class, the fastest route to permanent residency for graduates.' },
-                { icon: BookOpen, title: 'Provincial Nominee Programs', body: 'Many Canadian provinces have dedicated streams for international graduates. PNPs offer additional pathways to PR with lower CRS score requirements.' },
+                { icon: Clock, title: 'PGWP (Post-Graduation Work Permit)', body: 'Some graduates may qualify for a post-graduation work permit. Eligibility depends on the institution, program, study history, language evidence, and rules in force when applying; the permit length is determined by IRCC. Check the current PGWP eligibility page before choosing a program.' },
+                { icon: FileText, title: 'Canadian Experience Class', body: "Canadian work experience may help a graduate qualify for the Canadian Experience Class, but applicants must meet the program's current requirements and compete in Express Entry selection where applicable. Study or work in Canada does not guarantee permanent residence." },
+                { icon: BookOpen, title: 'Provincial Nominee Programs', body: 'Provincial nominee programs have different streams, criteria, and intake limits. A provincial nomination is not automatic and does not ensure an invitation unless the applicable program requirements are met.' },
               ].map(item => (
                 <div key={item.title} className="bg-white rounded-xl p-6 text-center">
                   <item.icon className="w-10 h-10 text-[#436175] mx-auto mb-4" />
@@ -326,11 +326,11 @@ export default function CanadaStudyVisaPillar() {
             <h2 className="text-2xl font-bold text-[#436175] mb-6">Frequently Asked Questions</h2>
             <div className="space-y-4">
               {[
-                { q: 'What IELTS score do I need for a Canada student visa?', a: 'For the SDS stream, you need IELTS Academic 6.0 in each band. For regular stream applications, IELTS 6.0 overall is generally accepted. PTE Academic (60+), CAEL (60+), and TOEFL iBT (83+) are also accepted for SDS.' },
-                { q: 'How much money do I need to show for a Canada study permit?', a: 'You need to demonstrate funds covering first-year tuition plus living costs of CAD $20,635 (outside Quebec) or CAD $13,421 (Quebec). For SDS, a Guaranteed Investment Certificate of CAD $20,635 is mandatory.' },
-                { q: 'Can I work while studying in Canada?', a: 'International students can work 24 hours per week off-campus during regular academic sessions and full-time during scheduled breaks like summer and winter holidays.' },
-                { q: 'How long does it take to get Canada PR after studying?', a: 'After completing your studies and gaining 1 year of skilled work experience on PGWP, you can apply for PR through the Canadian Experience Class. The entire process from study to PR typically takes 3-5 years.' },
-                { q: 'What is the difference between SDS and regular study permit?', a: 'SDS offers faster processing (20 days vs 8-12 weeks) but requires higher IELTS scores (6.0 each band vs 6.0 overall) and a mandatory GIC of CAD $20,635. SDS is available to residents of select countries including India, Pakistan, and the Philippines.' },
+                { q: 'What language score do I need for a Canada study permit?', a: 'There is no current SDS language threshold for new applications. Accepted tests and minimum scores depend on the designated learning institution, program, and any current IRCC instructions, so verify the requirements before applying.' },
+                { q: 'How much money do I need to show for a Canada study permit?', a: 'You must show enough for tuition, living expenses, and transportation. For applications on or after September 1, 2026, IRCC lists CAD $23,448 for one applicant outside Quebec for living expenses, excluding tuition and transportation; check the current table for family size and province.' },
+                { q: 'Can I work while studying in Canada?', a: "Eligible students may work up to 24 hours per week off campus during regular academic sessions and full-time during scheduled breaks if they meet IRCC's conditions. Check the current work rules and your permit conditions before working." },
+                { q: 'How long does it take to get Canada PR after studying?', a: 'There is no fixed timeline from graduation to permanent residence. Some graduates may qualify for an economic immigration program after gaining eligible work experience, but they must meet all current criteria and, where applicable, receive an invitation to apply.' },
+                { q: 'What happened to the Student Direct Stream (SDS)?', a: 'IRCC ended SDS on November 8, 2024. New study permit applications are processed through the regular stream, and applicants must meet the current study permit, financial-capacity, and institution requirements.' },
               ].map(faq => (
                 <details key={faq.q} className="bg-white rounded-xl p-5 group">
                   <summary className="font-semibold text-[#436175] cursor-pointer list-none flex items-center justify-between">
@@ -349,7 +349,7 @@ export default function CanadaStudyVisaPillar() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to Start Your Canada Study Journey?</h2>
           <p className="text-white/80 mb-8 max-w-2xl mx-auto">
-            Our team in Dubai has helped hundreds of students navigate the Canada study permit process — from university selection to visa approval and pre-departure preparation. Book a free consultation to discuss your profile.
+            Our Dubai team can help you review study plans, organize application information, and understand the published steps for a Canada study permit. Admission and immigration decisions are made by the institution and IRCC. Book a consultation to discuss your circumstances.
           </p>
           <Link href="/contact" className="inline-flex items-center px-8 py-4 bg-white text-[#436175] font-semibold rounded-lg hover:bg-gray-100 transition-colors">
             Book Free Consultation <ArrowRight className="w-5 h-5 ml-2" />

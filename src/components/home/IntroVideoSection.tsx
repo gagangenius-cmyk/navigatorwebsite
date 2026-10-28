@@ -4,7 +4,7 @@ import { ArrowRight, CheckCircle } from 'lucide-react';
 
 const IntroVideoSection = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="below-fold-section py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
@@ -13,13 +13,13 @@ const IntroVideoSection = () => {
             </h2>
             
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Welcome to Navigator Immigration, where dreams become reality. Watch our introductory video to learn how we&apos;ve helped thousands of individuals and families achieve their immigration goals with expert guidance and personalized support.
+              Meet Navigator Immigration and learn how our Dubai team supports people exploring study, work, visitor, and residence options abroad.
             </p>
             
             <div className="space-y-4 mb-8">
               <div className="flex items-center space-x-3">
                 <CheckCircle className="w-5 h-5 text-[#436175]" />
-                <span className="text-gray-700">15+ years of proven success</span>
+                <span className="text-gray-700">Guidance across multiple application categories</span>
               </div>
               <div className="flex items-center space-x-3">
                 <CheckCircle className="w-5 h-5 text-[#436175]" />
@@ -47,7 +47,7 @@ const IntroVideoSection = () => {
                   src="/img/images/intro.jpeg"
                   alt="Professional immigration consultation"
                   fill
-                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  sizes="(max-width: 639px) calc(100vw - 2rem), (max-width: 767px) 608px, (max-width: 1023px) 736px, (max-width: 1279px) 464px, 592px"
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>

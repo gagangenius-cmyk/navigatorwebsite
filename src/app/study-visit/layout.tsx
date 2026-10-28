@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     images: [
       {
-        url: '/title.jpeg',
+        url: '/title.webp',
         width: 1200,
         height: 630,
         alt: 'Study Visit Programs - Navigator Immigration',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Study Visit Programs | Navigator',
     description: 'Study visits and educational travel programs for international students.',
-    images: ['/title.jpeg'],
+    images: ['/title.webp'],
   },
   alternates: {
     canonical: 'https://navigatorglobals.com/study-visit',

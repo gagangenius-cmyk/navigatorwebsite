@@ -4,17 +4,16 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { Calendar, ArrowRight, Search } from 'lucide-react'
 import { formatStableDate } from '@/lib/formatting'
-import type { BlogPost } from '@/lib/blogData'
-import ImmigrationHero from '@/components/immigration/ImmigrationHero'
+import type { BlogCardPost } from '@/lib/blogData'
 import BlogCardImage from '@/components/blog/BlogCardImage'
 
-export default function ImmigrationBlogClient({ posts }: { posts: BlogPost[] }) {
+export default function ImmigrationBlogClient({ posts }: { posts: BlogCardPost[] }) {
   const [searchQuery, setSearchQuery] = useState('')
   const [activeCategory, setActiveCategory] = useState('All')
   const [currentPage, setCurrentPage] = useState(1)
   const postsPerPage = 9
 
-  const ivPosts = posts.filter(p => p.category !== 'Other Blogs')
+  const ivPosts = [...posts].sort((a, b) => b.date.localeCompare(a.date)).filter(p => p.category !== 'Other Blogs')
   const categories = ['All', ...new Set(ivPosts.map(p => p.category))]
 
   const filtered = ivPosts.filter(p => {
@@ -28,14 +27,6 @@ export default function ImmigrationBlogClient({ posts }: { posts: BlogPost[] }) 
   const paginated = filtered.slice((currentPage - 1) * postsPerPage, currentPage * postsPerPage)
 
   return (
-    <div className="min-h-screen bg-gray-500">
-      <ImmigrationHero
-        heading="All Immigration & Study Abroad Guides"
-        description="Browse our complete library of study abroad and immigration guides covering Canada, UK, Australia, USA, and Europe."
-        primaryCta={{ label: 'Free Eligibility Check', href: '/contact' }}
-        secondaryCta={{ label: 'Immigration Hub', href: '/immigration' }}
-        showScrollIndicator={false}
-      />
       <section className="py-16 bg-[#f5f5dc]">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
@@ -63,7 +54,7 @@ export default function ImmigrationBlogClient({ posts }: { posts: BlogPost[] }) 
               {paginated.map(p => (
                 <Link key={p.slug} href={`/immigration/blog/${p.slug}`} className="group bg-white rounded-xl overflow-hidden hover:shadow-md transition-shadow">
                   <div className="relative h-40 overflow-hidden bg-gray-100">
-                    <BlogCardImage slug={p.slug} title={p.title} />
+                    <BlogCardImage slug={p.slug} title={p.title} image={p.image} imageAlt={p.imageAlt} />
                   </div>
                   <div className="p-5">
                     <span className="inline-block bg-[#436175]/10 text-[#436175] text-xs font-medium px-2.5 py-1 rounded-full mb-3">
@@ -87,7 +78,7 @@ export default function ImmigrationBlogClient({ posts }: { posts: BlogPost[] }) 
             )}
 
             {totalPages > 1 && (
-              <div className="flex justify-center gap-2 mt-12">
+              <div className="flex flex-wrap justify-center gap-2 mt-12">
                 {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
                   <button
                     key={page}
@@ -108,6 +99,5 @@ export default function ImmigrationBlogClient({ posts }: { posts: BlogPost[] }) 
           </div>
         </div>
       </section>
-    </div>
   )
 }

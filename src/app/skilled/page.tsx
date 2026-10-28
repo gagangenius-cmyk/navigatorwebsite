@@ -226,7 +226,7 @@ export default function SkilledImmigration() {
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-12 text-center">Canada Program Overview</h2>
             <p className="text-left text-lg font-semibold text-black/90 mb-8 leading-relaxed">
-              Make Canada your permanent home with confidence through Navigator Immigration.
+              Explore Canadian permanent residence options with information about the routes and requirements to verify.
 
             </p>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -234,19 +234,19 @@ export default function SkilledImmigration() {
               <div className="space-y-8">
 
                 <p className="text-sm text-left text-black/90 mb-8 leading-relaxed">
-                  At Navigator Immigration, we specialize in delivering Canada Permanent Residency solutions for skilled professionals, entrepreneurs, and families worldwide. With years of immigration experience, we turn complex immigration rules into clearer, more achievable pathways to Canadian PR.
+                  We provide consultation support for people exploring Canadian permanent residence programs. The right route depends on factors such as work history, education, language results, family circumstances, and the program rules in force.
                 </p>
                 <p className="text-sm text-left text-black/90 mb-8 leading-relaxed">
-                  We offer complete support across all major Canada PR programs, including Express Entry, Provincial Nominee Programs (PNPs), Quebec immigration, family sponsorship, and business immigration streams. Our experts thoroughly assess your profile, maximize your eligibility, and strategically position your application to improve your chances of success.
+                  We can discuss options such as Express Entry, provincial nominee programs, Quebec-selected programs, family sponsorship, and business immigration. Eligibility criteria differ, and an assessment or consultation cannot guarantee an invitation or application approval.
                 </p>
                 <p className="text-sm text-left text-black/90 mb-8 leading-relaxed">
-                  What sets Navigator Immigration apart is our personalized, strategy-driven approach. We do not believe in generic advice, so every client receives a custom immigration roadmap, precise documentation support, proactive follow-ups, and real-time updates throughout the process.
+                  Consultation can help you identify the criteria to check, organize supporting documents, and understand the next steps for a route. The service scope and follow-up process should be confirmed before you engage us.
                 </p>
                 <p className="text-sm text-left text-black/90 mb-8 leading-relaxed">
-                  From your first consultation to your PR approval and beyond, we deliver a smooth, transparent, and stress-free experience backed by responsive support and clear communication.
+                  The relevant Canadian authority assesses each application and makes the final decision. We aim to explain the process clearly and set realistic expectations at each stage.
                 </p>
                 <p className="text-sm text-left text-black/90 mb-8 leading-relaxed">
-                  Start your Canada PR journey with Navigator Immigration and take the first step toward a secure, successful future in Canada.
+                  Contact us to discuss which Canadian permanent residence options may be relevant to your circumstances.
                 </p>
 
               </div>
@@ -300,19 +300,19 @@ export default function SkilledImmigration() {
               {/* Content on Left */}
               <div className="space-y-8">
                 <p className="text-sm text-left text-black/90 mb-8 leading-relaxed">
-                  At Navigator Immigration, we provide strategic Australia Permanent Residency solutions for skilled professionals and families seeking long-term settlement in Australia. Backed by 15+ years of immigration experience, we simplify Australia’s complex PR system and guide you toward the most suitable pathway with confidence and clarity.
+                  Navigator Immigration provides consultation support for skilled professionals and families exploring Australian permanent residence options. We can help review occupation, points, skills-assessment and nomination considerations, while eligibility and invitation decisions remain with the relevant assessing bodies and government authorities.
                 </p>
                 <p className="text-sm text-left text-black/90 mb-8 leading-relaxed">
-                  Our experienced team offers complete support across all major Australia PR visa categories, including Skilled Independent (Subclass 189), Skilled Nominated (Subclass 190), Skilled Work Regional (Subclass 491), and state or territory nomination programs. We conduct in-depth profile assessments, improve your points score, and design a custom PR strategy to maximize your chances of invitation and approval.
+                  We can discuss points-tested options such as subclasses 189, 190, and 491, and identify occupation, skills-assessment, points, and nomination criteria to verify. An expression of interest or consultation does not guarantee an invitation or visa grant.
                 </p>
                 <p className="text-sm text-left text-black/90 mb-8 leading-relaxed">
-                  What makes Navigator Immigration different is our personalized, end-to-end approach. From skills assessment and Expression of Interest (EOI) filing to state nomination, documentation, and visa lodgement, we manage every step with precision and transparency.
+                  The support available may include route comparison, document planning, and explaining the application stages. Confirm the scope of assistance before engagement and follow the official Home Affairs and assessing-authority instructions.
                 </p>
                 <p className="text-sm text-left text-black/90 mb-8 leading-relaxed">
-                  Our clients trust us for our honest advice, proactive communication, and structured guidance throughout the process. With Navigator Immigration, you gain a committed partner dedicated to helping you prepare for Australian Permanent Residency with clarity and confidence.
+                  Australian assessing bodies, state or territory governments, and Home Affairs make decisions under their own criteria. We can help you understand the process and prepare questions or documents for your chosen route.
                 </p>
                 <p className="text-sm text-left text-black/90 mb-8 leading-relaxed">
-                  Start your Australia PR journey with Navigator Immigration and take the first step toward a prosperous life in Australia.
+                  Contact us to discuss which Australian skilled migration options may be relevant to your circumstances.
                 </p>
 
 
@@ -333,14 +333,14 @@ export default function SkilledImmigration() {
               <div className="space-y-8">
                 <h3 className="text-3xl font-semibold text-white mb-6">New Zealand Immigration</h3>
                 <p className="text-sm text-left text-black/90 mb-8 leading-relaxed">
-                  New Zealand offers a transparent, skill-based immigration system designed to attract global talent, students, and professionals. With strong demand in sectors such as healthcare, construction, engineering, IT, and trades, the country provides clear pathways for temporary work visas, residence, and long-term settlement. New Zealand is known for its high quality of life, stable economy, family-friendly policies, and excellent education and healthcare systems, making it an ideal destination for skilled migrants and their families.
+                  New Zealand has work and residence visa categories with different eligibility rules. Depending on the route, relevant factors may include a job offer, employer accreditation, occupation, qualifications, work experience, pay, health, and character. Check Immigration New Zealand guidance for the visa that matches your circumstances.
                 </p>
                 <h3 className="text-3xl font-semibold text-white mb-6">Accredited Employer Work Visa (AEWV) – New Zealand</h3>
                 <p className="text-sm text-left text-black/90 mb-8 leading-relaxed">
-                  The Accredited Employer Work Visa (AEWV) is New Zealand’s primary work visa for skilled and semi-skilled professionals who have a job offer from an accredited New Zealand employer.
+                  The Accredited Employer Work Visa (AEWV) may be available to applicants with an eligible job offer from an accredited employer, subject to the current job-check, role, and applicant requirements.
                 </p>
                 <p className="text-sm text-left text-black/90 mb-8 leading-relaxed">
-                  Under the AEWV framework, employers must be officially accredited, ensuring fair employment practices and compliance with immigration standards. Once an employer is accredited, eligible overseas candidates can apply for a work visa tied to a specific job, role, and employer.
+                  Employer accreditation is only one part of the process. The job and applicant must also meet current Immigration New Zealand requirements, and an AEWV does not by itself guarantee eligibility for residence.
                 </p>
 
 
@@ -380,18 +380,18 @@ export default function SkilledImmigration() {
                 <div className="bg-blue-50 rounded-lg p-6">
                   <h3 className="text-xl font-semibold text-[#436175] mb-3">Basic Eligibility</h3>
                   <ul className="space-y-2 text-[#585a5e]">
-                    <li>Age: 18-45 years</li>
-                    <li>Language: IELTS 6.0+ or equivalent</li>
-                    <li>Education: Minimum high school diploma</li>
-                    <li>Work experience: 1+ years in skilled occupation</li>
+                    <li>Age: limits depend on the specific program and application stage</li>
+                    <li>Language: test, level, and evidence depend on the program</li>
+                    <li>Education: qualifications and assessment requirements vary by route</li>
+                    <li>Work experience: occupation, duration, and type of experience vary by route</li>
                   </ul>
                 </div>
                 <div className="bg-[#436175]/10 rounded-lg p-6">
                   <h3 className="text-xl font-semibold text-[#436175] mb-3">Documentation</h3>
                   <ul className="space-y-2 text-[#585a5e]">
                     <li>Valid passport</li>
-                    <li>Educational credential assessment</li>
-                    <li>Language test results</li>
+                    <li>Credential or skills assessment, if required by the program</li>
+                    <li>Language evidence that meets the relevant program rules</li>
                     <li>Work experience letters</li>
                   </ul>
                 </div>
@@ -400,8 +400,8 @@ export default function SkilledImmigration() {
                 <div className="bg-[#436175]/10 rounded-lg p-6">
                   <h3 className="text-xl font-semibold text-[#436175] mb-3">Financial Requirements</h3>
                   <ul className="space-y-2 text-[#585a5e]">
-                    <li>Proof of settlement funds</li>
-                    <li>Settlement funds for family</li>
+                    <li>Proof of funds only where required by the specific route</li>
+                    <li>Family-related financial evidence, if required</li>
                     <li>Application fees</li>
                     <li>Medical examination costs</li>
                   </ul>
@@ -409,10 +409,10 @@ export default function SkilledImmigration() {
                 <div className="bg-[#436175]/10 rounded-lg p-6">
                   <h3 className="text-xl font-semibold text-[#436175] mb-3">Additional Criteria</h3>
                   <ul className="space-y-2 text-[#585a5e]">
-                    <li>No criminal record</li>
-                    <li>Good health</li>
-                    <li>Security clearance</li>
-                    <li>Biometric data submission</li>
+                    <li>Police or character checks as required by the authority</li>
+                    <li>Medical examinations if required</li>
+                    <li>Security, identity, or biometrics steps if requested</li>
+                    <li>Professional registration or licensing, if required for the occupation</li>
                   </ul>
                 </div>
               </div>
@@ -432,21 +432,21 @@ export default function SkilledImmigration() {
                   <Shield className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold text-[#436175] mb-2">Permanent Residency</h3>
-                <p className="text-[#585a5e]">Get permanent resident status and pathway to citizenship</p>
+                <p className="text-[#585a5e]">Residence rights begin only if an application is approved; citizenship has separate requirements.</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#436175] rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold text-[#436175] mb-2">Family Sponsorship</h3>
-                <p className="text-[#585a5e]">Include your spouse and children in your application</p>
+                <p className="text-[#585a5e]">Some routes allow eligible family members to be included; check the rules for your program.</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#436175] rounded-full flex items-center justify-center mx-auto mb-4">
                   <Globe className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold text-[#436175] mb-2">Global Mobility</h3>
-                <p className="text-[#585a5e]">Travel freely and work in multiple countries</p>
+                <p className="text-[#585a5e]">Travel and work rights depend on the country granting residence and its conditions.</p>
               </div>
             </div>
           </div>
@@ -459,7 +459,7 @@ export default function SkilledImmigration() {
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-8 text-center">How to Get Skilled Visa</h2>
             <p className="text-xl text-gray-600 mb-16 text-center max-w-3xl mx-auto">
-              Follow our proven 5-step process to secure your skilled immigration visa
+              Use a structured five-step process to assess and prepare a skilled migration application
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
@@ -467,35 +467,35 @@ export default function SkilledImmigration() {
                 {
                   step: 1,
                   title: "Eligibility Check",
-                  description: "Evaluate your profile and calculate points",
+                  description: "Review route-specific age, occupation, education, language, and work criteria",
                   icon: <CheckCircle className="w-8 h-8" />,
                   color: "muted"
                 },
                 {
                   step: 2,
                   title: "Document Prep",
-                  description: "Gather and prepare all required documents",
+                  description: "Use the official checklist for your route to organize the required evidence",
                   icon: <FileText className="w-8 h-8" />,
                   color: "muted"
                 },
                 {
                   step: 3,
                   title: "Application",
-                  description: "Submit your application to immigration authorities",
+                  description: "Submit through the relevant official process if you meet the route requirements",
                   icon: <Shield className="w-8 h-8" />,
                   color: "muted"
                 },
                 {
                   step: 4,
                   title: "Medical & Security",
-                  description: "Complete medical exams and security checks",
+                  description: "Complete medical, character, or biometrics steps if requested",
                   icon: <Users className="w-8 h-8" />,
                   color: "muted"
                 },
                 {
                   step: 5,
-                  title: "Approval",
-                  description: "Receive your permanent resident visa",
+                  title: "Authority decision",
+                  description: "The relevant authority assesses the application and issues a decision",
                   icon: <Award className="w-8 h-8" />,
                   color: "muted"
                 }
@@ -578,7 +578,7 @@ export default function SkilledImmigration() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
               {[
-                { label: "Years of Guidance", value: "15+", icon: <Users className="w-8 h-8" /> },
+                { label: "Based in", value: "Dubai", icon: <Users className="w-8 h-8" /> },
                 { label: "Core Destinations", value: "3", icon: <Award className="w-8 h-8" /> },
                 { label: "Planning Focus", value: "Eligibility + Documents", icon: <Clock className="w-8 h-8" /> },
                 { label: "Office", value: "Dubai", icon: <MapPin className="w-8 h-8" /> }
@@ -646,13 +646,10 @@ export default function SkilledImmigration() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.8 }}
               >
-                Express Entry System
+                Canada Express Entry
               </motion.h3>
               <p className="text-lg text-gray-600 mb-6">
-                Canada&apos;s Express Entry system is a revolutionary immigration management system
-                that selects skilled workers as permanent residents based on their ability to
-                settle in Canada and participate in the economy. This points-based system
-                manages applications for three federal economic immigration programs.
+                Express Entry manages applications for the Federal Skilled Worker Program, Canadian Experience Class, and Federal Skilled Trades Program, as well as some provincial nominee streams. Applicants who meet a program's eligibility criteria may create a profile; selection is competitive and does not guarantee an invitation or permanent residence.
               </p>
 
               <div className="space-y-6 mb-8">
@@ -663,7 +660,7 @@ export default function SkilledImmigration() {
                       <h4 className="font-semibold text-gray-900">Federal Skilled Worker Program (FSW)</h4>
                     </div>
                   </h4>
-                  <p className="text-gray-600 text-sm">For skilled workers with foreign work experience</p>
+                  <p className="text-gray-600 text-sm">For eligible skilled workers who meet the program criteria</p>
                 </div>
 
                 <div className="bg-white rounded-lg p-6 shadow-sm">
@@ -673,7 +670,17 @@ export default function SkilledImmigration() {
                       <h4 className="font-semibold text-gray-900">Canadian Experience Class (CEC)</h4>
                     </div>
                   </h4>
-                  <p className="text-gray-600 text-sm">For individuals who already have skilled work experience in Canada</p>
+                  <p className="text-gray-600 text-sm">For applicants who meet the Canadian work-experience criteria</p>
+                </div>
+
+                <div className="bg-white rounded-lg p-6 shadow-sm">
+                  <h4 className="font-semibold text-gray-900 mb-3 flex items-center">
+                    <CheckCircle className="w-5 h-5 text-[#f5f5dc] mr-2" />
+                    <div>
+                      <h4 className="font-semibold text-gray-900">Federal Skilled Trades Program</h4>
+                    </div>
+                  </h4>
+                  <p className="text-gray-600 text-sm">For eligible tradespeople who meet the program's current criteria</p>
                 </div>
 
                 <div className="bg-blue-50 rounded-lg p-6">
@@ -682,19 +689,19 @@ export default function SkilledImmigration() {
                     <ul className="space-y-2">
                       <li className="flex items-start space-x-2">
                         <CheckCircle className="w-4 h-4 text-[#f5f5dc] mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">Minimum CLB 7 language proficiency</span>
+                        <span className="text-gray-700">Language threshold depends on the Express Entry program</span>
                       </li>
                       <li className="flex items-start space-x-2">
                         <CheckCircle className="w-4 h-4 text-[#f5f5dc] mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">Educational credential assessment</span>
+                        <span className="text-gray-700">Education assessment when required for the program</span>
                       </li>
                       <li className="flex items-start space-x-2">
                         <Star className="w-4 h-4 text-yellow-500 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">Pathway to citizenship</span>
+                        <span className="text-gray-700">Citizenship requires a separate application and eligibility</span>
                       </li>
                       <li className="flex items-start space-x-2">
                         <Shield className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">Free healthcare system</span>
+                        <span className="text-gray-700">Public health coverage eligibility varies by province and status</span>
                       </li>
                     </ul>
                   </div>
@@ -708,13 +715,13 @@ export default function SkilledImmigration() {
                   src="/img/images/canada.jpeg"
                   alt="Canada Immigration"
                   fill
-                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  sizes="(max-width: 639px) calc(100vw - 2rem), (max-width: 767px) 608px, (max-width: 1023px) 736px, (max-width: 1279px) 464px, 592px"
                   className="absolute inset-0 h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 text-white">
                   <h3 className="text-2xl font-bold mb-2">Start Your Canadian Journey</h3>
-                  <p className="text-blue-100">Build a better future in the Great White North</p>
+                  <p className="text-blue-100">Review the current requirements and plan your next steps</p>
                 </div>
               </div>
 
@@ -743,8 +750,7 @@ export default function SkilledImmigration() {
 
             <div className="text-center">
               <p className="text-lg text-gray-600 mb-8">
-                Take the first step towards permanent residency in Canada or Australia.
-                Contact us for a comprehensive assessment of your eligibility.
+                Discuss Canada or Australia skilled migration options and the criteria that may apply to your profile.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link

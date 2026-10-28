@@ -54,7 +54,7 @@ export const siteName = 'Navigator Immigration Consultant';
 export const brandKeyword = 'Navigator Immigration Consultant Dubai';
 export const brandLogo = '/img/logo/logo-resized.png';
 export const brandIcon = '/favicon.png';
-export const defaultOgImage = '/title.jpeg';
+export const defaultOgImage = '/title.webp';
 
 export const businessInfo = {
   legalName: 'Navigator Immigration Consultant',
@@ -87,10 +87,10 @@ export const businessInfo = {
     'New Zealand',
   ],
   sameAs: [
-    'https://www.facebook.com/navigatorimmigration',
-    'https://www.linkedin.com/company/navigator-immigration',
-    'https://twitter.com/navigatorimm',
-    'https://www.instagram.com/navigatorimmigration',
+    'https://www.instagram.com/navigatorimmigrationconsultant/',
+    'https://www.facebook.com/profile.php?id=61588288162608',
+    'https://www.linkedin.com/in/navigator-immigration-consultant-3747573ab/',
+    'https://www.tiktok.com/@navigator.immigration',
   ],
 };
 
@@ -104,17 +104,17 @@ export const coreSeoPages = {
       'Dubai immigration consultants for Canada PR, Australia PR, student visas, Europe work permits, visit visas, and business immigration.',
     keywords: [
       'Navigator Immigration Consultant Dubai',
-      'best immigration consultancy in Dubai',
-      'trusted visa consultants UAE',
+      'immigration consultancy in Dubai',
+      'visa consultants UAE',
       'Canada PR Australia PR Dubai',
       'immigration services Dubai',
       'visa consultancy Sheikh Zayed Road',
       'student visa work permit Dubai',
       'business immigration Dubai',
     ],
-    h1: 'Navigator Immigration Consultant | Trusted Dubai Immigration Consultancy',
+    h1: 'Navigator Immigration Consultancy in Dubai | Study, Work & PR Guidance',
     answer:
-      'Navigator Immigration Consultant is a Dubai-based visa consultancy helping professionals, students, families, and business owners with Canada PR, Australia PR, student visas, Europe work permits, visit visas, and investor pathways. Our team supports eligibility checks, document preparation, and application strategy from our office at Latifa Towers on Sheikh Zayed Road.',
+      'Navigator Immigration Consultant is a Dubai-based consultancy for professionals, students, families, and business owners exploring Canada and Australia residence options, study visas, Europe work permits, visit visas, and selected business pathways. Our team can discuss eligibility factors, document planning, and application steps from our office at Latifa Towers on Sheikh Zayed Road; the relevant institution or authority makes the final decision.',
     ctaLabel: 'Book Free Immigration Consultation',
     serviceName: 'Immigration Consultancy in Dubai',
     serviceDescription:
@@ -135,7 +135,7 @@ export const coreSeoPages = {
       {
         question: 'Can I get a free immigration assessment?',
         answer:
-          'Yes. You can contact Navigator Immigration Consultant to request a free immigration assessment and discuss the best visa pathway for your profile.',
+          'Yes. You can contact Navigator Immigration Consultant to request a free immigration assessment and compare visa options against your profile.',
       },
       {
         question: 'Which countries does Navigator Immigration Consultant help with?',
@@ -162,7 +162,6 @@ export const coreSeoPages = {
       { href: '/contact', label: 'free immigration consultation' },
     ],
     trustPoints: [
-      '15+ years of immigration guidance experience',
       'Dubai office at Latifa Towers, Sheikh Zayed Road',
       'Consultation support for PR, study, work, visit, and business visas',
       'Phone, WhatsApp, and email support for UAE and overseas clients',
@@ -187,7 +186,7 @@ export const coreSeoPages = {
     ],
     h1: 'Canada PR & Australia PR Skilled Immigration Consultants',
     answer:
-      'Navigator Immigration Consultant helps skilled professionals and families apply for Canada PR, Australia PR, and selected New Zealand pathways from Dubai. We guide clients on Express Entry, PNP, subclass 189, subclass 190, subclass 491, documents, IELTS planning, and application strategy through structured consultation and profile review.',
+      'Navigator Immigration Consultant offers consultations for skilled professionals and families exploring Canada and Australia permanent residence options, plus selected New Zealand routes. We discuss Express Entry, provincial pathways, Australian subclasses 189, 190, and 491, relevant documents, and the eligibility factors to verify with the official authorities.',
     ctaLabel: 'Book Free PR Consultation',
     serviceName: 'Skilled Immigration Consultancy',
     serviceDescription:
@@ -198,22 +197,22 @@ export const coreSeoPages = {
       {
         question: 'How can I apply for Canada PR from Dubai?',
         answer:
-          'You usually start with an eligibility review, language testing, educational credential assessment, and profile creation for Express Entry or a suitable provincial nominee pathway.',
+          'The steps depend on the program. They may include checking eligibility, taking an accepted language test, assessing education where required, and preparing an Express Entry or provincial application.',
       },
       {
         question: 'What is Express Entry?',
         answer:
-          'Express Entry is Canada’s online system for managing skilled immigration applications for programs such as the Federal Skilled Worker Program and Canadian Experience Class.',
+          'Express Entry is an online system that manages applications for the Federal Skilled Worker Program, Canadian Experience Class, Federal Skilled Trades Program, and some provincial nominee streams.',
       },
       {
         question: 'What is the difference between Express Entry and PNP?',
         answer:
-          'Express Entry is the federal application system, while a Provincial Nominee Program is a province-led pathway that may add extra eligibility or nomination advantages for selected applicants.',
+          'Express Entry manages certain federal programs and some aligned provincial streams. A provincial nominee program is administered by a province or territory; its criteria and relationship to Express Entry depend on the specific stream.',
       },
       {
         question: 'Can I apply for Canada PR without a job offer?',
         answer:
-          'Yes. Many candidates enter the Express Entry pool without a job offer, although a strong language score, education, and work experience remain important.',
+          'Some Express Entry programs do not require a job offer, but applicants still need to meet the current program criteria. Check the exact requirements for the stream you are considering.',
       },
       {
         question: 'What is the difference between subclass 189, 190, and 491?',
@@ -223,7 +222,7 @@ export const coreSeoPages = {
       {
         question: 'Can my family be included in my PR application?',
         answer:
-          'In many skilled immigration pathways, eligible spouses and dependent children can be included, subject to the country’s program rules and documentation requirements.',
+          'Some routes allow eligible family members to be included, subject to the destination, program, relationship, and documentation rules.',
       },
     ],
     relatedLinks: [
@@ -359,17 +358,17 @@ export const coreSeoPages = {
       {
         question: 'Which country is best for studying abroad?',
         answer:
-          'The best destination depends on your budget, academic goals, preferred course, work-rights expectations, and long-term plans such as post-study work or immigration pathways.',
+          'There is no single best destination for every student. Compare course fit, admission requirements, full costs, location, work conditions, and any separate post-study route using current official information.',
       },
       {
         question: 'What documents are required for a student visa?',
         answer:
-          'Common documents include a valid passport, admission letter, academic records, language test results, proof of funds, and supporting study-plan documents such as an SOP when required.',
+          'Requirements differ by country, course, and applicant. A checklist may include a passport, institution acceptance document, education records, language evidence, proof of funds, and additional documents requested for your case.',
       },
       {
         question: 'How do I apply for a Canada study permit?',
         answer:
-          'Applicants generally need a letter of acceptance, financial proof, identity documents, and a complete online application aligned with the current study permit process.',
+          'Most applicants need a letter of acceptance from a designated learning institution and proof of funds. A PAL/TAL may also be required, subject to exemptions; use the current IRCC checklist for your application.',
       },
       {
         question: 'How do I apply for a USA F1 visa?',
@@ -581,7 +580,7 @@ export const coreSeoPages = {
     keywords: [
       'about Navigator Immigration Consultant',
       'Navigator Immigration Consultant Dubai',
-      'trusted immigration consultants Dubai',
+      'immigration consultants Dubai',
       'visa consultants with experience',
       'global immigration consultancy Dubai',
       'contact Navigator Immigration Consultant',
@@ -634,12 +633,11 @@ export const coreSeoPages = {
     ],
     trustPoints: [
       'Dubai office at Latifa Towers, Sheikh Zayed Road',
-      '15+ years of immigration guidance experience highlighted across the site',
       'Support for PR, study, work, visit, and business immigration pathways',
       'Multiple contact options for local and overseas clients',
     ],
     localBlock:
-      'Navigator Immigration Consultant is a trusted immigration consultancy in Dubai supporting UAE and overseas clients with PR visas, student visas, work permits, visit visas, and investor migration consultations.',
+      'Navigator Immigration Consultant is a Dubai-based consultancy supporting UAE and overseas clients with PR, student visa, work permit, visit visa, and business immigration consultations.',
   },
   blog: {
     path: '/immigration/blog',
@@ -655,9 +653,9 @@ export const coreSeoPages = {
       'Schengen visa guide',
       'business immigration guide',
     ],
-    h1: 'Immigration Blog, Visa Updates & Expert Guides',
+    h1: 'Immigration Guides and Visa Updates',
     answer:
-      'Navigator Immigration Consultant publishes immigration guides, visa explainers, document checklists, and process articles for readers in Dubai and beyond. The blog focuses on Canada PR, Australia PR, study visas, Europe work permits, visit visas, and business immigration topics designed to answer practical search questions and help readers understand their next step.',
+      'Navigator Immigration Consultant publishes immigration guides, visa explainers, document checklists, and process articles for readers in Dubai and beyond. Topics include Canada and Australia residence routes, study visas, Europe work permits, visitor applications, and business immigration. Each guide is intended to help readers identify practical questions and check current requirements with the relevant authority.',
     ctaLabel: 'Read Immigration Guides',
     pageType: 'CollectionPage',
     breadcrumbs: [...rootBreadcrumbs, { name: 'Blog', path: '/immigration/blog' }],
@@ -686,7 +684,7 @@ export const coreSeoPages = {
       'free PR assessment Dubai',
       'immigration consultation online',
       'visa advice Dubai free',
-      'talk to immigration expert Dubai',
+      'immigration consultant Dubai',
     ],
     h1: 'Book a Free Visa Consultation in Dubai',
     answer:
@@ -747,20 +745,20 @@ export const coreSeoPages = {
 export const landingPages = {
   immigrationConsultantsDubai: {
     path: '/immigration-consultants-dubai',
-    title: 'Best Immigration Consultants in Dubai',
+    title: 'Immigration Consultants in Dubai | Navigator',
     description:
       'Navigator Immigration Consultant helps with Canada PR, Australia PR, student visas, Europe work permits, visit visas, and business immigration in Dubai.',
     keywords: [
       'immigration consultants in Dubai',
-      'best immigration consultants in Dubai',
+      'immigration consultants in Dubai',
       'visa consultants in Dubai',
       'immigration consultancy in Dubai',
       'immigration office in Dubai',
       'Dubai visa consultants',
-      'top immigration consultants UAE',
-      'local immigration experts Dubai',
+      'immigration consultant UAE',
+      'local immigration services Dubai',
     ],
-    h1: 'Top Immigration Consultants in Dubai — Expert Visa & PR Guidance',
+    h1: 'Immigration Consultation in Dubai for Study, Work & Residence Options',
     answer:
       'Navigator Immigration Consultant is an immigration consultancy in Dubai helping clients with PR, student visas, work permits, visit visas, and business immigration from its office at Latifa Towers on Sheikh Zayed Road. We support eligibility review, document preparation, and application planning for clients in the UAE and overseas.',
     ctaLabel: 'Speak to a Dubai Immigration Consultant',
@@ -771,9 +769,9 @@ export const landingPages = {
     breadcrumbs: [...rootBreadcrumbs, { name: 'Immigration Consultants in Dubai', path: '/immigration-consultants-dubai' }],
     faqs: [
       {
-        question: 'What makes Navigator Immigration Consultant one of the best immigration consultants in Dubai?',
+        question: 'What services does Navigator Immigration Consultant offer in Dubai?',
         answer:
-          'Navigator Immigration Consultant combines 15+ years of experience with a Dubai office at Latifa Towers, multi-country service coverage, and structured consultation support for PR, study, work, visit, and business immigration pathways.',
+          'Navigator Immigration Consultant is based at Latifa Towers in Dubai and offers consultations on PR, study, work, visit, and business immigration options. Ask about the service scope, fees, and steps that apply to your case before deciding how to proceed.',
       },
       {
         question: 'Which services do immigration consultants in Dubai typically provide?',
@@ -793,7 +791,7 @@ export const landingPages = {
       {
         question: 'How much do immigration consultants in Dubai charge?',
         answer:
-          'Fees vary by service scope and complexity. Navigator Immigration Consultant offers a free initial assessment to discuss your profile and the best pathway before any commitment.',
+          'Fees vary by service scope and complexity. Navigator Immigration Consultant offers a free initial assessment to discuss your profile and possible routes before any commitment.',
       },
       {
         question: 'Do I need to visit the office for immigration consultation?',
@@ -816,12 +814,12 @@ export const landingPages = {
       'Phone, WhatsApp, and email support for local and overseas clients',
     ],
     localBlock:
-      'Navigator Immigration Consultant is an immigration consultancy in Dubai serving clients near Sheikh Zayed Road, Trade Centre 1, and across the UAE with visa and PR guidance.',
+      'Navigator Immigration Consultant is based at Latifa Towers in Dubai and offers consultations on visa and residence pathways for clients in the UAE and overseas.',
     sections: [
       {
         title: 'Why clients search for immigration consultants in Dubai',
         body:
-          'Most users want a local immigration consultant who can explain requirements clearly, review documents before filing, and help compare the right service pathway for their profile. With hundreds of immigration firms operating in the UAE, choosing the right consultant can significantly affect your application outcome. Navigator Immigration Consultant stands out by offering structured consultation support across a wide range of visa categories, from skilled PR pathways to study-abroad planning, Europe work permits, tourist visas, and business investor routes. Our team takes the time to understand your background, goals, and constraints before recommending a specific pathway, rather than offering generic advice that may not fit your situation.',
+          'A useful consultation should leave you with a clearer view of the route you are considering, the evidence you may need, and the questions to confirm with the relevant authority. The right option depends on your nationality, qualifications, work or study plans, finances, and destination. Our Dubai team discusses those details and explains the scope of the support available before you decide on next steps.',
         bullets: [
           'PR and skilled migration consultations',
           'Student visa and study-abroad planning',
@@ -832,7 +830,7 @@ export const landingPages = {
       {
         title: 'Services available from our Dubai office',
         body:
-          'Navigator Immigration Consultant supports clients with commercial and informational visa needs, from initial eligibility review through document readiness and consultation follow-up. Our service model is designed for individuals, families, students, and business owners who want a clearer understanding of the immigration process before making major life decisions. Each service pathway — whether Canada PR, Australia skilled migration, a student visa for the UK or USA, or a Europe work permit — comes with its own eligibility criteria, documentation standards, and processing timelines. Our role is to help you navigate these complexities with a structured plan that aligns with your personal and professional goals.',
+          'Our consultations cover a range of study, skilled migration, work, visitor, and business immigration questions. Requirements and application steps are set by each destination and route, and can change over time. We help clients identify the relevant official guidance, organize supporting information, and understand the next steps for their circumstances.',
         bullets: [
           'Canada PR and Australia PR guidance',
           'Student visa support for major destinations',
@@ -843,9 +841,9 @@ export const landingPages = {
       {
         title: 'Why choose Navigator Immigration Consultant as your Dubai immigration consultant',
         body:
-          'Choosing the right immigration consultant in Dubai is a critical decision that affects your application timeline, document quality, and overall confidence in the process. Navigator Immigration Consultant brings practical experience across multiple immigration systems, including Canada Express Entry and PNP programs, Australia subclass 189, 190, and 491 skilled visas, UK and USA student visa routes, Europe work permit pathways, Schengen visit visas, and business immigration programs such as the Canada Start-up Visa and UK Innovator Founder routes. Our team provides transparent guidance on eligibility, required documents, processing times, and potential challenges so you can plan with realistic expectations.',
+          'Before engaging an immigration consultancy, check that the service you are offered matches your needs, understand the fee and refund terms, and confirm who will prepare or submit each part of the application. Navigator Immigration Consultant discusses Canada Express Entry and provincial pathways, Australian skilled migration, student routes, European work permits, visitor visas, and selected business immigration options. Government authorities and educational institutions make their own decisions; a consultation cannot guarantee an outcome.',
         bullets: [
-          '15+ years of immigration guidance experience in Dubai',
+          'Consultation support for several visa and immigration categories',
           'Office at 606, Latifa Towers, Trade Center 1, Sheikh Zayed Road',
           'Coverage for Canada, Australia, UK, USA, Europe, and New Zealand',
           'Free initial assessment for eligible inquiries',
@@ -854,7 +852,7 @@ export const landingPages = {
       {
         title: 'Understanding the immigration process from Dubai',
         body:
-          'The immigration process varies significantly by destination country and visa category. Canada PR applicants typically begin with an Express Entry or PNP eligibility review, followed by language testing (IELTS or equivalent), educational credential assessment (ECA), and profile creation. Australia PR applicants focus on occupation selection, skills assessment, points calculation, and state nomination options where applicable. Student visa applicants need admission letters, proof of funds, and in many cases a strong Statement of Purpose. Work permit seekers require a job offer or employer sponsorship, while visit visa applicants must demonstrate travel purpose, financial capacity, and ties to their home country. Navigator Immigration Consultant provides clear, step-by-step guidance for each of these pathways from our Dubai office.',
+          'Application steps depend on the destination and route. Skilled migration cases may involve occupation and credential checks, language evidence, or an invitation process. Study applications generally begin with course selection and institutional admission, followed by the relevant visa process. Work routes can depend on an employer or job offer, while visitor applications are assessed against the destination’s rules and the applicant’s circumstances. Confirm the current requirements with the official authority before filing.',
         bullets: [
           'Canada PR: Express Entry, PNP, CRS score planning',
           'Australia PR: Subclass 189, 190, 491 points-based system',
@@ -864,15 +862,15 @@ export const landingPages = {
         ],
       },
       {
-        title: 'Statistics and success trends for Dubai immigration applicants',
+        title: 'What to prepare before a consultation',
         body:
-          'According to Immigration, Refugees and Citizenship Canada (IRCC), over 110,000 Express Entry applications were processed in 2025 with CRS cut-off scores ranging from 470 to 540 depending on the draw type. Australia\'s Department of Home Affairs reported granting over 195,000 skilled migration places in the 2024-25 program year, with subclass 189 invitations issued at points thresholds between 65 and 95. Navigator Immigration Consultant tracks these trends to help Dubai-based applicants position their profiles competitively. For Canada PR, factors such as language proficiency (CLB 9 or higher), foreign work experience, and provincial nomination can significantly improve an applicant\'s CRS score. For Australia PR, age (25-32), superior English, and skilled employment history remain the strongest points contributors.',
+          'A focused discussion is easier when you can describe your goal, background, and intended timeline. Bring the documents you already have, note any deadlines, and list questions about cost, eligibility, evidence, and the work the consultancy would provide. Personal information should only be shared through the channels and processes you are comfortable using.',
         bullets: [
-          'Canada Express Entry: CRS range 470-540 in recent draws',
-          'Australia skilled migration: 195,000+ places in 2024-25',
-          'IELTS CLB 9 can add 30+ CRS points for Canada',
-          'Australia state nomination adds 5 or 15 points for 190/491',
-          'Student visa approval rates: Canada ~60%, UK ~95%, Australia ~75%',
+          'Your destination and the purpose of the application',
+          'Education, work history, language results, or business plans relevant to the route',
+          'Any offer letter, employer details, or government correspondence already received',
+          'Questions about service scope, fees, timelines, and official requirements',
+          'The government or institution website where you can verify current rules',
         ],
       },
     ],
@@ -1257,11 +1255,15 @@ export function buildPageMetadata(
   };
 
   if ((page.path.startsWith('/blog/') || page.path.startsWith('/immigration/blog/')) && blogOverrides) {
-    (metadata as any).other = {
-      ...((metadata as any).other || {}),
-      'article:published_time': blogOverrides.publishedTime ?? new Date().toISOString(),
-      'article:modified_time': blogOverrides.modifiedTime ?? new Date().toISOString(),
-    };
+    const articleDates: Record<string, string> = {};
+    if (blogOverrides.publishedTime) articleDates['article:published_time'] = blogOverrides.publishedTime;
+    if (blogOverrides.modifiedTime) articleDates['article:modified_time'] = blogOverrides.modifiedTime;
+    if (Object.keys(articleDates).length > 0) {
+      (metadata as any).other = {
+        ...((metadata as any).other || {}),
+        ...articleDates,
+      };
+    }
   }
 
   return metadata;
@@ -1272,7 +1274,9 @@ type BlogMetadataInput = {
   excerpt: string;
   answer: string;
   date: string;
+  dateModified?: string;
   tags: string[];
+  image?: string;
   seo?: {
     metaTitle?: string;
     metaDescription?: string;
@@ -1317,7 +1321,8 @@ export function buildBlogMetadata(post: BlogMetadataInput, path: string): Metada
     undefined,
     {
       publishedTime: new Date(post.date).toISOString(),
-      modifiedTime: new Date(post.date).toISOString(),
+      modifiedTime: new Date(post.dateModified ?? post.date).toISOString(),
+      ogImage: post.image,
       canonical: post.seoControl?.canonical?.trim() || undefined,
       index: post.seoControl?.index ?? true,
       follow: post.seoControl?.follow ?? true,

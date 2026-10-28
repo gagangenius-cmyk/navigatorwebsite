@@ -6,15 +6,15 @@ export const dynamic = "force-dynamic"
 
 
 export const metadata: Metadata = {
-  title: 'Immigration Consultants in Bahrain',
-  description: 'Study abroad and visa guidance for students from Bahrain, provided by Navigator Immigration Consultant in Dubai.',
-  keywords: ['immigration consultant Dubai', 'bahrain study abroad', 'study visa from bahrain', 'bahrain immigration consultant', 'Navigator Immigration Dubai'],
+  title: "Study Abroad from Bahrain | Navigator Immigration Dubai",
+  description: "Students in Bahrain can get help comparing courses and preparing overseas applications. Navigator Immigration Consultant is based in Dubai.",
+  keywords: ['study abroad from Bahrain', 'study visa from Bahrain', 'university applications from Bahrain', 'Navigator Immigration Dubai'],
   alternates: {
     canonical: `${siteUrl}/immigration/geo/gcc/bahrain`,
   },
   openGraph: {
-    title: 'Immigration Consultants in Bahrain | Navigator Immigration Dubai',
-    description: 'Expert study abroad and visa guidance for students from Bahrain. Trusted immigration consultant in Dubai.',
+    title: 'Study Abroad from Bahrain | Navigator Immigration Dubai',
+    description: 'Students from Bahrain can get help comparing study options and organizing university and visa applications. Navigator Immigration Consultant is based in Dubai.',
     url: `${siteUrl}/immigration/geo/gcc/bahrain`,
     siteName,
     type: 'website',
@@ -27,25 +27,25 @@ export default function BahrainPage() {
     <GeoPage
       name="Bahrain"
       region="gcc"
-      description="Navigator Immigration Consultant is a trusted immigration consultant in Bahrain, a country with a well-established international education tradition, strong connections to UK and US universities, and growing interest in Canadian education."
-      overview="Navigator Immigration Consultant is a trusted immigration consultant in Bahrain, providing expert support for students pursuing education abroad. Bahrain has a long tradition of international education, supported by the Kingdom's strong economic foundation and the Ministry of Education's scholarship programs. Bahraini students have historically favoured the United Kingdom and the United States for higher education, but Canada and Australia are attracting growing interest due to their post-study work options and clear immigration pathways. The country's English-medium education system, with many schools following British and American curricula, prepares students well for overseas study. Bahrain's banking sector is sophisticated and well-equipped to support the financial documentation required for study visa applications."
+      description="Study abroad planning for students in Bahrain, with help comparing courses, funding options and destination-specific visa steps."
+      overview="The first question is whether you are applying as a Bahraini citizen or as a resident with another passport. Nationality and lawful residence can affect scholarship eligibility, visa requirements and which mission accepts an application. Once that is clear, compare programs by course fit and total cost, and check what evidence is needed if family or an employer is paying. Use current information from the scholarship sponsor, university and destination government."
       benefits={[
-        "Bahrain's Ministry of Education provides scholarship support for Bahraini students at approved international universities across multiple destinations.",
-        'English-medium education is widely available, with many Bahraini schools following British GCSE/A-Level and American curricula.',
-        "Bahrain's well-developed banking sector makes financial documentation for visa applications straightforward.",
-        "The Kingdom's small size and close-knit community mean strong support networks exist for students and their families.",
-        'Bahraini students have historically strong representation in UK universities, with well-established alumni networks.',
+        "Check scholarship eligibility against citizenship, residence, course and institution.",
+        "Confirm which visa office accepts your application before booking an appointment.",
+        "Document family or employer support and how funds will be available.",
+        "Compare courses by prerequisites, full tuition and living costs.",
+        "Verify health, language-test and police-certificate requirements only from the official checklist.",
       ]}
       scholarships={[
-        'Ministry of Education Scholarships — Bahraini government provides funding for students at approved international universities across multiple destinations, covering tuition and living expenses.',
-        'Bahrain Petroleum Company (BAPCO) and other major employers offer scholarship programs for employees and their dependents.',
-        'Some UK and US universities offer dedicated scholarship programs for Bahraini applicants based on academic merit.',
+        "Ask the relevant scholarship authority whether the current award is open to your citizenship and chosen institution.",
+        "Check universities for international awards and read the conditions for renewal and academic progress.",
+        "Confirm the award’s amount, duration and covered expenses before including it in your study budget.",
       ]}
-      loanInfo="Bahraini students are typically funded through government scholarships or family resources. Bahraini banks including Bank of Bahrain and Kuwait (BBK), National Bank of Bahrain (NBB), and Ahli United Bank offer education financing options. Bahrain's sophisticated banking sector and strong regulatory framework mean financial documentation from Bahraini banks is well-received by visa officers internationally."
+      loanInfo="If you are using savings, a loan or sponsor support, confirm which documents the destination accepts and when funds need to be available. Keep evidence of the sponsor’s relationship and income where required, and make sure the funding plan covers costs not included in a scholarship."
       faqs={[
-        { q: 'Which countries do Bahraini students prefer?', a: 'The United Kingdom has traditionally been the most popular destination for Bahraini students. The USA, Canada, and Australia are also significant destinations, with Canada growing rapidly in popularity.' },
-        { q: 'What scholarships are available for Bahraini students?', a: 'The Ministry of Education offers scholarships for students meeting academic requirements. Some universities also offer merit-based scholarships specifically for Bahraini applicants.' },
-        { q: 'What programs do Bahraini students typically pursue?', a: 'Medicine, engineering, business administration, computer science, and law are popular choices. Finance and accounting programs also attract many Bahraini students given the Kingdom\'s role as a regional financial centre.' },
+        { q: "Do Bahrain residents and citizens have the same scholarship options?", a: "Not necessarily. Each award sets its own citizenship, residence, course and institution rules. Check the current official conditions with the sponsor before relying on funding." },
+        { q: "Can I apply for an overseas visa from Bahrain?", a: "The answer depends on your passport, lawful residence and the destination’s consular jurisdiction. Follow the destination government’s instructions for the office that handles your application." },
+        { q: "What if my family is paying for my studies?", a: "Check the destination’s current rules for sponsor evidence. You may need to document the relationship, the sponsor’s finances and how the funds will be available; requirements vary by route." },
       ]}
     />
   )

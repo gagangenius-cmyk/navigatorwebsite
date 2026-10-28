@@ -16,12 +16,12 @@ import {
 export const metadata: Metadata = buildPageMetadata(coreSeoPages.businessImmigration);
 
 const businessSteps = [
-  { position: 1, name: 'Initial Consultation', text: 'Evaluate your eligibility, investment capacity, and identify the best business immigration or investor visa option.', url: `${siteUrl}/business-immigration#overview` },
-  { position: 2, name: 'Business Plan Development', text: 'Develop a comprehensive business plan or investment strategy aligned with the program requirements.', url: `${siteUrl}/business-immigration#investment` },
-  { position: 3, name: 'Due Diligence & Documentation', text: 'Complete background checks, source-of-funds verification, and prepare all legal and financial documents.', url: `${siteUrl}/business-immigration#requirements` },
-  { position: 4, name: 'Investment Execution', text: 'Make the required investment or business establishment as per the program guidelines.', url: `${siteUrl}/business-immigration#investment` },
-  { position: 5, name: 'Application & Approval', text: 'Submit your residency or citizenship application and receive approval with settlement support.', url: `${siteUrl}/business-immigration#process` },
-  { position: 6, name: 'Post-Approval Support', text: 'We assist with family inclusion, compliance requirements, and ongoing support after visa approval.', url: `${siteUrl}/business-immigration#contact` },
+  { position: 1, name: 'Initial Consultation', text: 'Review your goals, investment capacity and evidence against relevant business immigration or investor visa criteria.', url: `${siteUrl}/business-immigration#overview` },
+  { position: 2, name: 'Business Plan Development', text: 'Prepare a business plan or investment evidence when the selected program requires it.', url: `${siteUrl}/business-immigration#investment` },
+  { position: 3, name: 'Due Diligence & Documentation', text: 'Identify any background, source-of-funds, legal or financial evidence required for the selected route.', url: `${siteUrl}/business-immigration#requirements` },
+  { position: 4, name: 'Investment Execution', text: 'Complete an investment or business-establishment step only where it is required by the chosen program.', url: `${siteUrl}/business-immigration#investment` },
+  { position: 5, name: 'Application & Approval', text: 'Prepare the application for review by the competent authority, which makes the decision under the program rules.', url: `${siteUrl}/business-immigration#process` },
+  { position: 6, name: 'Post-Approval Support', text: 'If included in the agreed service, organise eligible family-member documentation and explain relevant post-grant conditions.', url: `${siteUrl}/business-immigration#contact` },
 ];
 
 export default function BusinessImmigrationLayout({
@@ -29,11 +29,10 @@ export default function BusinessImmigrationLayout({
 }: {
   children: ReactNode
 }) {
-  const lastReviewed = new Date().toISOString().split('T')[0];
   const serviceSchema = buildServiceSchema(coreSeoPages.businessImmigration);
   const faqSchema = buildFaqSchema(coreSeoPages.businessImmigration.faqs);
   const howToSchema = buildHowToSchema(businessSteps, 'Business Immigration & Investor Visa');
-  const webpageSchema = buildWebPageSchemaWithReview(coreSeoPages.businessImmigration, lastReviewed);
+  const webpageSchema = buildWebPageSchemaWithReview(coreSeoPages.businessImmigration);
   const speakableSchema = buildSpeakableSchema('#site-content', `${siteUrl}/business-immigration`);
 
   return (

@@ -28,11 +28,10 @@ export default function SkilledLayout({
 }: {
   children: ReactNode
 }) {
-  const lastReviewed = new Date().toISOString().split('T')[0];
   const serviceSchema = buildServiceSchema(coreSeoPages.skilled);
   const faqSchema = buildFaqSchema(coreSeoPages.skilled.faqs);
   const howToSchema = buildHowToSchema(skilledSteps, 'Skilled Immigration (Canada PR & Australia PR)');
-  const webpageSchema = buildWebPageSchemaWithReview(coreSeoPages.skilled, lastReviewed);
+  const webpageSchema = buildWebPageSchemaWithReview(coreSeoPages.skilled);
   const speakableSchema = buildSpeakableSchema('#site-content', `${siteUrl}/skilled`);
 
   return (

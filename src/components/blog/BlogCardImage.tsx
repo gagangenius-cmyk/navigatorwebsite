@@ -14,11 +14,13 @@ function hashSlug(slug: string): number {
 type BlogCardImageProps = {
   slug: string
   title: string
+  image?: string
+  imageAlt?: string
 }
 
-export default function BlogCardImage({ slug, title }: BlogCardImageProps) {
+export default function BlogCardImage({ slug, title, image, imageAlt }: BlogCardImageProps) {
   const [failed, setFailed] = useState(false)
-  const src = `https://picsum.photos/seed/${encodeURIComponent(slug)}/600/400`
+  const src = image || '/img/blog/canada-express-entry-2026-categories.webp'
 
   const gradients = [
     'from-[#436175] via-[#585a5e] to-[#2C353F]',
@@ -39,9 +41,9 @@ export default function BlogCardImage({ slug, title }: BlogCardImageProps) {
       {!failed && (
         <Image
           src={src}
-          alt={title}
+          alt={imageAlt || title}
           fill
-          sizes="(max-width: 768px) 100vw, 33vw"
+          sizes="(max-width: 639px) calc(100vw - 2rem), (max-width: 767px) 608px, (max-width: 1023px) 356px, (max-width: 1279px) 315px, 400px"
           className="object-cover"
           onError={() => setFailed(true)}
         />

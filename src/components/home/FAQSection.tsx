@@ -144,7 +144,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section suppressHydrationWarning className="py-24" style={{background: 'linear-gradient(135deg, rgba(247,55,24,0.85), rgba(67,97,117,0.75), rgba(88,90,94,0.85))'}}>
+    <section suppressHydrationWarning className="below-fold-section py-24" style={{background: 'linear-gradient(135deg, rgba(247,55,24,0.85), rgba(67,97,117,0.75), rgba(88,90,94,0.85))'}}>
       <div className="container mx-auto px-4">
         <motion.div 
           className="text-center mb-16"

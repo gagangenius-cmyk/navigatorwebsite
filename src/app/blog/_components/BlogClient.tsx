@@ -5,10 +5,10 @@ import { useState } from 'react';
 import { Calendar, ArrowRight, Search, CheckCircle } from 'lucide-react';
 import { formatStableDate } from '@/lib/formatting';
 import { coreSeoPages } from '@/lib/marketingSeo';
-import type { BlogPost } from '@/lib/blogData';
+import type { BlogCardPost } from '@/lib/blogData';
 import BlogCardImage from '@/components/blog/BlogCardImage';
 
-export default function BlogClient({ posts }: { posts: BlogPost[] }) {
+export default function BlogClient({ posts }: { posts: BlogCardPost[] }) {
   const seoPage = coreSeoPages.blog;
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
@@ -18,9 +18,10 @@ export default function BlogClient({ posts }: { posts: BlogPost[] }) {
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 6;
 
-  const categories = ['All Categories', ...new Set([...posts.map((post) => post.category), 'Other Blogs'])];
+  const sortedPosts = [...posts].sort((a, b) => b.date.localeCompare(a.date));
+  const categories = ['All Categories', ...new Set([...sortedPosts.map((post) => post.category), 'Other Blogs'])];
 
-  const filteredPosts = posts.filter((post) => {
+  const filteredPosts = sortedPosts.filter((post) => {
     const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
     const matchesCategory = activeCategory === 'All Categories' || post.category === activeCategory;
@@ -107,7 +108,7 @@ export default function BlogClient({ posts }: { posts: BlogPost[] }) {
                 {paginatedPosts.map((post) => (
                   <article key={post.id} className="group bg-white border border-light-brown-grey rounded-xl overflow-hidden hover:shadow-lg transition-shadow">
                     <div className="relative h-48 overflow-hidden bg-gradient-to-br from-[#436175]/10 to-[#585a5e]/10">
-                      <BlogCardImage slug={post.slug} title={post.title} />
+                      <BlogCardImage slug={post.slug} title={post.title} image={post.image} imageAlt={post.imageAlt} />
                     </div>
                     
                     <div className="p-6">

@@ -5,6 +5,8 @@ const nextConfig = {
   devIndicators: false,
   transpilePackages: [],
   productionBrowserSourceMaps: false,
+  compress: true,
+  poweredByHeader: false,
   
   // Security Headers
   async headers() {
@@ -49,7 +51,7 @@ const nextConfig = {
       },
       // Cache-Control for static assets
       {
-        source: '/:path*\\.(jpg|jpeg|png|gif|webp|avif|svg|ico|woff|woff2|ttf|eot|css|js)$',
+        source: '/:path*\\.(jpg|jpeg|png|gif|webp|avif|svg|ico|woff|woff2|ttf|eot|css|js)',
         headers: [
           {
             key: 'Cache-Control',
@@ -57,16 +59,15 @@ const nextConfig = {
           }
         ]
       },
-      // Cache-Control for HTML pages
       {
-        source: '/:path*',
+        source: '/:path*\\.(mp4|webm)',
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, max-age=0, must-revalidate'
+            value: 'public, max-age=2592000, stale-while-revalidate=86400'
           }
         ]
-      }
+      },
     ];
   },
   
@@ -165,7 +166,7 @@ const nextConfig = {
   
   // Experimental Security Features
   experimental: {
-    optimizeCss: false,
+    optimizeCss: true,
     optimizePackageImports: ['lucide-react', 'framer-motion'],
     webpackMemoryOptimizations: true,
   }

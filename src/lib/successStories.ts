@@ -15,6 +15,36 @@ export type SuccessStory = {
 
 const evidencePath = (file: string) => `/media/success-stories/evidence/${file}`;
 
+const successStoryImageDimensions: Record<string, readonly [number, number]> = {
+  'norway-client-review-poster.webp': [720, 1280],
+  'norway-employment-offer.webp': [1132, 1600],
+  'australia-858-national-innovation.webp': [990, 1400],
+  'australia-491-south-australia.webp': [990, 1400],
+  'australia-student-visa.webp': [990, 1400],
+  'australia-vetassess-motor-mechanic.webp': [990, 1400],
+  'australia-190-priyadarshani.webp': [990, 1400],
+  'australia-190-sandeep.webp': [990, 1400],
+  'australia-190-shivansh.webp': [708, 1000],
+  'australia-visit-visa.webp': [708, 1000],
+  'australia-482-feb-2026.webp': [708, 1000],
+  'australia-482-jan-2026.webp': [708, 1000],
+  'australia-482-aug-2026-1.webp': [459, 597],
+  'australia-482-aug-2026-2.webp': [459, 597],
+  'australia-visa-grant-1.webp': [708, 1000],
+  'australia-visa-grant-2.webp': [708, 1000],
+  'czech-work-permit-jaseem.webp': [1131, 1600],
+  'czech-work-permit-santosh.webp': [1131, 1600],
+  'czech-work-permit-zeeshan.webp': [1131, 1600],
+  'czech-work-permit-gajendran.webp': [1131, 1600],
+};
+
+const fallbackImageDimensions = [1132, 1600] as const;
+
+export const getSuccessStoryImageDimensions = (src: string): readonly [number, number] => {
+  const fileName = src.split('/').pop() ?? '';
+  return successStoryImageDimensions[fileName] ?? fallbackImageDimensions;
+};
+
 export const successStories: SuccessStory[] = [
   {
     slug: 'norway-client-review',

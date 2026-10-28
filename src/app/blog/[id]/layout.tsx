@@ -37,7 +37,7 @@ export default async function BlogPostLayout({ children, params }: BlogPostLayou
               },
             },
             datePublished: post.date,
-            dateModified: post.date,
+            dateModified: post.dateModified ?? post.date,
             mainEntityOfPage: {
               '@type': 'WebPage',
               '@id': `${siteUrl}/immigration/blog/${post.slug}`,
@@ -53,10 +53,13 @@ export default async function BlogPostLayout({ children, params }: BlogPostLayou
             },
             image: {
               '@type': 'ImageObject',
-              url: `${siteUrl}${defaultOgImage}`,
-              width: 942,
-              height: 938,
+              url: `${siteUrl}${post.image ?? defaultOgImage}`,
+              width: 1600,
+              height: 900,
+              caption: post.imageCaption ?? post.imageAlt ?? post.title,
             },
+            keywords: post.seo?.secondaryKeywords ?? post.tags,
+            citation: post.authorityLinks?.map((link) => link.url),
             wordCount: (post.content?.sections ?? []).reduce((count, s) => count + s.body.split(/\s+/).length + s.heading.split(/\s+/).length + (s.bullets?.reduce((b, bullet) => b + bullet.split(/\s+/).length, 0) ?? 0), 0),
             articleSection: post.category,
             isPartOf: {

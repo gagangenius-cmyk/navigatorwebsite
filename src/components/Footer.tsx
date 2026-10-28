@@ -1,8 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Facebook, Twitter, Linkedin, Instagram, MapPin, Phone, Mail } from 'lucide-react';
+import { Facebook, Linkedin, Instagram, MapPin, Phone, Mail } from 'lucide-react';
 import { coreSeoPages } from '@/lib/marketingSeo';
 import { brandPhoneDisplay, brandPhoneTel, brandWhatsAppUrl } from '@/lib/contactInfo';
+import TikTokIcon from './TikTokIcon';
 import footerLogo from '../../public/img/logo/logo-resized.png';
 
 const Footer = () => {
@@ -43,23 +44,23 @@ const Footer = () => {
               </Link>
             </div>
             <p className="text-[#ffffff] mb-6 leading-relaxed text-sm sm:text-base">
-              Your trusted Dubai immigration consultancy for Canada PR, Australia PR, student visas, Europe work permits, visit visas, and business immigration.
+              Dubai-based guidance for Canada and Australia skilled migration, student visas, Europe work permits, visit visas, and business immigration.
             </p>
             <p className="text-white/80 mb-6 leading-relaxed text-sm">
               {coreSeoPages.home.localBlock}
             </p>
             <div className="flex space-x-3 sm:space-x-4">
-              <a href="https://www.facebook.com/navigatorimmigration" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <a href="https://www.instagram.com/navigatorimmigrationconsultant/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <Instagram className="w-5 h-5 text-[#ffffff] hover:text-surface-light transition-colors duration-300" />
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=61588288162608" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <Facebook className="w-5 h-5 text-[#ffffff] hover:text-surface-light transition-colors duration-300" />
               </a>
-              <a href="https://twitter.com/navigatorimm" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                <Twitter className="w-5 h-5 text-[#ffffff] hover:text-surface-light transition-colors duration-300" />
-              </a>
-              <a href="https://www.linkedin.com/company/navigator-immigration" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/navigator-immigration-consultant-3747573ab/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <Linkedin className="w-5 h-5 text-[#ffffff] hover:text-surface-light transition-colors duration-300" />
               </a>
-              <a href="https://www.instagram.com/navigatorimmigration" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                <Instagram className="w-5 h-5 text-[#ffffff] hover:text-surface-light transition-colors duration-300" />
+              <a href="https://www.tiktok.com/@navigator.immigration" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                <TikTokIcon className="w-5 h-5 text-[#ffffff] hover:text-surface-light transition-colors duration-300" />
               </a>
             </div>
           </div>

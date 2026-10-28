@@ -6,15 +6,15 @@ export const dynamic = "force-dynamic"
 
 
 export const metadata: Metadata = {
-  title: 'Immigration Consultants in Kuwait',
-  description: 'Study abroad and visa guidance for students from Kuwait, provided by Navigator Immigration Consultant in Dubai.',
-  keywords: ['immigration consultant Dubai', 'kuwait study abroad', 'study visa from kuwait', 'kuwait immigration consultant', 'Navigator Immigration Dubai'],
+  title: "Study Abroad from Kuwait | Navigator Immigration Dubai",
+  description: "Students in Kuwait can get help comparing programs and preparing university and visa applications. Navigator Immigration Consultant is based in Dubai.",
+  keywords: ['study abroad from Kuwait', 'study visa from Kuwait', 'university applications from Kuwait', 'Navigator Immigration Dubai'],
   alternates: {
     canonical: `${siteUrl}/immigration/geo/gcc/kuwait`,
   },
   openGraph: {
-    title: 'Immigration Consultants in Kuwait | Navigator Immigration Dubai',
-    description: 'Expert study abroad and visa guidance for students from Kuwait. Trusted immigration consultant in Dubai.',
+    title: 'Study Abroad from Kuwait | Navigator Immigration Dubai',
+    description: 'Students from Kuwait can get help comparing study options and organizing university and visa applications. Navigator Immigration Consultant is based in Dubai.',
     url: `${siteUrl}/immigration/geo/gcc/kuwait`,
     siteName,
     type: 'website',
@@ -27,25 +27,25 @@ export default function KuwaitPage() {
     <GeoPage
       name="Kuwait"
       region="gcc"
-      description="Navigator Immigration Consultant is a trusted immigration consultant in Kuwait, a country with a strong tradition of sending students abroad through government and private scholarships, with Canada, UK, and USA being top destinations."
-      overview="Navigator Immigration Consultant is a premier immigration consultant in Kuwait, helping students access world-class education opportunities abroad. Kuwait has a well-established tradition of international education, supported by the country's generous scholarship programs and the long-standing presence of English-medium education. The Kuwait Cultural Office manages scholarship programs that have sent thousands of Kuwaiti students to universities in the United States, United Kingdom, Canada, and Australia over several decades. Kuwaiti students are particularly well-represented in medicine, engineering, business, and law programs at international universities. The country's strong economy and high per-capita income mean that many families can also self-fund international education, and Kuwait's banking sector is well-equipped to handle the financial documentation required for visa applications."
+      description="Students in Kuwait can get help comparing overseas programs, checking funding conditions and preparing university and visa applications."
+      overview="If your study plan depends on government, employer or family funding, confirm the terms before choosing a course. Check whether the sponsor approves the institution and subject, how payments are released, and whether there are academic or service conditions. Students who fund the plan themselves should build a budget for the full program and follow the destination’s current financial-evidence rules. Visa-office jurisdiction can depend on citizenship and residence, so verify it directly."
       benefits={[
-        "Kuwait's government scholarship programs have a long history of supporting international education, with well-established administrative structures through the Kuwait Cultural Office.",
-        'English-medium education is widely available in Kuwait, with many schools following British, American, and IB curricula that prepare students well for overseas study.',
-        'Kuwaiti students have strong support networks through Kuwait Cultural Office representatives and student associations in major study destinations.',
-        "The country's robust banking sector makes financial documentation for visa applications straightforward and reliable.",
-        'Kuwaiti graduates with international degrees are highly valued in both government and private sectors in Kuwait.',
+        "Get written confirmation that a sponsor accepts the chosen university, course and intake.",
+        "Compare funding coverage with tuition, living costs, travel, insurance and deposits.",
+        "Keep sponsor, bank and university records aligned on the amount and payment schedule.",
+        "Check that your academic subjects and grades meet course prerequisites.",
+        "Confirm where you must submit biometrics or visa documents for your case.",
       ]}
       scholarships={[
-        'The Kuwait Cultural Office manages government scholarship programs providing full funding for Kuwaiti students at approved international universities, covering tuition, living expenses, and travel.',
-        'Kuwait Petroleum Corporation (KPC) and other major Kuwaiti employers offer scholarship programs for employees and their dependents pursuing higher education abroad.',
-        'Private Kuwaiti foundations and philanthropic organizations offer additional scholarship opportunities for meritorious students.',
+        "Ask the relevant scholarship authority about current approved institutions, fields and applicant eligibility.",
+        "Check university awards for international students and whether a separate application is required.",
+        "Confirm renewal conditions and whether the scholarship covers living costs as well as tuition.",
       ]}
-      loanInfo="Most Kuwaiti students are funded through government scholarships. For self-funded students, Kuwaiti banks including National Bank of Kuwait (NBK), Kuwait Finance House, and Gulf Bank offer education financing. Kuwait's strong economy and high per-capita income mean many families can self-fund international education. Bank statements from Kuwaiti banks are well-regarded by visa officers due to the country's sophisticated banking sector."
+      loanInfo="For a loan or family-funded application, keep evidence of each source and show when the money can be used. Compare the lender’s release schedule and repayment terms with the university’s payment dates, and verify the destination’s current rules before treating a loan letter as proof of funds."
       faqs={[
-        { q: 'How do Kuwaiti students get government scholarships?', a: 'The Kuwait Cultural Office manages scholarship programs for students accepted at approved international universities. Applications go through the Cultural Office with requirements varying by program level and destination.' },
-        { q: 'Which destinations are most popular for Kuwaiti students?', a: 'The United Kingdom, USA, and Canada are the top choices. The UK is particularly popular due to its proximity and strong academic reputation. Australia also attracts growing numbers of Kuwaiti students.' },
-        { q: 'What programs do Kuwaiti students typically pursue?', a: 'Medicine, engineering, business administration, computer science, and law are popular choices. There is growing interest in data science, artificial intelligence, and renewable energy programs.' },
+        { q: "How can Kuwaiti students confirm scholarship conditions?", a: "Use the current notice from the scholarship authority and confirm approved institutions, eligible subjects, funding coverage and renewal rules. Do not rely on a previous year’s list when planning a new intake." },
+        { q: "Can an expatriate living in Kuwait apply for a student visa there?", a: "Possibly, depending on the destination’s consular jurisdiction and your lawful residence status. Check the destination’s official instructions for the office that accepts applications from your circumstances." },
+        { q: "What financial documents should I prepare?", a: "Start with the destination’s official checklist. It may ask for evidence of tuition payments, living costs, travel funds and the source of support; the accepted documents and timing vary by country and case." },
       ]}
     />
   )

@@ -88,6 +88,17 @@ body {
   font-family: 'Montserrat', var(--font-montserrat), sans-serif;
 }
 
+/* Keep the homepage hero content below the fixed contact bar and navigation. */
+.home-hero {
+  padding-top: max(10rem, calc(var(--top-bar-height, 44px) + var(--main-header-height, 80px) + 1rem));
+}
+
+@media (min-width: 1024px) {
+  .home-hero {
+    padding-top: max(8rem, calc(var(--top-bar-height, 44px) + var(--main-header-height, 80px) + 1rem));
+  }
+}
+
 /* Global heading styles */
 h1, h2, h3, h4, h5, h6 {
   color: #436175;
@@ -151,6 +162,155 @@ video::-webkit-media-controls-enclosure {
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
+}
+
+/* Defer painting for sections below the first viewport without changing their
+   measured layout or their rendered appearance when scrolled into view. */
+.below-fold-section {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 760px;
+}
+
+/* Keep the hero entrance and decorative motion in CSS without a Framer Motion client bundle. */
+@keyframes immigration-hero-section-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes immigration-hero-rise {
+  from { opacity: 0; transform: translateY(var(--hero-rise-distance)); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes immigration-hero-orb-one {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.2); }
+}
+
+@keyframes immigration-hero-orb-two {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.1); }
+}
+
+@keyframes immigration-hero-scroll-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes immigration-hero-scroll-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+.immigration-hero-section {
+  animation: immigration-hero-section-fade 800ms ease-out both;
+}
+
+.immigration-hero-content {
+  --hero-rise-distance: 50px;
+  animation: immigration-hero-rise 1s 200ms ease-out both;
+}
+
+.immigration-hero-title {
+  --hero-rise-distance: 30px;
+  animation: immigration-hero-rise 1s 400ms ease-out both;
+}
+
+.immigration-hero-description {
+  --hero-rise-distance: 20px;
+  animation: immigration-hero-rise 1s 600ms ease-out both;
+}
+
+.immigration-hero-actions {
+  --hero-rise-distance: 20px;
+  animation: immigration-hero-rise 1s 800ms ease-out both;
+}
+
+.immigration-hero-cta {
+  transition: transform 200ms ease;
+}
+
+.immigration-hero-cta:hover { transform: scale(1.05); }
+.immigration-hero-cta:active { transform: scale(0.95); }
+
+.immigration-hero-orb-one {
+  animation: immigration-hero-orb-one 4s ease-in-out infinite;
+}
+
+.immigration-hero-orb-two {
+  animation: immigration-hero-orb-two 3s ease-in-out 1s infinite;
+}
+
+.immigration-hero-scroll-indicator {
+  animation: immigration-hero-scroll-fade 1s 1.2s ease-out both;
+}
+
+.immigration-hero-scroll-dot {
+  animation: immigration-hero-scroll-bounce 2s ease-in-out infinite;
+}
+
+@keyframes student-visa-hero-section-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes student-visa-hero-rise {
+  from { opacity: 0; transform: translateY(var(--hero-rise-distance)); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes student-visa-hero-orb-one {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.2); }
+}
+
+@keyframes student-visa-hero-orb-two {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.1); }
+}
+
+.student-visa-hero {
+  animation: student-visa-hero-section-fade 800ms ease-out both;
+}
+
+.student-visa-hero-content {
+  --hero-rise-distance: 50px;
+  animation: student-visa-hero-rise 1s 200ms ease-out both;
+}
+
+.student-visa-hero-title {
+  --hero-rise-distance: 30px;
+  animation: student-visa-hero-rise 1s 400ms ease-out both;
+}
+
+.student-visa-hero-answer {
+  --hero-rise-distance: 20px;
+  animation: student-visa-hero-rise 1s 600ms ease-out both;
+}
+
+.student-visa-hero-actions {
+  --hero-rise-distance: 20px;
+  animation: student-visa-hero-rise 1s 800ms ease-out both;
+}
+
+.student-visa-hero-orb-one {
+  animation: student-visa-hero-orb-one 4s ease-in-out infinite;
+}
+
+.student-visa-hero-orb-two {
+  animation: student-visa-hero-orb-two 3s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+  }
 }
 
 /* Adaptive header text colors based on video background */

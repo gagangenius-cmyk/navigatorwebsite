@@ -1,22 +1,10 @@
-'use client';
-
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState } from 'react';
+import SectionAnchorNav from '@/components/SectionAnchorNav';
 import { ArrowRight, GraduationCap, Plane, CheckCircle, BookOpen, Camera, Globe, Users, Award, Heart, Star, FileText, Clock, Shield } from 'lucide-react';
 import QuickAssessmentForm from '../../components/QuickAssessmentForm';
 
 export default function StudyVisitVisas() {
-  const [activeSection, setActiveSection] = useState('overview');
-
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setActiveSection(sectionId);
-    }
-  };
-
   const anchorPoints = [
     { id: 'overview', label: 'Program Overview', icon: <Award className="w-4 h-4" /> },
     { id: 'study', label: 'Study Programs', icon: <GraduationCap className="w-4 h-4" /> },
@@ -67,35 +55,13 @@ export default function StudyVisitVisas() {
       </section>
 
       {/* Sticky Anchor Navigation */}
-      <div className="sticky z-30 bg-white border-b border-gray-200 shadow-sm top-48 lg:top-36">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between py-2 lg:py-4">
-            <div className="flex items-center overflow-x-auto gap-1 pb-2 lg:pb-0 scrollbar-hide">
-              {anchorPoints.map((anchor) => (
-                <button
-                  key={anchor.id}
-                  onClick={() => scrollToSection(anchor.id)}
-                  className={`flex-shrink-0 flex items-center gap-1 lg:gap-2 px-3 lg:px-4 py-1.5 lg:py-2 rounded-lg text-xs lg:text-sm font-medium transition-all duration-200 whitespace-nowrap ${
-                    activeSection === anchor.id
-                      ? 'bg-purple-600 text-white'
-                      : 'text-gray-600 hover:text-purple-600 hover:bg-purple-50'
-                  }`}
-                >
-                  <span className="hidden sm:inline">{anchor.icon}</span>
-                  <span>{anchor.label}</span>
-                </button>
-              ))}
-            </div>
-            <Link
-              href="/contact"
-              className="flex-shrink-0 inline-flex items-center px-3 lg:px-4 py-1.5 lg:py-2 bg-gradient-to-r from-[#436175] to-[#585a5e] text-white font-medium rounded-lg hover:from-[#436175] hover:to-[#585a5e] transition-all duration-300 text-xs lg:text-sm"
-            >
-              Get Started
-              <ArrowRight className="ml-1 lg:ml-2 w-3 h-3 lg:w-4 lg:h-4" />
-            </Link>
-          </div>
-        </div>
-      </div>
+      <SectionAnchorNav
+        anchors={anchorPoints}
+        navClassName="sticky z-30 bg-white border-b border-gray-200 shadow-sm top-48 lg:top-36"
+        activeClassName="bg-purple-600 text-white"
+        inactiveClassName="text-gray-600 hover:text-purple-600 hover:bg-purple-50"
+        ctaClassName="flex-shrink-0 inline-flex items-center px-3 lg:px-4 py-1.5 lg:py-2 bg-gradient-to-r from-[#436175] to-[#585a5e] text-white font-medium rounded-lg hover:from-[#436175] hover:to-[#585a5e] transition-all duration-300 text-xs lg:text-sm"
+      />
 
       {/* Statistics Section */}
       <section className="py-20 bg-white">
@@ -104,7 +70,7 @@ export default function StudyVisitVisas() {
             {[
               { label: "Students Placed", value: "2500+", icon: <GraduationCap className="w-8 h-8" /> },
               { label: "Visitor Visas", value: "1800+", icon: <Plane className="w-8 h-8" /> },
-              { label: "Success Rate", value: "99%", icon: <Award className="w-8 h-8" /> },
+              { label: "Case Review", value: "1:1", icon: <Award className="w-8 h-8" /> },
               { label: "Universities", value: "500+", icon: <BookOpen className="w-8 h-8" /> }
             ].map((stat, index) => (
               <div key={index} className="text-center group">
@@ -154,7 +120,7 @@ export default function StudyVisitVisas() {
               
               <h3 className="text-2xl font-semibold text-gray-900 mb-6">World-Class Education Awaits</h3>
               <p className="text-lg text-gray-600 mb-6">
-                Study at world-class institutions in Canada, Australia, UK, USA, and EU countries. 
+                Explore institutions and programs in Canada, Australia, the UK, the USA, and European countries.
                 We help you secure student visas for your educational journey, from application 
                 to arrival, ensuring a smooth transition to your new academic environment.
               </p>
@@ -247,13 +213,13 @@ export default function StudyVisitVisas() {
                   src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
                   alt="Study Abroad"
                   fill
-                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  sizes="(max-width: 639px) calc(100vw - 2rem), (max-width: 767px) 608px, (max-width: 1023px) 736px, (max-width: 1279px) 464px, 592px"
                   className="absolute inset-0 h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 text-white">
                   <h3 className="text-2xl font-bold mb-2">Study Your Dream Course</h3>
-                  <p className="text-[#436175]100">Join thousands of international students</p>
+                  <p className="text-[#436175]100">Explore study options with informed planning</p>
                 </div>
               </div>
               
@@ -313,7 +279,7 @@ export default function StudyVisitVisas() {
                   src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
                   alt="Visitor Visas"
                   fill
-                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  sizes="(max-width: 639px) calc(100vw - 2rem), (max-width: 767px) 608px, (max-width: 1023px) 736px, (max-width: 1279px) 464px, 592px"
                   className="absolute inset-0 h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
@@ -508,7 +474,7 @@ export default function StudyVisitVisas() {
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-8 text-center">How to Get Study/Visit Visa</h2>
             <p className="text-xl text-gray-600 mb-16 text-center max-w-3xl mx-auto">
-              Follow our proven 5-step process to secure your study or visitor visa efficiently
+              Use a clear five-step process to plan a study or visitor visa application
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">

@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { useState } from 'react';
-import { submitLead } from '@/lib/submitLead';
 
 const CTASection = () => {
   const [formData, setFormData] = useState({
@@ -47,7 +46,6 @@ const CTASection = () => {
       if (response.ok) {
         const result = await response.json();
         if (result.success) {
-          submitLead({ name: formData.name, email: formData.email, phone: formData.phone });
           setSubmitted(true);
           setSubmitting(false);
           setTimeout(() => {
@@ -78,7 +76,7 @@ const CTASection = () => {
   };
 
   return (
-    <section suppressHydrationWarning className="py-24 bg-[#f5f5dc] relative overflow-hidden">
+    <section suppressHydrationWarning className="below-fold-section py-24 bg-[#f5f5dc] relative overflow-hidden">
       <div className="absolute inset-0">
         <div
           className="absolute left-0 top-0 h-80 w-80 rounded-full bg-muted-brown-grey/15 blur-3xl animate-pulse"

@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
-import { getAllBlogPosts } from '@/lib/blogData'
+import { getAllBlogPosts, toBlogCardPosts } from '@/lib/blogData'
 import { siteUrl, siteName } from '@/lib/marketingSeo'
+import ImmigrationHero from '@/components/immigration/ImmigrationHero'
 import ImmigrationBlogClient from './_components/ImmigrationBlogClient'
 
 export const dynamic = "force-dynamic"
@@ -8,8 +9,16 @@ export const dynamic = "force-dynamic"
 
 export const metadata: Metadata = {
   title: 'Immigration Blog | Navigator',
-  description: 'Practical study visa, immigration, and study-abroad guides for Canada, the UK, Australia, the USA, and Europe.',
-  keywords: ['immigration blog', 'study abroad blog', 'student visa guide', 'immigration consultant Dubai'],
+  description: 'Practical immigration, work and study guides for GCC residents exploring Norway, Bulgaria, Germany, Portugal, Canada, the UK and more.',
+  keywords: [
+    'immigration blog for GCC residents',
+    'Norway work permit from GCC',
+    'Bulgaria work permit from UAE',
+    'Germany work visa from GCC',
+    'Portugal D8 visa from UAE',
+    'study abroad blog',
+    'immigration consultant Dubai',
+  ],
   alternates: {
     canonical: `${siteUrl}/immigration/blog`,
   },
@@ -24,6 +33,17 @@ export const metadata: Metadata = {
 }
 
 export default function ImmigrationBlogPage() {
-  const posts = getAllBlogPosts()
-  return <ImmigrationBlogClient posts={posts} />
+  const posts = toBlogCardPosts(getAllBlogPosts())
+  return (
+    <div className="min-h-screen bg-gray-500">
+      <ImmigrationHero
+        heading="All Immigration & Study Abroad Guides"
+        description="Browse practical work, study and residence guides for GCC residents exploring Norway, Bulgaria, Germany, Portugal and other destinations."
+        primaryCta={{ label: 'Free Eligibility Check', href: '/contact' }}
+        secondaryCta={{ label: 'Immigration Hub', href: '/immigration' }}
+        showScrollIndicator={false}
+      />
+      <ImmigrationBlogClient posts={posts} />
+    </div>
+  )
 }

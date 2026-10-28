@@ -33,7 +33,7 @@ const ProcessSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-[#f5f5dc] relative overflow-hidden">
+    <section className="below-fold-section py-24 bg-[#f5f5dc] relative overflow-hidden">
       {/* Background Shadows */}
       <div className="absolute inset-0">
         <div className="absolute top-10 left-10 w-48 h-48 sm:w-72 sm:h-72 bg-[#f5f5dc]/50 rounded-full blur-3xl"></div>

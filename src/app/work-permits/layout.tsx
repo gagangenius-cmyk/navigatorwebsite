@@ -29,7 +29,6 @@ export default function WorkPermitsLayout({
 }: {
   children: ReactNode
 }) {
-  const lastReviewed = new Date().toISOString().split('T')[0];
   const serviceSchema = buildServiceSchema(coreSeoPages.workPermits);
   const faqSchema = buildFaqSchema(coreSeoPages.workPermits.faqs);
   const howToSchema = buildHowToSchema(workPermitSteps, 'Europe Work Permit');
@@ -37,9 +36,9 @@ export default function WorkPermitsLayout({
     '/videos/work-visa.mp4',
     'Europe Work Permit Overview - Navigator Immigration',
     'Watch our Europe work permit overview to learn how skilled professionals can work in Germany, Poland, Portugal, and other EU countries with expert guidance.',
-    `${siteUrl}/title.jpeg`
+    `${siteUrl}/title.webp`
   );
-  const webpageSchema = buildWebPageSchemaWithReview(coreSeoPages.workPermits, lastReviewed);
+  const webpageSchema = buildWebPageSchemaWithReview(coreSeoPages.workPermits);
   const speakableSchema = buildSpeakableSchema('#site-content', `${siteUrl}/work-permits`);
 
   return (

@@ -12,9 +12,13 @@ export type BlogPost = {
   author: string;
   authorBio: string;
   date: string;
+  dateModified?: string;
   category: string;
   readTime: string;
   answer: string;
+  image?: string;
+  imageAlt?: string;
+  imageCaption?: string;
   seo: {
     metaTitle: string;
     metaDescription: string;
@@ -72,17 +76,54 @@ export type BlogPost = {
   };
 };
 
+export type BlogCardPost = Pick<
+  BlogPost,
+  'id' | 'slug' | 'title' | 'excerpt' | 'author' | 'date' | 'category' | 'readTime' | 'image' | 'imageAlt'
+>;
+
+export function toBlogCardPosts(posts: BlogPost[]): BlogCardPost[] {
+  return posts.map(({ id, slug, title, excerpt, author, date, category, readTime, image, imageAlt }) => ({
+    id,
+    slug,
+    title,
+    excerpt,
+    author,
+    date,
+    category,
+    readTime,
+    image,
+    imageAlt,
+  }));
+}
+
 function isServer(): boolean {
   return typeof globalThis.window === 'undefined';
 }
 
+const blogDataPath = () => {
+  const { join } = require('path') as typeof import('path');
+  return join(process.cwd(), 'data', 'blogs.json');
+};
+
+let _cachedFileSignature: string | null = null;
+
 function loadFromJson(): BlogPost[] {
   if (!isServer()) return [];
   try {
-    const { readFileSync } = require('fs') as typeof import('fs');
-    const { join } = require('path') as typeof import('path');
-    const raw = readFileSync(join(process.cwd(), 'data', 'blogs.json'), 'utf-8');
-    return JSON.parse(raw) as BlogPost[];
+    const { readFileSync, statSync } = require('fs') as typeof import('fs');
+    const filePath = blogDataPath();
+    const { mtimeMs, size } = statSync(filePath);
+    const signature = `${mtimeMs}:${size}`;
+
+    if (_cachedPosts && _cachedFileSignature === signature) {
+      return _cachedPosts;
+    }
+
+    const raw = readFileSync(filePath, 'utf-8');
+    const posts = JSON.parse(raw) as BlogPost[];
+    _cachedPosts = posts;
+    _cachedFileSignature = signature;
+    return posts;
   } catch (e) {
     return [];
   }
@@ -91,8 +132,7 @@ function loadFromJson(): BlogPost[] {
 function saveToJson(posts: BlogPost[]): void {
   if (!isServer()) return;
   const { writeFileSync } = require('fs') as typeof import('fs');
-  const { join } = require('path') as typeof import('path');
-  writeFileSync(join(process.cwd(), 'data', 'blogs.json'), JSON.stringify(posts, null, 2), 'utf-8');
+  writeFileSync(blogDataPath(), JSON.stringify(posts, null, 2), 'utf-8');
 }
 
 let _cachedPosts: BlogPost[] | null = null;
@@ -135,4 +175,5 @@ export function getAllBlogPosts(): BlogPost[] {
 export function saveBlogPosts(posts: BlogPost[]): void {
   saveToJson(posts);
   _cachedPosts = posts;
+  _cachedFileSignature = null;
 }

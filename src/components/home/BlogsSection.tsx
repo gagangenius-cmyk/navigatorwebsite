@@ -6,7 +6,7 @@ import BlogCardImage from '@/components/blog/BlogCardImage';
 
 const BlogsSection = ({ posts }: { posts: BlogPost[] }) => {
   return (
-    <section className="py-24 bg-[#f5f5dc]">
+    <section className="below-fold-section py-24 bg-[#f5f5dc]">
       <div className="container mx-auto px-4">
         <div className="mb-16 text-center">
           <h2 className="text-2xl lg:text-3xl font-bold text-dark-blue-grey mb-6">

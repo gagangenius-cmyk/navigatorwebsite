@@ -43,7 +43,7 @@ export const metadata: Metadata = buildPageMetadata(glossaryConfig);
 export default function GlossaryPage() {
   const definedTermSchema = buildDefinedTermSchema(glossaryTerms);
   const breadcrumbSchema = buildBreadcrumbSchema(glossaryConfig.breadcrumbs);
-  const webpageSchema = buildWebPageSchemaWithReview(glossaryConfig, '2026-06-15');
+  const webpageSchema = buildWebPageSchemaWithReview(glossaryConfig);
 
   const groupedTerms: Record<string, typeof glossaryTerms> = {};
   glossaryTerms.forEach((term) => {

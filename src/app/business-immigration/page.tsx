@@ -1,8 +1,7 @@
-'use client';
-
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState } from 'react';
+import DeferredAutoplayVideo from '@/components/DeferredAutoplayVideo';
+import SectionAnchorNav from '@/components/SectionAnchorNav';
 import { ArrowRight, Building, TrendingUp, CheckCircle, DollarSign, Briefcase, Users, Award, Globe, Shield, Target, FileText, Clock, Star } from 'lucide-react';
 import QuickAssessmentForm from '../../components/QuickAssessmentForm';
 import {
@@ -18,15 +17,6 @@ import { coreSeoPages } from '@/lib/marketingSeo';
 
 export default function BusinessImmigration() {
   const seoPage = coreSeoPages.businessImmigration;
-  const [activeSection, setActiveSection] = useState('overview');
-
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setActiveSection(sectionId);
-    }
-  };
 
   const anchorPoints = [
     { id: 'overview', label: 'Program Overview', icon: <Award className="w-4 h-4" /> },
@@ -84,35 +74,13 @@ export default function BusinessImmigration() {
       </section>
 
       {/* Sticky Anchor Navigation */}
-      <div className="sticky z-30 bg-[#f5f5dc] border-b border-light-brown-grey shadow-sm top-48 lg:top-36">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between py-2 lg:py-4">
-            <div className="flex items-center overflow-x-auto gap-1 pb-2 lg:pb-0 scrollbar-hide">
-              {anchorPoints.map((anchor) => (
-                <button
-                  key={anchor.id}
-                  onClick={() => scrollToSection(anchor.id)}
-                  className={`flex-shrink-0 flex items-center gap-1 lg:gap-2 px-3 lg:px-4 py-1.5 lg:py-2 rounded-lg text-xs lg:text-sm font-medium transition-all duration-200 whitespace-nowrap ${
-                    activeSection === anchor.id
-                      ? 'bg-gradient-to-r from-[#436175] to-[#585a5e] text-white'
-                      : 'text-[#436175] hover:text-[#585a5e] hover:bg-[#f5f5dc]'
-                  }`}
-                >
-                  <span className="hidden sm:inline">{anchor.icon}</span>
-                  <span>{anchor.label}</span>
-                </button>
-              ))}
-            </div>
-            <Link
-              href="/contact"
-              className="flex-shrink-0 inline-flex items-center px-3 lg:px-4 py-1.5 lg:py-2 bg-gradient-to-r from-orange-600 to-gray-600 text-white font-medium rounded-lg hover:from-gray-600 hover:to-orange-600 transition-all duration-300 text-xs lg:text-sm"
-            >
-              Get Started
-              <ArrowRight className="ml-1 lg:ml-2 w-3 h-3 lg:w-4 lg:h-4" />
-            </Link>
-          </div>
-        </div>
-      </div>
+      <SectionAnchorNav
+        anchors={anchorPoints}
+        navClassName="sticky z-30 bg-[#f5f5dc] border-b border-light-brown-grey shadow-sm top-48 lg:top-36"
+        activeClassName="bg-gradient-to-r from-[#436175] to-[#585a5e] text-white"
+        inactiveClassName="text-[#436175] hover:text-[#585a5e] hover:bg-[#f5f5dc]"
+        ctaClassName="flex-shrink-0 inline-flex items-center px-3 lg:px-4 py-1.5 lg:py-2 bg-gradient-to-r from-orange-600 to-gray-600 text-white font-medium rounded-lg hover:from-gray-600 hover:to-orange-600 transition-all duration-300 text-xs lg:text-sm"
+      />
 
       {/* Program Overview Section */}
       <section id="overview" className="py-24 bg-gradient-to-br from-accent-orange-red/85 via-[#436175]/75 to-[#585a5e]/85">
@@ -138,19 +106,16 @@ export default function BusinessImmigration() {
 
               {/* Video on Right */}
               <div className="relative">
-                <video
+                <DeferredAutoplayVideo
+                  src="/videos/business.mp4"
+                  sourceType="video/mp4"
                   className="w-full h-96 lg:h-[500px] object-cover rounded-2xl shadow-2xl"
                   controls={false}
-                  autoPlay
                   muted
                   loop
                   playsInline
-                  preload="none"
                   poster="/videoScreenshots/business.png"
-                >
-                  <source src="/videos/business.mp4" type="video/mp4" />
-                  Your browser does not support video tag.
-                </video>
+                />
 
               </div>
             </div>
@@ -170,7 +135,7 @@ export default function BusinessImmigration() {
                     src="/img/images/pexels-davegarcia-32642490.jpg.jpeg"
                     alt="Real Estate Investment"
                     fill
-                    sizes="(max-width: 1024px) 100vw, 33vw"
+                    sizes="(max-width: 639px) calc(100vw - 2rem), (max-width: 767px) 608px, (max-width: 1023px) 352px, (max-width: 1279px) 310px, 395px"
                     className="absolute inset-0 h-full w-full rounded-lg object-cover"
                   />
                 </div>
@@ -185,7 +150,7 @@ export default function BusinessImmigration() {
                     src="/img/images/pexels-armin-rimoldi-5554303.jpg.jpeg"
                     alt="Government Bonds Investment"
                     fill
-                    sizes="(max-width: 1024px) 100vw, 33vw"
+                    sizes="(max-width: 639px) calc(100vw - 2rem), (max-width: 767px) 608px, (max-width: 1023px) 352px, (max-width: 1279px) 310px, 395px"
                     className="absolute inset-0 h-full w-full rounded-lg object-cover"
                   />
                 </div>
@@ -200,7 +165,7 @@ export default function BusinessImmigration() {
                     src="/img/images/business-immigration.jpeg"
                     alt="Business Equity Investment"
                     fill
-                    sizes="(max-width: 1024px) 100vw, 33vw"
+                    sizes="(max-width: 639px) calc(100vw - 2rem), (max-width: 767px) 608px, (max-width: 1023px) 352px, (max-width: 1279px) 310px, 395px"
                     className="absolute inset-0 h-full w-full rounded-lg object-cover"
                   />
                 </div>
@@ -303,7 +268,7 @@ export default function BusinessImmigration() {
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-8 text-center">How to Get Business Visa</h2>
             <p className="text-xl text-gray-600 mb-16 text-center max-w-3xl mx-auto">
-              Follow our proven 6-step process to secure your business immigration visa
+              Use a six-step process to assess and prepare a business immigration application
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -553,7 +518,7 @@ export default function BusinessImmigration() {
                   src="/img/images/pexels-andre-furtado-43594-2960861.jpg.jpeg"
                   alt="Business Investment"
                   fill
-                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  sizes="(max-width: 639px) calc(100vw - 2rem), (max-width: 767px) 608px, (max-width: 1023px) 736px, (max-width: 1279px) 800px, 800px"
                   className="absolute inset-0 h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
@@ -599,7 +564,7 @@ export default function BusinessImmigration() {
                   src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
                   alt="Entrepreneur Programs"
                   fill
-                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  sizes="(max-width: 639px) calc(100vw - 2rem), (max-width: 767px) 608px, (max-width: 1023px) 736px, (max-width: 1279px) 800px, 800px"
                   className="absolute inset-0 h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>

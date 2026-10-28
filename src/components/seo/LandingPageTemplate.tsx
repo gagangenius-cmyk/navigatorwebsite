@@ -26,11 +26,10 @@ type LandingPageTemplateProps = {
 };
 
 export default function LandingPageTemplate({ page }: LandingPageTemplateProps) {
-  const lastReviewed = new Date().toISOString().split('T')[0];
   const breadcrumbSchema = buildBreadcrumbSchema(page.breadcrumbs);
   const faqSchema = buildFaqSchema(page.faqs);
   const serviceSchema = buildServiceSchema(page);
-  const webpageSchema = buildWebPageSchemaWithReview(page, lastReviewed);
+  const webpageSchema = buildWebPageSchemaWithReview(page);
   const speakableSchema = buildSpeakableSchema('#site-content', absoluteUrl(page.path));
 
   return (

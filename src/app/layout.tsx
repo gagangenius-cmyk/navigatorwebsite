@@ -94,21 +94,6 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#436175" />
 
-        {/* Strip bis_skin_checked attributes — non-blocking */}
-        <Script id="bis-skin-remover" strategy="afterInteractive" suppressHydrationWarning>
-          {`
-            try {
-              var bisRemover = new MutationObserver(function() {
-                var els = document.querySelectorAll('[bis_skin_checked]');
-                for (var i = 0; i < els.length; i++) {
-                  els[i].removeAttribute('bis_skin_checked');
-                }
-              });
-              bisRemover.observe(document.documentElement, {attributes: true, subtree: true, attributeFilter: ['bis_skin_checked']});
-            } catch(e) {}
-          `}
-        </Script>
-
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-LP61V70NXQ"
@@ -130,7 +115,7 @@ export default function RootLayout({
         <JsonLd data={buildWebsiteSchema()} />
         <TopBar />
         <MainHeader />
-        <div id="site-content"  >{children}</div>
+        <main id="site-content">{children}</main>
         <Footer />
         <DeferredChatBot />
       </body>

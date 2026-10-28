@@ -33,7 +33,7 @@ export default function AustraliaStudyVisaPillar() {
     <div className="min-h-screen bg-gray-500">
       <ImmigrationHero
         heading="Australia Study Visa"
-        description="Your complete resource for studying in Australia — from Subclass 500 and Genuine Student requirements to the 485 Temporary Graduate Visa and PR pathways."
+        description="A practical guide to Australia's Student visa (subclass 500), study planning, financial evidence, and options some graduates may be eligible to explore."
         primaryCta={{ label: 'Free Eligibility Check', href: '/contact' }}
         secondaryCta={{ label: 'View Australia Guides', href: '/immigration/blog' }}
       />
@@ -43,16 +43,16 @@ export default function AustraliaStudyVisaPillar() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-[#436175] mb-6">Australia Student Visa Overview</h2>
             <p className="text-[#e5e7eb] mb-6 leading-relaxed">
-              Australia is consistently ranked among the top three study destinations globally, attracting over 700,000 international students annually. With world-class universities, a sunny climate, and strong post-study work options, Australia offers an exceptional education experience. The country is particularly popular for its strong research programs across STEM, healthcare, and business disciplines.
+              Australia offers study options through universities, vocational education providers, and other registered institutions. Compare course content, entry requirements, location, total fees, and student support using information from each provider.
             </p>
             <p className="text-[#e5e7eb] mb-6 leading-relaxed">
-              The Subclass 500 Student Visa is the primary visa for international students. It requires a Confirmation of Enrolment from a CRICOS-registered institution, meeting the Genuine Student requirement, demonstrating English proficiency, and maintaining Overseas Student Health Cover for your entire stay. Australia&apos;s Temporary Graduate Visa (Subclass 485) allows graduates to work for 2-4 years after study, with extended rights for select degrees.
+              The Student visa (subclass 500) is for eligible students enrolled in a registered course. Applicants need a Confirmation of Enrolment (CoE), must meet the Genuine Student requirement, and generally need adequate health cover and evidence of funds. Other evidence, including English or health information, depends on the applicant and current Department of Home Affairs instructions. From 2 October 2026, most new Student visa applications must be lodged from outside Australia. Check the current <a href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500" target="_blank" rel="noreferrer">subclass 500 requirements</a> before applying. Check Home Affairs' current <a href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500#About" target="_blank" rel="noreferrer">financial-capacity information</a>, <a href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500#Work" target="_blank" rel="noreferrer">work conditions</a>, and <a href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485/post-higher-education-work" target="_blank" rel="noreferrer">subclass 485 eligibility</a> before making plans.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
               {[
-                { icon: DollarSign, label: 'Annual Tuition', value: 'AUD $28,000-$45,000' },
-                { icon: Clock, label: 'Visa Processing', value: '4-8 weeks' },
-                { icon: GraduationCap, label: 'Work During Study', value: '48 hrs/fortnight' },
+                { icon: DollarSign, label: 'Course fees', value: 'Set by provider and course' },
+                { icon: Clock, label: 'Processing', value: 'Check current Home Affairs estimates' },
+                { icon: GraduationCap, label: 'Work During Study', value: 'Up to 48 hours/fortnight when eligible' },
               ].map(item => (
                 <div key={item.label} className="bg-white rounded-xl p-5 text-center">
                   <item.icon className="w-8 h-8 text-[#436175] mx-auto mb-3" />
@@ -68,31 +68,31 @@ export default function AustraliaStudyVisaPillar() {
       <section className="py-16 bg-gray-500 [&_h1]:[color:white] [&_h2]:[color:white] [&_th]:[color:white]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-[#436175] mb-6">Top Australian Universities for International Students</h2>
+            <h2 className="text-3xl font-bold text-[#436175] mb-6">Examples of Australian Universities</h2>
             <p className="text-[#e5e7eb] mb-6 leading-relaxed">
-              Australia is home to several world-class universities that consistently rank among the global top 100. Here are the leading institutions for international students:
+              These are examples, not a ranking. Compare course content, entry criteria, location, support services, and current international fees on each institution's official website.
             </p>
             <div className="overflow-x-auto rounded-xl">
               <table className="w-full text-sm text-left">
                 <thead className="bg-[#436175] text-white">
                   <tr>
                     <th className="p-3 font-semibold">University</th>
-                    <th className="p-3 font-semibold">QS Ranking 2026</th>
-                    <th className="p-3 font-semibold">Popular Programs</th>
-                    <th className="p-3 font-semibold">Est. Tuition (AUD/yr)</th>
+                    <th className="p-3 font-semibold">Location</th>
+                    <th className="p-3 font-semibold">Institution</th>
+                    <th className="p-3 font-semibold">Where to check fees</th>
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-[#f5f5dc]">
                   {[
-                    ['University of Melbourne', '#14', 'Medicine, Engineering, Law', '$35,000-$50,000'],
-                    ['University of Sydney', '#19', 'Business, Engineering, Health', '$38,000-$52,000'],
-                    ['University of New South Wales', '#19', 'Engineering, Business, Law', '$35,000-$48,000'],
-                    ['Australian National University', '#30', 'Science, Arts, Law', '$34,000-$46,000'],
-                    ['Monash University', '#37', 'Engineering, Medicine, Business', '$32,000-$45,000'],
-                    ['University of Queensland', '#40', 'Medicine, Engineering, Science', '$32,000-$44,000'],
-                    ['University of Adelaide', '#82', 'Engineering, Science, Medicine', '$30,000-$42,000'],
-                    ['University of Technology Sydney', '#90', 'IT, Business, Design', '$28,000-$40,000'],
-                    ['RMIT University', '#123', 'Design, Engineering, Business', '$28,000-$38,000'],
+                    ['University of Melbourne', 'Melbourne, Victoria', 'University', 'Current course fee page'],
+                    ['University of Sydney', 'Sydney, New South Wales', 'University', 'Current course fee page'],
+                    ['University of New South Wales', 'Sydney, New South Wales', 'University', 'Current course fee page'],
+                    ['Australian National University', 'Canberra, ACT', 'University', 'Current course fee page'],
+                    ['Monash University', 'Melbourne, Victoria', 'University', 'Current course fee page'],
+                    ['University of Queensland', 'Brisbane, Queensland', 'University', 'Current course fee page'],
+                    ['University of Adelaide', 'Adelaide, South Australia', 'University', 'Current course fee page'],
+                    ['University of Technology Sydney', 'Sydney, New South Wales', 'University', 'Current course fee page'],
+                    ['RMIT University', 'Melbourne, Victoria', 'University', 'Current course fee page'],
                   ].map(row => (
                     <tr key={row[0]} className="hover:bg-gray-200">
                       {row.map((cell, i) => (
@@ -110,28 +110,28 @@ export default function AustraliaStudyVisaPillar() {
       <section className="py-16 bg-[#f5f5dc]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-[#436175] mb-6">Cost of Living in Australia</h2>
+            <h2 className="text-3xl font-bold text-[#436175] mb-6">Planning an Australia Study Budget</h2>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Living costs in Australia vary by city. Below is the monthly cost breakdown for international students:
+              Costs depend on your course, city, housing, and personal needs. Use the Department's financial-capacity rules for visa evidence and build a separate budget from current provider, housing, and local transport information.
             </p>
             <div className="overflow-x-auto rounded-xl">
               <table className="w-full text-sm text-left">
                 <thead className="bg-[#436175] text-white">
                   <tr>
-                    <th className="p-3 font-semibold">Expense</th>
-                    <th className="p-3 font-semibold">Sydney (AUD/month)</th>
-                    <th className="p-3 font-semibold">Melbourne (AUD/month)</th>
-                    <th className="p-3 font-semibold">Other Cities (AUD/month)</th>
+                    <th className="p-3 font-semibold">Budget item</th>
+                    <th className="p-3 font-semibold">What to include</th>
+                    <th className="p-3 font-semibold">Where to check</th>
+                    <th className="p-3 font-semibold">Notes</th>
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-[#f5f5dc]">
                   {[
-                    ['Rent (shared apt)', '$900-$1,500', '$800-$1,400', '$600-$900'],
-                    ['Groceries & Food', '$400-$600', '$400-$600', '$350-$500'],
-                    ['Transport (monthly pass)', '$130-$180', '$130-$175', '$80-$130'],
-                    ['OSHC Insurance', '$600/yr', '$600/yr', '$600/yr'],
-                    ['Phone & Internet', '$60-$100', '$60-$100', '$50-$80'],
-                    ['Miscellaneous', '$250-$400', '$250-$400', '$200-$350'],
+                    ['Tuition and provider fees', 'Course tuition, deposits, and mandatory charges', 'Provider fee schedule', 'Varies by course and study load'],
+                    ['Housing and utilities', 'Rent or residence, utilities, and deposits', 'Provider accommodation resources and current local listings', 'Costs vary by city and housing choice'],
+                    ['Everyday costs', 'Food, local transport, phone, and personal items', 'Build a budget for your own circumstances', 'No single estimate fits every student'],
+                    ['Health cover', 'Overseas Student Health Cover for the required period', 'Home Affairs and insurer information', 'Check policy dates and inclusions'],
+                    ['Travel and arrival', 'Travel, initial accommodation, and set-up expenses', 'Your itinerary and accommodation plan', 'Keep separate from course and living funds'],
+                    ['Visa financial evidence', 'Current living-cost amount plus tuition, travel, and any family costs', 'Home Affairs financial-capacity guidance', 'Check the latest figure and accepted evidence'],
                   ].map(row => (
                     <tr key={row[0]} className="hover:bg-gray-200">
                       {row.map((cell, i) => (
@@ -151,20 +151,20 @@ export default function AustraliaStudyVisaPillar() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-[#436175] mb-6">Scholarships for Studying in Australia</h2>
             <p className="text-[#e5e7eb] mb-6 leading-relaxed">
-              Several Australian scholarships can help reduce the cost of your education:
+              Funding availability, value, and criteria vary by provider, course, and application year. Confirm current terms and deadlines directly with the institution or funder, and do not rely on an award until it is confirmed.
             </p>
             <div className="space-y-4">
               {[
-                { name: 'Australia Awards Scholarships', amount: 'Full tuition + living + airfare', eligibility: 'Government-funded — students from developing countries including India, Pakistan, Bangladesh' },
-                { name: 'Destination Australia Program', amount: 'Up to AUD $15,000/year', eligibility: 'Students studying at regional campuses' },
-                { name: 'University of Melbourne International Scholarship', amount: 'Full or partial tuition', eligibility: 'High-achieving international students' },
-                { name: 'UNSW International Scholarships', amount: 'Up to AUD $20,000/year', eligibility: 'Academic excellence — automatic consideration with application' },
-                { name: 'Monash International Merit Scholarship', amount: 'AUD $10,000-$50,000', eligibility: 'Outstanding academic results and leadership potential' },
+                { name: 'Government scholarship schemes', amount: 'Varies by scheme', eligibility: 'Check nationality, country-program, study-level, and application-year rules' },
+                { name: 'Institution scholarships', amount: 'Set by the provider', eligibility: 'Check course, academic, nationality, and deadline criteria' },
+                { name: 'Faculty or course awards', amount: 'Varies by award', eligibility: 'Ask whether a separate application is needed and what the award covers' },
+                { name: 'Research funding', amount: 'Depends on the offer', eligibility: 'Confirm duration, conditions, and whether living costs are included' },
+                { name: 'External awards', amount: 'Varies by funder', eligibility: 'Check citizenship, residency, field, and course restrictions' },
               ].map(s => (
                 <div key={s.name} className="bg-white rounded-xl p-5">
                   <h3 className="font-semibold text-[#436175] mb-1">{s.name}</h3>
-                  <p className="text-sm text-gray-700"><span className="font-medium">Amount:</span> {s.amount}</p>
-                  <p className="text-sm text-gray-700"><span className="font-medium">Eligibility:</span> {s.eligibility}</p>
+                  <p className="text-sm text-gray-700"><span className="font-medium">Award value:</span> {s.amount}</p>
+                  <p className="text-sm text-gray-700"><span className="font-medium">What to verify:</span> {s.eligibility}</p>
                 </div>
               ))}
             </div>
@@ -180,14 +180,14 @@ export default function AustraliaStudyVisaPillar() {
               {[
                 { icon: FileText, text: 'Valid passport' },
                 { icon: FileText, text: 'Confirmation of Enrolment (CoE) from CRICOS-registered institution' },
-                { icon: FileText, text: 'Financial evidence showing AUD $24,505 living costs + tuition + travel' },
-                { icon: FileText, text: 'IELTS/PTE/TOEFL language test results' },
-                { icon: FileText, text: 'Genuine Student (GS) statement and supporting evidence' },
+                { icon: FileText, text: 'Evidence of funds for tuition, living costs, travel, and family costs if applicable' },
+                { icon: FileText, text: 'English-language evidence if required for your application' },
+                { icon: FileText, text: 'Answers and supporting information for the Genuine Student requirement' },
                 { icon: FileText, text: 'Academic transcripts and completion certificates' },
                 { icon: FileText, text: 'Overseas Student Health Cover (OSHC) policy' },
-                { icon: FileText, text: 'Biometrics (fingerprints and photograph)' },
-                { icon: FileText, text: 'Health examination results' },
-                { icon: FileText, text: 'Visa application fee receipt (AUD $710)' },
+                { icon: FileText, text: 'Biometrics if requested in your application instructions' },
+                { icon: FileText, text: 'Health examination evidence if requested' },
+                { icon: FileText, text: 'Current visa application fee payment, as instructed' },
               ].map(item => (
                 <div key={item.text} className="flex items-start gap-3 bg-white rounded-xl p-4 shadow-sm">
                   <item.icon className="w-5 h-5 text-[#436175] shrink-0 mt-0.5" />
@@ -204,14 +204,14 @@ export default function AustraliaStudyVisaPillar() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-[#436175] mb-6">Common Australia Student Visa Refusal Reasons</h2>
             <p className="text-[#e5e7eb] mb-6 leading-relaxed">
-              Australia&apos;s Department of Home Affairs assesses student visa applications carefully. Here are common reasons for refusal and how to avoid them:
+              A Student visa application is assessed on its individual circumstances. Use these points as general checks, not a complete list or a guarantee of approval.
             </p>
             <div className="space-y-4">
               {[
-                { reason: 'Failed Genuine Student Requirement', solution: 'Prepare a comprehensive GS statement explaining your academic background, career goals, chosen program relevance, and strong ties to your home country. Include supporting evidence.' },
-                { reason: 'Insufficient Financial Capacity', solution: 'Demonstrate AUD $24,505 annual living costs plus full first-year tuition plus travel. Funds must be genuine and accessible. Education loans are acceptable with proper documentation.' },
-                { reason: 'Inadequate English Proficiency', solution: 'Meet minimum IELTS 6.0 overall (5.5 each band) for direct entry. Lower scores may qualify for packaged ELICOS programs. Consider PTE Academic (50+) or TOEFL iBT (60+).' },
-                { reason: 'Health or Character Concerns', solution: 'Complete all required health examinations upfront. Provide police clearance certificates. Disclose any previous visa refusals or immigration history.' },
+                { reason: 'Genuine Student information is unclear', solution: 'Answer the current Genuine Student questions fully and accurately, explaining how the course relates to your background and plans. Include relevant evidence requested for your circumstances.' },
+                { reason: 'Financial evidence does not meet the rules', solution: 'Check the current financial-capacity amount and accepted evidence. Include tuition, living costs, travel, and any applicable family costs, and ensure documents clearly show the source and availability of funds.' },
+                { reason: 'Course or application evidence is incomplete', solution: "Compare your application against the current Home Affairs checklist and your provider's instructions. English evidence may be required, but accepted tests and scores depend on current rules and your circumstances." },
+                { reason: 'Health, character, or other information needs attention', solution: 'Answer all questions accurately and complete any health, character, or biometrics steps requested by Home Affairs. Disclose relevant travel and visa history as instructed.' },
               ].map(item => (
                 <div key={item.reason} className="bg-white rounded-xl p-5">
                   <h3 className="font-semibold text-[#436175] mb-2">{item.reason}</h3>
@@ -228,7 +228,7 @@ export default function AustraliaStudyVisaPillar() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-[#436175] mb-6">Australia Student Visa Application Timeline</h2>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Plan your Australia student visa application with this recommended timeline for a February or July intake:
+              Use these stages as a planning outline for a February or July intake. Provider deadlines, assessment times, and visa processing vary, so confirm current dates before making travel plans.
             </p>
             <div className="space-y-4">
               {[
@@ -236,7 +236,7 @@ export default function AustraliaStudyVisaPillar() {
                 { month: '4-6 months before', tasks: 'Take IELTS/PTE. Apply to shortlisted universities. Prepare academic documents and GS statement.' },
                 { month: '2-4 months before', tasks: 'Receive CoE. Arrange OSHC. Prepare financial evidence. Submit visa application via ImmiAccount.' },
                 { month: '1-2 months before', tasks: 'Complete biometrics and health examination. Track application status. Arrange accommodation and flights.' },
-                { month: 'Arrival', tasks: 'Arrive up to 90 days before course start. Attend orientation. Open Australian bank account. Register for OSHC card.' },
+                { month: 'Arrival', tasks: "Travel within the dates and conditions shown on your visa and CoE. Follow your provider's arrival instructions and keep your health-cover details accessible." },
               ].map(item => (
                 <div key={item.month} className="flex gap-4 bg-white rounded-xl p-5 shadow-sm">
                   <div className="w-36 shrink-0">
@@ -259,8 +259,8 @@ export default function AustraliaStudyVisaPillar() {
                 { step: '1', title: 'Choose Your Institution and Program', body: 'Select a CRICOS-registered institution and a program that matches your academic background and career goals. Australia offers a wide range of programs from vocational education to doctoral research degrees.' },
                 { step: '2', title: 'Receive Your Confirmation of Enrolment', body: 'Once accepted, your institution issues a CoE — a document confirming your enrollment details. You need this CoE to apply for your Subclass 500 visa.' },
                 { step: '3', title: 'Meet the Genuine Student Requirement', body: 'The GS requirement assesses your genuine intention to study in Australia based on your academic background, career plans, economic circumstances, and ties to your home country.' },
-                { step: '4', title: 'Submit Your Visa Application', body: 'Apply online via ImmiAccount with your CoE, OSHC policy, financial evidence showing AUD $24,505 for living costs, English test results, and biometrics. Processing typically takes 4-8 weeks.' },
-                { step: '5', title: 'Prepare for Your Move', body: "Arrange accommodation (on-campus or private rental), open an Australian bank account, purchase OSHC, and join your institution's orientation program. You can enter Australia up to 90 days before your course starts." },
+                { step: '4', title: 'Submit Your Visa Application', body: 'Apply through ImmiAccount and follow the checklist generated for your case. Most applications from 2 October 2026 must be lodged outside Australia. Processing times vary; check Home Affairs guidance and avoid booking travel until your visa is granted.' },
+                { step: '5', title: 'Prepare for Your Move', body: "Arrange accommodation (on-campus or private rental), open an Australian bank account, purchase OSHC, and join your institution's orientation program. Travel within the dates permitted by your visa and follow your provider's current arrival guidance." },
               ].map(item => (
                 <div key={item.step} className="flex gap-4 bg-white rounded-xl p-6 shadow-sm">
                   <div className="w-10 h-10 rounded-full bg-[#436175] text-white flex items-center justify-center font-bold shrink-0">{item.step}</div>
@@ -281,9 +281,9 @@ export default function AustraliaStudyVisaPillar() {
             <h2 className="text-3xl font-bold text-[#436175] mb-8 text-center">Post-Study Work & PR Pathways</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { icon: Clock, title: 'Subclass 485 Visa', body: 'The Temporary Graduate Visa allows 2-4 years of work after study depending on qualification level. Extended post-study work rights apply to select degrees in priority areas.' },
-                { icon: FileText, title: 'Skilled Migration Options', body: 'Australian work experience on the 485 visa helps qualify for PR through Subclass 189 (Skilled Independent), 190 (State Nominated), or 491 (Regional) skilled migration pathways.' },
-                { icon: BookOpen, title: 'Skills Assessment & Points Test', body: 'Most PR pathways require a skills assessment in your occupation and a points test covering age, English ability, work experience, education, and Australian study credits.' },
+                { icon: Clock, title: 'Subclass 485 Visa', body: 'The Post-Higher Education Work stream of subclass 485 is usually granted for 2 to 3 years, depending on qualification and current rules. Separate eligibility requirements apply, including age and course criteria; check the <a href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485/post-higher-education-work" target="_blank" rel="noreferrer">official stream guidance</a> before relying on it.' },
+                { icon: FileText, title: 'Skilled Migration Options', body: 'Some graduates may later explore skilled migration routes such as subclasses 189, 190, or 491. Each has separate occupation, skills-assessment, points, nomination, and invitation requirements; a graduate visa does not guarantee permanent residence.' },
+                { icon: BookOpen, title: 'Skills Assessment & Points Test', body: 'Many skilled routes involve an occupation-specific skills assessment and, for points-tested visas, factors such as age, English, work history, and qualifications. Requirements differ by visa subclass and can change.' },
               ].map(item => (
                 <div key={item.title} className="bg-white rounded-xl p-6 text-center">
                   <item.icon className="w-10 h-10 text-[#436175] mx-auto mb-4" />
@@ -324,11 +324,11 @@ export default function AustraliaStudyVisaPillar() {
             <h2 className="text-2xl font-bold text-[#436175] mb-6">Frequently Asked Questions</h2>
             <div className="space-y-4">
               {[
-                { q: 'What is the Genuine Student requirement for Australia?', a: 'The GS requirement assesses your genuine intention to study in Australia based on your academic background, career plans, economic circumstances, and ties to your home country. It replaced the GTE (Genuine Temporary Entrant) requirement.' },
-                { q: 'How much money do I need for an Australia student visa?', a: "You need AUD $24,505 per year for living costs plus first-year tuition fees and approximately AUD $2,000-$3,000 for travel costs. Funds can be in your account, a sponsor's account, or through an education loan." },
-                { q: 'Can I work while studying in Australia?', a: "Yes, international students can work 48 hours per fortnight during term time and unlimited hours during scheduled breaks. PhD and master's research students have unlimited work rights." },
-                { q: 'What is the Subclass 485 visa?', a: "The Temporary Graduate Visa allows graduates to work 2-4 years after study. Post-Study Work Stream: 2 years for bachelor's, 2-3 years for master's, 4 years for PhD. Graduate Work Stream: 18 months." },
-                { q: 'Can I apply for PR after studying in Australia?', a: 'Yes, skilled work experience on the 485 visa can help you qualify for skilled migration PR pathways like Subclass 189 (Skilled Independent), 190 (State Nominated), or 491 (Regional) visas.' },
+                { q: 'What is the Genuine Student requirement for Australia?', a: 'The Genuine Student requirement considers whether study is the primary reason for the visa application. Applicants answer questions about their circumstances, course choice, and expected benefit; follow the current form and evidence instructions.' },
+                { q: 'How much money do I need for an Australia student visa?', a: 'The current living-cost figure for a single student is AUD $29,710 for 12 months, in addition to tuition and travel. Additional funds may be required for family members. Check Home Affairs’ current financial-capacity rules and accepted evidence for your application.' },
+                { q: 'Can I work while studying in Australia?', a: "Eligible Student visa holders may work up to 48 hours per fortnight while their course is in session; exceptions apply for some research students. Check your visa conditions and current Home Affairs rules before starting work." },
+                { q: 'What is the Subclass 485 visa?', a: "The Post-Higher Education Work stream is usually granted for 2 to 3 years, depending on qualification and current rules. Separate eligibility requirements apply, including age and qualification criteria; confirm the relevant stream with Home Affairs." },
+                { q: 'Can I apply for PR after studying in Australia?', a: 'Some graduates may later explore skilled migration routes such as subclasses 189, 190, or 491. Each has separate occupation, skills-assessment, points, nomination, and invitation requirements. Study or graduate work does not guarantee permanent residence.' },
               ].map(faq => (
                 <details key={faq.q} className="bg-white rounded-xl p-5 group">
                   <summary className="font-semibold text-[#436175] cursor-pointer list-none flex items-center justify-between">
@@ -347,7 +347,7 @@ export default function AustraliaStudyVisaPillar() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to Study in Australia?</h2>
           <p className="text-white/80 mb-8 max-w-2xl mx-auto">
-            Our Dubai team offers comprehensive Australia student visa guidance — from choosing the right CRICOS-registered program to preparing your Genuine Student statement and visa application. Schedule a free consultation today.
+            Our Dubai team can discuss course planning, CoE-related steps, and how to organize application information. Home Affairs and your education provider remain the authoritative sources for current requirements and decisions. Book a consultation to discuss your circumstances.
           </p>
           <Link href="/contact" className="inline-flex items-center px-8 py-4 bg-white text-[#436175] font-semibold rounded-lg hover:bg-gray-100 transition-colors">
             Book Free Consultation <ArrowRight className="w-5 h-5 ml-2" />

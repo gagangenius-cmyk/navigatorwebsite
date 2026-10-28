@@ -6,15 +6,15 @@ export const dynamic = "force-dynamic"
 
 
 export const metadata: Metadata = {
-  title: 'Immigration Consultants in Saudi Arabia',
-  description: 'Study abroad and visa guidance for students from Saudi Arabia, provided by Navigator Immigration Consultant in Dubai.',
-  keywords: ['immigration consultant Dubai', 'saudi arabia study abroad', 'study visa from saudi arabia', 'saudi arabia immigration consultant', 'Navigator Immigration Dubai'],
+  title: "Study Abroad from Saudi Arabia | Navigator Immigration Dubai",
+  description: "Students in Saudi Arabia can get help comparing courses and organizing overseas applications. Navigator Immigration Consultant is based in Dubai.",
+  keywords: ['study abroad from Saudi Arabia', 'study visa from Saudi Arabia', 'university applications from Saudi Arabia', 'Navigator Immigration Dubai'],
   alternates: {
     canonical: `${siteUrl}/immigration/geo/gcc/saudi-arabia`,
   },
   openGraph: {
-    title: 'Immigration Consultants in Saudi Arabia | Navigator Immigration Dubai',
-    description: 'Expert study abroad and visa guidance for students from Saudi Arabia. Trusted immigration consultant in Dubai.',
+    title: 'Study Abroad from Saudi Arabia | Navigator Immigration Dubai',
+    description: 'Students from Saudi Arabia can get help comparing study options and organizing university and visa applications. Navigator Immigration Consultant is based in Dubai.',
     url: `${siteUrl}/immigration/geo/gcc/saudi-arabia`,
     siteName,
     type: 'website',
@@ -27,25 +27,25 @@ export default function SaudiArabiaPage() {
     <GeoPage
       name="Saudi Arabia"
       region="gcc"
-      description="Navigator Immigration Consultant is a trusted immigration consultant in Saudi Arabia, a country with a rapidly growing international student population and strong government scholarship programs supporting study abroad in Canada, UK, USA, and Australia."
-      overview="Navigator Immigration Consultant is a trusted immigration consultant in Saudi Arabia, guiding students through scholarship-funded overseas education. Saudi Arabia has made international education a strategic priority, with the Custodian of the Two Holy Mosques Scholarship Program and other government initiatives sending thousands of Saudi students to top universities worldwide. The King Abdullah Scholarship Program has been instrumental in creating a generation of Saudi graduates from leading international institutions. Students from Saudi Arabia typically pursue degrees in medicine, engineering, computer science, and business administration. The country's Vision 2030 initiative has further emphasized international education as a key driver of economic diversification and knowledge transfer, creating unprecedented opportunities for Saudi students abroad."
+      description="Study abroad planning for students in Saudi Arabia, including help comparing programs and organizing admission and visa documents."
+      overview="Start by confirming whether your plan is self-funded, employer-sponsored or supported through a scholarship. Each funding route has different documents and conditions; a scholarship may limit the approved course or institution, while private funding still needs to meet the destination’s rules. Applicants should also verify which mission or application centre serves their citizenship and current residence. Check these details before accepting an offer or paying a deposit."
       benefits={[
-        'The Custodian of the Two Holy Mosques Scholarship Program provides full funding for tuition, living expenses, and health insurance for eligible Saudi students at top international universities.',
-        "Saudi Arabia's Vision 2030 initiative strongly supports international education as a pathway for economic diversification and skills development.",
-        'English-language programs are widely available at Saudi universities, preparing students for the academic language demands of overseas study.',
-        'Saudi cultural missions in major study destinations (Canada, UK, USA, Australia) provide comprehensive support services for Saudi students abroad.',
-        'Graduates of international programs are highly valued in Saudi Arabia\'s growing private sector and government organizations.',
+        "Confirm scholarship or employer approval for the exact course, institution and study period.",
+        "Check whether funding covers tuition only or also living costs, travel and insurance.",
+        "Keep sponsor letters, income evidence and payment records consistent with the stated plan.",
+        "Verify application-office jurisdiction using your passport and current residence status.",
+        "Compare course entry requirements and total cost before committing to an intake.",
       ]}
       scholarships={[
-        'The Custodian of the Two Holy Mosques Scholarship Program — Saudi Arabia\'s flagship scholarship providing full tuition, monthly stipend, health insurance, and annual airfare for students at top international universities.',
-        'Saudi Aramco and other major Saudi corporations offer scholarship programs for employees and their children pursuing international education.',
-        'The Saudi Cultural Mission in each destination country provides additional financial support services and manages scholarship administration.',
+        "Check current scholarship announcements from the relevant authority and confirm nationality and academic eligibility.",
+        "Request written confirmation of the approved institution, course, funding amount and renewal conditions.",
+        "Plan for any costs the award does not cover, such as housing, travel, insurance or dependants.",
       ]}
-      loanInfo="The majority of Saudi students studying abroad are funded through government scholarships, which cover full tuition, living expenses, health insurance, and travel. For self-funded students, Saudi banks including National Commercial Bank, Al Rajhi Bank, and Riyad Bank offer education financing options. Saudi students typically provide sponsor letters from their employer or government entity as financial evidence for visa applications. The strong government backing makes financial documentation straightforward for Saudi applicants."
+      loanInfo="If the plan combines scholarship, family support or a loan, list each source and the amount it will cover. Check when funds are released and whether the destination accepts the supporting documents. Do not rely on a general estimate in place of the official financial checklist for the chosen visa route."
       faqs={[
-        { q: 'What is the Custodian of the Two Holy Mosques Scholarship?', a: "It is Saudi Arabia's flagship international scholarship program providing full funding for Saudi students at top-ranked universities worldwide. It covers tuition, monthly stipend, health insurance, and airfare." },
-        { q: 'Which countries do Saudi students prefer?', a: 'The USA, United Kingdom, Canada, and Australia are the most popular destinations. Malaysia is also a significant destination for Saudi students seeking quality education at lower costs.' },
-        { q: 'What programs do Saudi students typically pursue?', a: 'Medicine, engineering, computer science, business administration, and data science are popular choices. Saudi students increasingly pursue specialized master\'s and PhD programs aligned with Vision 2030 priorities.' },
+        { q: "Do Saudi scholarship rules apply to every applicant in the country?", a: "No. Scholarship eligibility depends on the specific scheme and may be limited by citizenship, course, institution or academic record. Check the current official notice and confirm approval before budgeting around an award." },
+        { q: "Can a student visa be arranged before university admission?", a: "Most study routes require an offer or other institution-specific confirmation, but the exact sequence varies by destination. Follow the chosen university’s and government authority’s instructions before paying for visa steps." },
+        { q: "Can a visa consultant guarantee approval?", a: "No. Only the destination’s immigration authority decides a visa application. A consultant can help organize documents and explain published steps, but should not promise an outcome." },
       ]}
     />
   )

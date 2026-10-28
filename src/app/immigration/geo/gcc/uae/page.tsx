@@ -6,15 +6,15 @@ export const dynamic = "force-dynamic"
 
 
 export const metadata: Metadata = {
-  title: 'Immigration Consultants in UAE',
-  description: 'Study abroad and visa guidance for students from the UAE, provided by Navigator Immigration Consultant in Dubai.',
-  keywords: ['immigration consultant Dubai', 'uae study abroad', 'study visa from uae', 'uae immigration consultant', 'Navigator Immigration Dubai'],
+  title: "Study Abroad from UAE | Navigator Immigration Dubai",
+  description: "Students living in the UAE can get help comparing courses and preparing overseas applications. Navigator Immigration Consultant is based in Dubai.",
+  keywords: ['study abroad from UAE', 'study visa from UAE', 'university applications from UAE', 'Navigator Immigration Dubai'],
   alternates: {
     canonical: `${siteUrl}/immigration/geo/gcc/uae`,
   },
   openGraph: {
-    title: 'Immigration Consultants in UAE | Navigator Immigration Dubai',
-    description: 'Expert study abroad and visa guidance for students from UAE. Trusted immigration consultant in Dubai.',
+    title: 'Study Abroad from UAE | Navigator Immigration Dubai',
+    description: 'Students from UAE can get help comparing study options and organizing university and visa applications. Navigator Immigration Consultant is based in Dubai.',
     url: `${siteUrl}/immigration/geo/gcc/uae`,
     siteName,
     type: 'website',
@@ -27,25 +27,25 @@ export default function UAEPage() {
     <GeoPage
       name="UAE"
       region="gcc"
-      description="Navigator Immigration Consultant is a trusted immigration consultant in UAE, a country with a world-class education system and strong English proficiency, making it an ideal base for students pursuing higher education abroad. Dubai residents have easy access to visa centres for Canada, UK, USA, and Australia."
-      overview="Navigator Immigration Consultant is a trusted immigration consultant in UAE, providing expert guidance to residents seeking to study abroad. The UAE has established itself as a major source of international students, with thousands of UAE residents choosing to study abroad each year. The country's strong English-medium education system, international school curriculum (IGCSE, IB, American), and multicultural environment give UAE students a significant advantage when applying to overseas universities. Dubai and Abu Dhabi residents benefit from having visa application centres for Canada (VFS), the UK, the USA (embassy in Abu Dhabi), and Australia right in the city. UAE residents also enjoy strong banking relationships that make financial documentation straightforward, and many international universities actively recruit from UAE schools through dedicated liaison offices."
+      description="Students living in the UAE can get Dubai-based help comparing overseas courses and preparing university and visa applications."
+      overview="The UAE is home to students with many different passports and residence statuses. Before planning an overseas application, identify which passport you will use, whether you need to show lawful UAE residence, and which visa office handles applications from your current location. For funding, make sure statements, sponsor letters and income records show how the required money will be available. Course and visa rules are set by each institution and destination government."
       benefits={[
-        'Visa application centres for all major study destinations are located in Dubai and Abu Dhabi, eliminating the need for travel to apply.',
-        'UAE residents benefit from strong English proficiency developed through English-medium schooling from kindergarten through Grade 12.',
-        'Established banking relationships in the UAE make it straightforward to produce the financial evidence required for visa applications.',
-        'International schools in the UAE follow British, American, IB, and Indian curricula that are well-recognized by global universities.',
-        'Many top universities host recruitment events in Dubai, and some maintain dedicated regional offices in the UAE.',
+        "Check requirements against your citizenship and the passport used for travel, not UAE residence alone.",
+        "Confirm whether the destination accepts applications from UAE residents at the local post or visa centre.",
+        "Keep UAE residence evidence current if it is relevant to jurisdiction or your application.",
+        "Document salary, savings, business income or family sponsorship in the form requested by the destination.",
+        "Compare course entry criteria and total costs across study destinations.",
       ]}
       scholarships={[
-        'UAE government scholarships are available through various entities for Emirati students pursuing international education at top-ranked universities.',
-        'Many UAE-based private companies offer sponsorship and scholarship programs for children of employees studying abroad.',
-        'International universities often have dedicated scholarship programs for UAE nationals and residents, recognizing the strong academic preparation in UAE schools.',
+        "Check whether a scholarship is open to UAE nationals, expatriate residents or both; eligibility may differ.",
+        "Ask the university or sponsoring organization to confirm approved courses, funding scope and renewal conditions.",
+        "Budget separately for expenses not covered by the award, including housing, insurance and travel.",
       ]}
-      loanInfo="UAE banks including Emirates NBD, ADCB, Mashreq, and Abu Dhabi Islamic Bank offer education loans for UAE residents studying abroad. Loans typically cover tuition, accommodation, and living expenses. The strong banking infrastructure in the UAE means financial documentation for visa applications is straightforward. Many UAE residents use their savings or employer-provided education benefits to fund international education. Salary transfer letters and bank statements from UAE banks are widely accepted by visa officers."
+      loanInfo="If you plan to use savings, a bank loan or employer support, check the destination’s current rules for acceptable proof and access to funds. Keep the sponsor’s relationship, income evidence, account records and transfer timing clear. A local bank product is not automatically accepted as sufficient evidence by every country."
       faqs={[
-        { q: 'Can UAE residents apply for Canada SDS?', a: 'Yes, SDS is available for UAE residents. Requirements include IELTS 6.0 each band and a GIC of CAD $20,635. Processing takes approximately 20 days via VFS Dubai.' },
-        { q: 'What documents do UAE residents need for a student visa?', a: 'Valid passport with UAE residence visa, Emirates ID, school/college transcripts, IELTS/PTE scores, 3-6 months of UAE bank statements or sponsor letter, and university acceptance letter.' },
-        { q: 'Which study destinations are most popular among UAE students?', a: 'Canada is the top choice due to strong educational reputation and PR pathways. The UK is popular for its proximity (7-hour flight) and prestigious universities. Australia and the USA also attract significant numbers.' },
+        { q: "Can UAE residents apply for a Canada study permit?", a: "Yes, if they meet IRCC’s current requirements. The application is assessed under the regular study permit process; check the official instructions for proof of funds and the visa office serving your place of residence." },
+        { q: "Do UAE residents all need the same student-visa documents?", a: "No. Requirements depend on the destination, passport, residence status, course and personal circumstances. Start with the destination authority’s checklist and confirm whether UAE residence evidence or local application instructions apply to you." },
+        { q: "Which study destination is best for a UAE resident?", a: "It depends on the course, budget, admission profile and future plans. Compare each destination’s current entry, work and visa rules for the passport you will use; UAE residence does not determine every requirement." },
       ]}
     />
   )

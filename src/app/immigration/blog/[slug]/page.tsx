@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { ArrowLeft, Calendar, Globe, ExternalLink } from 'lucide-react'
 import JsonLd from '@/components/seo/JsonLd'
@@ -59,9 +60,9 @@ export default async function ImmigrationBlogPost({ params }: { params: Promise<
                   <span>{post.readTime}</span>
                 </div>
 
-                <h1 className="text-4xl lg:text-5xl font-bold text-[#436175] mb-6">
+                <h2 className="text-4xl lg:text-5xl font-bold text-[#436175] mb-6">
                   {post.title}
-                </h1>
+                </h2>
 
                 <div className="flex items-center space-x-3">
                   <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-400 text-xs font-bold">
@@ -73,6 +74,21 @@ export default async function ImmigrationBlogPost({ params }: { params: Promise<
                   </div>
                 </div>
               </header>
+
+              <figure className="mb-10 overflow-hidden rounded-2xl bg-[#f8f4ea]">
+                <Image
+                  src={post.image ?? '/img/blog/canada-express-entry-2026-categories.webp'}
+                  alt={post.imageAlt ?? post.title}
+                  width={1600}
+                  height={900}
+                  sizes="(max-width: 639px) calc(100vw - 2rem), (max-width: 767px) 608px, (max-width: 1023px) 736px, 896px"
+                  className="h-auto max-h-[30rem] w-full object-cover"
+                  priority
+                />
+                <figcaption className="px-5 py-3 text-sm text-gray-600">
+                  {post.imageCaption ?? post.imageAlt ?? post.title}
+                </figcaption>
+              </figure>
 
               <div className="prose prose-lg max-w-none">
                 <div className="rounded-2xl bg-[#f8f4ea] p-6 text-gray-700 leading-relaxed">
@@ -96,10 +112,10 @@ export default async function ImmigrationBlogPost({ params }: { params: Promise<
               </div>
 
               <footer className="mt-12 pt-8 border-t">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center space-x-4">
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                  <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
                     <span className="text-gray-700">Tags:</span>
-                    <div className="flex space-x-2">
+                    <div className="flex flex-wrap gap-2">
                       {post.tags.map(tag => (
                         <span key={tag} className="bg-[#585a5e] text-white px-3 py-1 rounded-full text-sm">
                           {tag}
@@ -157,7 +173,7 @@ export default async function ImmigrationBlogPost({ params }: { params: Promise<
                   {relatedPosts.map(p => (
                     <article key={p.id} className="group bg-white rounded-xl overflow-hidden hover:shadow-md transition-shadow">
                       <div className="relative h-36 overflow-hidden">
-                        <BlogCardImage slug={p.slug} title={p.title} />
+                        <BlogCardImage slug={p.slug} title={p.title} image={p.image} imageAlt={p.imageAlt} />
                       </div>
                       <div className="p-5">
                         <h3 className="text-lg font-semibold text-[#436175] mb-2 group-hover:text-blue-600">

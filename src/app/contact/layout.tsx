@@ -19,7 +19,7 @@ export default function ContactLayout({
   children: ReactNode
 }) {
   const faqSchema = buildFaqSchema(coreSeoPages.contact.faqs);
-  const webpageSchema = buildWebPageSchemaWithReview(coreSeoPages.contact, '2026-06-01');
+  const webpageSchema = buildWebPageSchemaWithReview(coreSeoPages.contact);
   const speakableSchema = buildSpeakableSchema('#site-content', `${siteUrl}/contact`);
 
   return (

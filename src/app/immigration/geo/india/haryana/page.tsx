@@ -6,15 +6,15 @@ export const dynamic = "force-dynamic"
 
 
 export const metadata: Metadata = {
-  title: 'Immigration Consultants in Haryana',
-  description: 'Study abroad and visa guidance for students from Haryana, provided by Navigator Immigration Consultant in Dubai.',
-  keywords: ['immigration consultant Dubai', 'haryana study abroad', 'study visa from haryana', 'haryana immigration consultant', 'Navigator Immigration Dubai'],
+  title: "Study Abroad from Haryana | Navigator Immigration Dubai",
+  description: "Students from Haryana can get help comparing courses and organizing university and visa applications. Navigator Immigration Consultant is based in Dubai.",
+  keywords: ['study abroad from Haryana', 'study visa from Haryana', 'university applications from Haryana', 'Navigator Immigration Dubai'],
   alternates: {
     canonical: `${siteUrl}/immigration/geo/india/haryana`,
   },
   openGraph: {
-    title: 'Immigration Consultants in Haryana | Navigator Immigration Dubai',
-    description: 'Expert study abroad and visa guidance for students from Haryana. Trusted immigration consultant in Dubai.',
+    title: 'Study Abroad from Haryana | Navigator Immigration Dubai',
+    description: 'Students from Haryana can get help comparing study options and organizing university and visa applications. Navigator Immigration Consultant is based in Dubai.',
     url: `${siteUrl}/immigration/geo/india/haryana`,
     siteName,
     type: 'website',
@@ -27,25 +27,25 @@ export default function HaryanaPage() {
     <GeoPage
       name="Haryana"
       region="india"
-      description="Haryana has emerged as a major source of international students, particularly from cities like Gurugram and Faridabad, with strong preference for Canada and Australia. Navigator Immigration Consultant is a trusted immigration consultant in Haryana, helping students achieve their study abroad goals."
-      overview="Haryana's proximity to Delhi's international education ecosystem gives its students a significant advantage. Cities like Gurugram, Faridabad, Panchkula, and Ambala have seen a surge in students choosing to study abroad, particularly in Canada and Australia. The state's strong English-medium education system, particularly in Gurugram's many international schools and CBSE-affiliated institutions, prepares students well for the academic demands of overseas study. Haryana's growing IT and business process outsourcing sectors also create strong career motivations for advanced international degrees in technology, business, and management fields. Navigator Immigration Consultant, as a known immigration consultant in Haryana, provides comprehensive support for aspiring international students."
+      description="Study abroad application guidance for students from Haryana, with help comparing courses and preparing documents for each destination."
+      overview="Students from Haryana may study in one state and live or work in another, so confirm the visa application office that serves your current residence and passport. Do not choose an appointment location from a generic checklist alone. For admission, collect complete records from the relevant school, board or university and check how each institution evaluates your qualification. Plan from the course start date, leaving time to meet university deadlines and the destination government’s current process."
       benefits={[
-        "Proximity to Delhi gives Haryana students access to the capital's extensive study abroad infrastructure including embassies, test centres, and education fairs.",
-        "Gurugram's corporate sector provides excellent internship and work experience opportunities that strengthen study abroad applications.",
-        "The state has a strong network of international schools and CBSE institutions with excellent English-medium education.",
-        "Haryana students have good access to education loans through banks with branches in Gurugram, Faridabad, and Panchkula.",
-        "Growing preference for technology and management programs abroad, aligned with Haryana's industrial and IT sector growth.",
+        "Check visa-office jurisdiction against your current residence and passport before booking biometrics.",
+        "Request transcripts and grading information from the school board or university that issued them.",
+        "Compare course entry rules with your subjects, grades and any language-test requirements.",
+        "Budget for tuition, living costs, travel, insurance and any required deposits.",
+        "Verify post-study and work conditions on the destination government’s current website.",
       ]}
       scholarships={[
-        'Haryana government offers the Haryana State Scholarship for meritorious students pursuing higher education abroad, with preference for STEM and management programs.',
-        'Many Gurugram-based corporate foundations offer scholarships for children of employees pursuing international education.',
-        'University merit scholarships — Canadian and UK universities offer significant awards for Indian students from Haryana with strong CBSE scores.',
+        "Review current national or state scholarship notices and confirm that overseas study is permitted by the scheme.",
+        "Check university funding for the exact program and intake; application deadlines may come before admission decisions.",
+        "Read renewal, grade and service conditions before including a scholarship in your budget.",
       ]}
-      loanInfo="Haryana students benefit from proximity to Delhi's education loan market. SBI, HDFC Credila, Avanse, ICICI, and Axis Bank offer study abroad loans through branches in Gurugram and Faridabad. Loans up to INR 1.5 crores are available. Many professionals working in Gurugram's corporate sector qualify for preferential loan terms through employer banking partnerships. Collateral-free loans up to INR 7.5 lakhs are available under government schemes."
+      loanInfo="When comparing education loans, check the sanctioned amount, release milestones, collateral, interest and repayment terms. If more than one family member is paying, show each contribution clearly. For visa evidence, follow the destination’s current rules on the form and history of funds."
       faqs={[
-        { q: 'Which study abroad destinations are popular in Haryana?', a: 'Canada is the most popular destination, particularly for SDS stream applicants. Australia and the UK are also popular choices. Students from Gurugram increasingly consider US universities for technology programs.' },
-        { q: 'What is the typical academic profile of Haryana students going abroad?', a: 'Many have strong CBSE backgrounds with good scores in mathematics and science. Engineering, computer applications, and business management graduates are the most common profiles seeking master\'s programs abroad.' },
-        { q: 'How do Haryana students prepare for study abroad?', a: 'Students typically use coaching centres in Gurugram or Delhi for IELTS/PTE/GRE preparation. Many attend education fairs in Delhi to connect directly with university representatives.' },
+        { q: "Can I apply for my visa from Gurugram or Delhi?", a: "The responsible office depends on the destination’s consular rules and your citizenship or lawful residence, not simply the nearest city. Check the official instructions for your case before making an appointment." },
+        { q: "Do CBSE and state-board records need extra assessment?", a: "That depends on the university and program. Send the complete marksheets and certificates, and ask admissions whether it needs an official grade explanation, credential assessment or subject details." },
+        { q: "When should I book an English test?", a: "First confirm which test version the course accepts and the minimum score for your intake. Check how long results remain valid and leave time for a retake if your schedule allows." },
       ]}
     />
   )

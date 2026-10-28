@@ -1,28 +1,45 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight, ChevronLeft, ChevronRight, CirclePlay, Quote, ShieldCheck } from 'lucide-react';
-import { useEffect, useState } from 'react';
-import { featuredSuccessStories } from '@/lib/successStories';
+import { useEffect, useRef, useState } from 'react';
+import { featuredSuccessStories, getSuccessStoryImageDimensions } from '@/lib/successStories';
 
 const SuccessStoriesSection = () => {
+  const sectionRef = useRef<HTMLElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isInView, setIsInView] = useState(false);
   const story = featuredSuccessStories[activeIndex];
 
   useEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return;
+
+    const observer = new IntersectionObserver(([entry]) => {
+      setIsInView(entry.isIntersecting);
+    });
+
+    observer.observe(section);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!isInView) return;
+
     const timer = window.setInterval(() => {
       setActiveIndex((current) => (current + 1) % featuredSuccessStories.length);
     }, 6500);
 
     return () => window.clearInterval(timer);
-  }, []);
+  }, [isInView]);
 
   const move = (direction: number) => {
     setActiveIndex((current) => (current + direction + featuredSuccessStories.length) % featuredSuccessStories.length);
   };
 
   return (
-    <section className="relative overflow-hidden bg-[#2C353F] py-20 text-white sm:py-24">
+    <section ref={sectionRef} className="below-fold-section relative overflow-hidden bg-[#2C353F] py-20 text-white sm:py-24">
       <div className="absolute -left-32 top-0 h-80 w-80 rounded-full bg-[#F73718]/10 blur-3xl" aria-hidden="true" />
       <div className="absolute -right-24 bottom-0 h-96 w-96 rounded-full bg-[#436175]/30 blur-3xl" aria-hidden="true" />
 
@@ -57,14 +74,23 @@ const SuccessStoriesSection = () => {
             <div className="relative overflow-hidden rounded-[1.65rem] border border-white/15 bg-[#17212b] shadow-2xl">
               <div className="grid min-h-[26rem] md:grid-cols-[0.9fr_1.1fr]">
                 <div className="relative min-h-[19rem] overflow-hidden bg-[#0f1720] md:min-h-full">
-                  {/* These are public static assets; keep them off the host's Next image optimizer. */}
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    key={story.evidence}
-                    src={story.poster || story.evidence}
-                    alt={story.poster ? `Preview image for ${story.title}` : story.evidenceAlt}
-                    className="block h-auto w-full transition-opacity duration-500"
-                  />
+                  {(() => {
+                    const imageSrc = story.poster || story.evidence;
+                    const [width, height] = getSuccessStoryImageDimensions(imageSrc);
+
+                    return (
+                      <Image
+                        key={imageSrc}
+                        src={imageSrc}
+                        alt={story.poster ? `Preview image for ${story.title}` : story.evidenceAlt}
+                        width={width}
+                        height={height}
+                        quality={70}
+                        sizes="(max-width: 767px) calc(100vw - 2rem), (max-width: 1279px) 42vw, 520px"
+                        className="block h-auto w-full transition-opacity duration-500"
+                      />
+                    );
+                  })()}
                   <div className="absolute inset-x-5 top-5 flex items-center justify-between">
                     <span className="rounded-full bg-[#F6B44B] px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-[#2C353F]">
                       {story.destination}

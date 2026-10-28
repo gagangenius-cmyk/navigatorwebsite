@@ -52,7 +52,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="py-16 sm:py-20 lg:py-24 bg-[#f5f5dc]">
+    <section className="below-fold-section py-16 sm:py-20 lg:py-24 bg-[#f5f5dc]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-dark-blue-grey mb-4 sm:mb-6">Comprehensive Immigration Solutions</h2>
@@ -70,7 +70,7 @@ const ServicesSection = () => {
                     src={service.image} 
                     alt={service.title}
                     fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1280px) 33vw, 20vw"
+                    sizes="(max-width: 639px) calc(100vw - 2rem), (max-width: 767px) 296px, (max-width: 1023px) 360px, (max-width: 1279px) 315px, 230px"
                     className="object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>

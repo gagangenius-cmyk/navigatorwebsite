@@ -1,8 +1,7 @@
-'use client';
-
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState } from 'react';
+import DeferredAutoplayVideo from '@/components/DeferredAutoplayVideo';
+import SectionAnchorNav from '@/components/SectionAnchorNav';
 import { ArrowRight, Plane, CheckCircle, Camera, Globe, Users, Award, Heart, FileText, Clock, Shield, Briefcase } from 'lucide-react';
 import QuickAssessmentForm from '../../components/QuickAssessmentForm';
 import {
@@ -16,15 +15,6 @@ import { coreSeoPages } from '@/lib/marketingSeo';
 
 export default function VisitVisa() {
   const seoPage = coreSeoPages.visitVisa;
-  const [activeSection, setActiveSection] = useState('overview');
-
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setActiveSection(sectionId);
-    }
-  };
 
   const anchorPoints = [
     { id: 'overview', label: 'Program Overview', icon: <Award className="w-4 h-4" /> },
@@ -81,34 +71,13 @@ export default function VisitVisa() {
       </section>
 
       {/* Sticky Anchor Navigation */}
-      <div className="sticky z-30 bg-[#f5f5dc] border-b border-light-brown-grey shadow-sm top-48 lg:top-36">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between py-2 lg:py-4">
-            <div className="flex items-center overflow-x-auto gap-1 pb-2 lg:pb-0 scrollbar-hide">
-              {anchorPoints.map((anchor) => (
-                <button
-                  key={anchor.id}
-                  onClick={() => scrollToSection(anchor.id)}
-                  className={`flex-shrink-0 flex items-center gap-1 lg:gap-2 px-3 lg:px-4 py-1.5 lg:py-2 rounded-lg text-xs lg:text-sm font-medium transition-all duration-200 whitespace-nowrap ${activeSection === anchor.id
-                    ? 'bg-gradient-to-r from-[#436175] to-[#585a5e] text-white'
-                    : 'text-[#585a5e] hover:text-[#436175] hover:bg-background-light'
-                    }`}
-                >
-                  <span className="hidden sm:inline">{anchor.icon}</span>
-                  <span>{anchor.label}</span>
-                </button>
-              ))}
-            </div>
-            <Link
-              href="/contact"
-              className="flex-shrink-0 inline-flex items-center px-3 lg:px-4 py-1.5 lg:py-2 bg-gradient-to-r from-[#436175] to-[#585a5e] text-white font-medium rounded-lg hover:from-accent-blue-dark hover:to-accent-blue transition-all duration-300 text-xs lg:text-sm"
-            >
-              Get Started
-              <ArrowRight className="ml-1 lg:ml-2 w-3 h-3 lg:w-4 lg:h-4" />
-            </Link>
-          </div>
-        </div>
-      </div>
+      <SectionAnchorNav
+        anchors={anchorPoints}
+        navClassName="sticky z-30 bg-[#f5f5dc] border-b border-light-brown-grey shadow-sm top-48 lg:top-36"
+        activeClassName="bg-gradient-to-r from-[#436175] to-[#585a5e] text-white"
+        inactiveClassName="text-[#585a5e] hover:text-[#436175] hover:bg-background-light"
+        ctaClassName="flex-shrink-0 inline-flex items-center px-3 lg:px-4 py-1.5 lg:py-2 bg-gradient-to-r from-[#436175] to-[#585a5e] text-white font-medium rounded-lg hover:from-accent-blue-dark hover:to-accent-blue transition-all duration-300 text-xs lg:text-sm"
+      />
 
       {/* Program Overview Section */}
       <section id="overview" className="py-24 bg-gradient-to-br from-accent-orange-red/85 via-[#436175]/75 to-[#585a5e]/85">
@@ -118,22 +87,22 @@ export default function VisitVisa() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               {/* Content on Left */}
               <div className="space-y-8">
-                <h3 className="text-3xl font-semibold text-white mb-6">Comprehensive Visitor Services</h3>
+                <h3 className="text-3xl font-semibold text-white mb-6">Visitor Visa Application Guidance</h3>
 
                 <p className="text-sm text-left text-black/90 mb-8 leading-relaxed">
-                  Explore, visit, and experience new countries with Navigator Immigration.
+                  Plan a visitor visa application with information tailored to your destination and purpose of travel.
                 </p>
                 <p className="text-sm text-left text-black/90 mb-8 leading-relaxed">
-                  At Navigator Immigration, we specialize in helping individuals and families obtain visit visas for Canada, USA, UK, Australia, EU countries, and beyond. With our team expertise, we simplify the application process so you can focus on planning your trip rather than worrying about paperwork.
+                  We provide consultation support for individuals and families preparing visitor visa applications for destinations such as Canada, the USA, the UK, Australia, and Schengen countries. Requirements depend on the destination, passport, travel purpose, and applicant circumstances.
                 </p>
                 <p className="text-sm text-left text-black/90 mb-8 leading-relaxed">
-                  Our expert team provides complete end-to-end support, including eligibility assessment, document preparation, application submission, and interview guidance. We offer tailored solutions to meet your travel goals, whether it’s a short holiday, family visit, or business trip.
+                  Support may include reviewing the published checklist, organizing supporting documents, and explaining application steps. Some routes require an appointment or interview; follow the instructions from the relevant authority.
                 </p>
                 <p className="text-sm text-left text-black/90 mb-8 leading-relaxed">
-                  We make the process more organized and reliable by helping you prepare an accurate, complete application. With Navigator Immigration, you get personalized guidance and responsive support at every step.
+                  Careful preparation can help you check that your information is consistent and that you have addressed the documents requested for your case. The destination authority makes the visa decision.
                 </p>
                 <p className="text-sm text-left text-black/90 mb-8 leading-relaxed">
-                  Start your journey today and partner with Navigator Immigration to make your international travel plans easier to prepare and submit.
+                  Contact our Dubai team to discuss your travel plans and the current visitor visa steps for your destination.
                 </p>
 
 
@@ -142,19 +111,16 @@ export default function VisitVisa() {
 
               {/* Video on Right */}
               <div className="relative">
-                <video
+                <DeferredAutoplayVideo
+                  src="/videos/visit-visa.mp4"
+                  sourceType="video/mp4"
                   className="w-full h-96 lg:h-[500px] object-cover rounded-2xl shadow-2xl"
                   controls
                   muted
-                  autoPlay
                   loop
                   playsInline
-                  preload="none"
                   poster="/videoScreenshots/visit-visa.png"
-                >
-                  <source src="/videos/visit-visa.mp4" type="video/mp4" />
-                  Your browser does not support video tag.
-                </video>
+                />
 
               </div>
             </div>
@@ -341,7 +307,7 @@ export default function VisitVisa() {
                 src="/img/visit-visa/Visit_2.jpg"
                 alt="Visit Visa"
                 fill
-                sizes="(max-width: 1024px) 100vw, 800px"
+                sizes="(max-width: 639px) calc(100vw - 2rem), (max-width: 767px) 608px, (max-width: 1023px) 736px, (max-width: 1279px) 464px, 592px"
                 className="absolute inset-0 h-full w-full rounded-xl object-cover"
               />
             </div>
@@ -357,7 +323,7 @@ export default function VisitVisa() {
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-8 text-center">Visitor Visa Application Process</h2>
             <p className="text-xl text-gray-600 mb-16 text-center max-w-3xl mx-auto">
-              Follow our proven 5-step process to secure your visitor visa efficiently
+              Use a clear five-step process to prepare a visitor visa application
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
@@ -365,30 +331,30 @@ export default function VisitVisa() {
                   {
                     step: 1,
                     title: "Eligibility Check",
-                    description: "We assess your travel purpose and eligibility for visitor visa",
+                    description: "Discuss your travel purpose and identify the destination-specific criteria to review",
                     icon: <CheckCircle className="w-8 h-8" />
                   },
                   {
                     step: 2,
                     title: "Document Prep",
-                    description: "Our team helps you gather and prepare all necessary documents",
+                    description: "Use the current official checklist to organize supporting documents",
                     icon: <FileText className="w-8 h-8" />
                   },
                   {
                     step: 3,
                     title: "Application",
-                    description: "We submit your visitor visa application with all supporting documents",
+                    description: "Complete and submit the application through the official process for your destination",
                     icon: <Shield className="w-8 h-8" />
                   },
                   {
                     step: 4,
                     title: "Follow-up",
-                    description: "We track your application progress and keep you informed",
+                    description: "Follow application updates and respond to any requests from the relevant authority",
                     icon: <Users className="w-8 h-8" />
                   },
                   {
                     step: 5,
-                    title: "Approval",
+                    title: "Decision & travel",
                     description: "We assist with travel arrangements and pre-departure guidance",
                     icon: <Award className="w-8 h-8" />
                   }
@@ -440,7 +406,7 @@ export default function VisitVisa() {
               <div className="text-center mb-16">
                 <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Contact Us for Visit Visa Assistance</h2>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                  Get expert guidance for your visitor visa application
+                  Discuss your visitor visa application with our team
                 </p>
               </div>
 
@@ -459,7 +425,7 @@ export default function VisitVisa() {
                 src="/img/visit-visa/1.jpg"
                 alt="Visit Visa"
                 fill
-                sizes="(max-width: 1024px) 100vw, 800px"
+                sizes="(max-width: 639px) calc(100vw - 2rem), (max-width: 767px) 608px, (max-width: 1023px) 736px, (max-width: 1279px) 464px, 592px"
                 className="absolute inset-0 h-full w-full rounded-xl object-cover"
               />
             </div>
@@ -474,7 +440,7 @@ export default function VisitVisa() {
             Start Your Travel Journey Today
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Visit your loved ones or explore new destinations with our expert visitor visa assistance
+            Plan a visit to family, friends, or a destination with guidance on the application steps
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

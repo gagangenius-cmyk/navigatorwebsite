@@ -25,7 +25,7 @@ export default function Home() {
 
   const serviceSchema = buildServiceSchema(coreSeoPages.home);
   const faqSchema = buildFaqSchema(coreSeoPages.home.faqs);
-  const webpageSchema = buildWebPageSchemaWithReview(coreSeoPages.home, '2026-06-10');
+  const webpageSchema = buildWebPageSchemaWithReview(coreSeoPages.home);
   const speakableSchema = buildSpeakableSchema('#site-content', 'https://navigatorglobals.com/');
 
   return (

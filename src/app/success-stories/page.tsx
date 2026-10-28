@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight, CirclePlay, FileCheck2, ShieldCheck } from 'lucide-react';
 import { successStories } from '@/lib/successStories';
 import JsonLd from '@/components/seo/JsonLd';
@@ -45,7 +46,7 @@ export default function SuccessStoriesPage() {
   };
 
   return (
-    <main className="success-stories-page bg-[#f5f5dc]">
+    <div className="success-stories-page bg-[#f5f5dc]">
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={collectionSchema} />
       <section className="relative overflow-hidden bg-[#2C353F] pb-20 pt-36 text-white sm:pb-24 sm:pt-44">
@@ -114,8 +115,13 @@ export default function SuccessStoriesPage() {
                   {story.video ? (
                     <SuccessStoryVideo src={story.video} poster={story.poster} title={story.title} />
                   ) : (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img src={story.evidence} alt={story.evidenceAlt} className="block max-h-full max-w-full object-contain transition duration-500 group-hover:scale-[1.02]" />
+                    <Image
+                      src={story.evidence}
+                      alt={story.evidenceAlt}
+                      fill
+                      sizes="(max-width: 767px) calc(100vw - 2rem), (max-width: 1279px) calc(50vw - 2rem), 400px"
+                      className="object-contain transition duration-500 group-hover:scale-[1.02]"
+                    />
                   )}
                   <div className="absolute inset-x-5 top-5 flex items-center justify-between gap-3">
                     <span className="rounded-full bg-[#2C353F] px-3 py-1.5 text-xs font-bold uppercase tracking-[0.12em] text-white">{story.destination}</span>
@@ -170,7 +176,7 @@ export default function SuccessStoriesPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
 

@@ -8,7 +8,6 @@ import {
   TrustSection,
 } from '@/components/seo/PageSeoSections';
 import { createSubmissionReference } from '@/lib/formatting';
-import { submitLead } from '@/lib/submitLead';
 import { coreSeoPages } from '@/lib/marketingSeo';
 import { brandPhoneDisplay } from '@/lib/contactInfo';
 
@@ -266,12 +265,6 @@ const ContactUsPage: React.FC = () => {
         })
       }));
 
-      submitLead({
-        name: generalForm.name,
-        email: generalForm.email,
-        phone: generalForm.phone,
-        ImmigrationType: generalForm.service,
-      });
       setGeneralReferenceId(createSubmissionReference('GEN'));
       setGeneralSubmitted(true);
       window.setTimeout(() => {
@@ -449,7 +442,7 @@ const ContactUsPage: React.FC = () => {
                     <h4 className="text-xl font-bold text-[#436175] mb-4">Thank You!</h4>
                     <p className="text-[#585a5e] mb-4">
                       Your message has been sent successfully. 
-                      Our team will contact you within 24 hours.
+                      Our team will review your inquiry and get back to you as soon as possible.
                     </p>
                     <div className="text-sm text-gray-500">
                       Reference ID: {generalReferenceId}
@@ -595,7 +588,7 @@ const ContactUsPage: React.FC = () => {
                         <h4 className="text-xl font-bold text-gray-900 mb-4">Thank You!</h4>
                         <p className="text-gray-600 mb-4">
                           Your partnership inquiry has been submitted successfully. 
-                          Our team will contact you within 24 hours.
+                          Our team will review your inquiry and get back to you as soon as possible.
                         </p>
                         <div className="text-sm text-gray-500">
                           Reference ID: {partnerReferenceId}
@@ -878,7 +871,7 @@ const ContactUsPage: React.FC = () => {
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Partner With Navigator Immigration?</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Join a leading immigration consultancy with a proven track record of success
+                Work with a Dubai-based consultancy supporting immigration and study applications
               </p>
             </div>
 
@@ -887,9 +880,9 @@ const ContactUsPage: React.FC = () => {
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Award className="w-8 h-8 text-blue-600" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">Industry Recognition</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Dubai-Based Consultation</h3>
                 <p className="text-gray-600">
-                  Dubai immigration consultancy with 15+ years of guidance across PR, student visas, work permits, visit visas, and business immigration
+                  Consultation support for PR, student visas, work permits, visit visas, and business immigration
                 </p>
               </div>
 
@@ -899,7 +892,7 @@ const ContactUsPage: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">Global Network</h3>
                 <p className="text-gray-600">
-                  Extensive network of partners across 30+ countries serving thousands of clients annually
+                  Support for applicants considering several destinations and immigration categories
                 </p>
               </div>
 
@@ -948,7 +941,7 @@ const ContactUsPage: React.FC = () => {
               <div className="bg-white rounded-xl p-6 shadow-sm">
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">How quickly do you respond to partnership inquiries?</h3>
                 <p className="text-gray-600">
-                  We typically respond to partnership inquiries within 24-48 business hours. 
+                  We review partnership inquiries and respond as soon as we can.
                   For urgent matters, please call our office directly.
                 </p>
               </div>

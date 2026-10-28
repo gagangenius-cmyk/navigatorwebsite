@@ -6,15 +6,15 @@ export const dynamic = "force-dynamic"
 
 
 export const metadata: Metadata = {
-  title: 'Immigration Consultants in Uttar Pradesh',
-  description: 'Study abroad and visa guidance for students from Uttar Pradesh, provided by Navigator Immigration Consultant in Dubai.',
-  keywords: ['immigration consultant Dubai', 'uttar pradesh study abroad', 'study visa from uttar pradesh', 'uttar pradesh immigration consultant', 'Navigator Immigration Dubai'],
+  title: "Study Abroad from Uttar Pradesh | Navigator Immigration Dubai",
+  description: "Students from Uttar Pradesh can get help comparing courses and organizing academic and visa documents. Navigator Immigration Consultant is based in Dubai.",
+  keywords: ['study abroad from Uttar Pradesh', 'study visa from Uttar Pradesh', 'university applications from Uttar Pradesh', 'Navigator Immigration Dubai'],
   alternates: {
     canonical: `${siteUrl}/immigration/geo/india/uttar-pradesh`,
   },
   openGraph: {
-    title: 'Immigration Consultants in Uttar Pradesh | Navigator Immigration Dubai',
-    description: 'Expert study abroad and visa guidance for students from Uttar Pradesh. Trusted immigration consultant in Dubai.',
+    title: 'Study Abroad from Uttar Pradesh | Navigator Immigration Dubai',
+    description: 'Students from Uttar Pradesh can get help comparing study options and organizing university and visa applications. Navigator Immigration Consultant is based in Dubai.',
     url: `${siteUrl}/immigration/geo/india/uttar-pradesh`,
     siteName,
     type: 'website',
@@ -27,25 +27,25 @@ export default function UttarPradeshPage() {
     <GeoPage
       name="Uttar Pradesh"
       region="india"
-      description="Uttar Pradesh, particularly from cities like Lucknow, Noida, and Varanasi, has a rapidly growing international student population choosing Canada, UK, and Australia. Navigator Immigration Consultant is a trusted immigration consultant in Uttar Pradesh, guiding students toward international education opportunities."
-      overview="Uttar Pradesh is experiencing rapid growth in study abroad aspirations, driven by rising aspirations, improved economic conditions, and better access to information. Cities like Lucknow, Noida, Ghaziabad, Varanasi, and Agra are emerging as significant sources of international students. Noida, in particular, benefits from its proximity to Delhi's education ecosystem while developing its own study abroad infrastructure. The state's large student population and growing middle class are creating increasing demand for international education across programs. Canada remains the top choice due to its favourable visa policies and post-study work options, followed by the UK and Australia. Navigator Immigration Consultant, a reliable immigration consultant in Uttar Pradesh, helps students access global education opportunities."
+      description="Planning overseas study from Uttar Pradesh? Get help comparing programs and assembling consistent academic, financial and visa documents."
+      overview="An application can involve records from several schools, boards, universities and sponsors. Gather complete certificates and marksheets, check that names and dates match your passport, and arrange translations only in the form the institution or destination authority requests. Compare programs using the actual entry criteria and total cost rather than assuming one route suits every city or academic background. Visa requirements are set by the destination government and should be checked for your passport and place of application."
       benefits={[
-        "UP's large and diverse student population means strong competition drives higher preparation standards and better outcomes.",
-        "Noida and Lucknow have growing study abroad ecosystems with test preparation centres, visa consultancies, and regular education fairs.",
-        "The state's improving economic conditions are enabling more families to invest in international education.",
-        "Active alumni networks from international universities in Noida and Lucknow provide mentorship and guidance.",
-        "Government and private scholarship programs are increasingly accessible to students from UP with strong academic records.",
+        "Collect complete academic records and resolve name or date differences before submitting applications.",
+        "Ask the university whether it needs grade conversions, subject details or credential evaluation.",
+        "Use only language tests and scores accepted for your chosen course and intake.",
+        "Document sponsor relationships and the source of funds if another person pays costs.",
+        "Check official visa instructions for your current residence and application office.",
       ]}
       scholarships={[
-        'The Uttar Pradesh government offers scholarships for meritorious students from economically weaker sections pursuing higher education abroad through various welfare department schemes.',
-        'Students from UP are eligible for national-level scholarships including the National Overseas Scholarship for scheduled castes and tribes.',
-        'Many private trusts and educational foundations based in Lucknow and Noida offer financial support for students from UP pursuing international education.',
+        "Check official scholarship notices for current eligibility, academic conditions and whether overseas study is allowed.",
+        "Search university and program awards for international applicants, including separate deadlines and forms.",
+        "Do not count an award toward the budget until the institution confirms its value and duration in writing.",
       ]}
-      loanInfo="SBI, HDFC Credila, Avanse, ICICI, and Bank of Baroda offer education loans for study abroad through branches across UP. Noida and Lucknow have the most developed education loan infrastructure. Loans up to INR 1.5 crores are available with collateral. Students from smaller UP cities may need to travel to Lucknow or Noida for loan processing. Government schemes offer collateral-free loans up to INR 7.5 lakhs for eligible students."
+      loanInfo="If you need a loan, compare the approved amount and release schedule with tuition deposits and living costs. Keep the loan documents, sponsor records and bank statements organized by source. Check the destination’s official instructions for the exact financial evidence it accepts."
       faqs={[
-        { q: 'Which cities in UP have the most students going abroad?', a: 'Noida, Lucknow, Ghaziabad, Varanasi, and Agra have the highest numbers of students pursuing international education. Noida benefits significantly from its proximity to Delhi.' },
-        { q: 'What programs do UP students typically choose?', a: 'Engineering, computer science, business management, and healthcare programs are popular. Data science and artificial intelligence programs are growing rapidly in popularity.' },
-        { q: 'What are the main challenges for UP students?', a: 'Access to quality test preparation in smaller cities can be limited. Financial documentation for visa applications can be more challenging for families without established banking relationships.' },
+        { q: "What should I do if my academic records show different name spellings?", a: "Ask the issuing school or university for corrected records or an official explanation, and follow the destination institution’s instructions for supporting documents. Keep your passport and application details consistent." },
+        { q: "Are study abroad scholarships available to applicants from Uttar Pradesh?", a: "Some public bodies, institutions and private organizations offer awards, but eligibility and funding change by scheme. Check the current notice for citizenship, course, university and covered costs." },
+        { q: "Can an education consultant choose a university for me?", a: "A consultant can help you compare options, but the choice should reflect your academic record, goals and budget. Confirm course details, fees and admission decisions directly with the institution." },
       ]}
     />
   )

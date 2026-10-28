@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { Phone, Mail, User, MessageSquare, Send, CheckCircle } from 'lucide-react';
 import { createSubmissionReference } from '@/lib/formatting';
-import { submitLead } from '@/lib/submitLead';
 
 interface FormData {
   name: string;
@@ -77,12 +76,6 @@ const QuickAssessmentForm: React.FC<QuickAssessmentFormProps> = ({
       const result = await response.json();
 
       if (result.success) {
-        submitLead({
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          ImmigrationType: formData.service,
-        });
         setReferenceId(createSubmissionReference('QAS'));
         setIsSubmitted(true);
         setIsSubmitting(false);
@@ -179,6 +172,7 @@ const QuickAssessmentForm: React.FC<QuickAssessmentFormProps> = ({
               name="service"
               value={formData.service}
               onChange={handleChange}
+              aria-label="Select an immigration service"
               className="w-full pl-3 sm:pl-4 pr-8 sm:pr-10 py-2.5 sm:py-3 border border-white rounded-lg focus:ring-2 focus:ring-[#436175] focus:border-transparent transition-all duration-200 appearance-none bg-white text-sm sm:text-base"
             >
               <option value="skilled">Skilled Immigration</option>

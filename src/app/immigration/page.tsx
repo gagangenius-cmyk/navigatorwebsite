@@ -11,14 +11,14 @@ export const dynamic = "force-dynamic"
 
 export const metadata: Metadata = {
   title: 'Study Abroad & Immigration Hub | Navigator',
-  description: 'Expert resources on study abroad, student visas, and immigration to Canada, UK, Australia, USA, and Europe. Trusted immigration consultant in Dubai.',
+  description: 'Study abroad and immigration guides for Canada, the UK, Australia, the USA, and Europe, with practical information for applicants planning from Dubai and beyond.',
   keywords: ['immigration Dubai', 'study abroad Dubai', 'student visa Dubai', 'immigration consultant Dubai'],
   alternates: {
     canonical: `${siteUrl}/immigration`,
   },
   openGraph: {
     title: 'Study Abroad & Immigration Hub | Navigator',
-    description: 'Expert resources on study abroad, student visas, and immigration to Canada, UK, Australia, USA, and Europe. Trusted immigration consultant in Dubai.',
+    description: 'Study abroad and immigration guides for Canada, the UK, Australia, the USA, and Europe, with practical information for applicants planning from Dubai and beyond.',
     url: `${siteUrl}/immigration`,
     siteName,
     type: 'website',
@@ -33,19 +33,19 @@ export default function ImmigrationHub() {
     {
       title: 'Canada Study Visa',
       href: '/immigration/canada-study-visa',
-      desc: 'SDS, PGWP, Express Entry pathways for international students.',
+      desc: 'Study permits, PGWP, and Express Entry pathways for international students.',
       count: posts.filter(p => p.category === 'Canada Immigration').length,
     },
     {
       title: 'UK Study Visa',
       href: '/immigration/uk-study-visa',
-      desc: 'Tier 4 visa, CAS, Graduate Route, and settlement options.',
+      desc: 'The Student route, CAS, Graduate route, and conditions that may apply after study.',
       count: posts.filter(p => p.category === 'UK Immigration').length,
     },
     {
       title: 'Australia Study Visa',
       href: '/immigration/australia-study-visa',
-      desc: 'Subclass 500, 485 visa, Genuine Student test, and PR.',
+      desc: 'Student visa (subclass 500), the Genuine Student requirement, and possible post-study options.',
       count: posts.filter(p => p.category === 'Australia Immigration').length,
     },
     {
@@ -56,15 +56,20 @@ export default function ImmigrationHub() {
     },
   ]
 
-  const featured = posts.filter(p =>
-    ['canada-study-visa-requirements-2026', 'uk-student-visa-requirements-2026', 'australia-student-visa-requirements-2026'].includes(p.slug)
-  )
+  const featuredIds = [
+    'canada-express-entry-2026-categories-guide',
+    'australia-skills-in-demand-482-income-threshold-2026',
+    'etias-europe-2026-uae-travelers',
+  ]
+  const featured = featuredIds
+    .map(id => posts.find(post => post.id === id))
+    .filter(Boolean) as typeof posts
 
   return (
     <div className="min-h-screen bg-gray-500">
       <ImmigrationHero
         heading="Study Abroad & Immigration Guide"
-        description="Everything you need to know about studying abroad — from visa requirements and financial planning to post-study work and permanent residency."
+        description="Browse guides to study abroad, student visa requirements, financial planning, and post-study options across selected destinations."
         primaryCta={{ label: 'Free Eligibility Check', href: '/contact' }}
         secondaryCta={{ label: 'Browse All Guides', href: '/immigration/blog' }}
       />
@@ -94,7 +99,7 @@ export default function ImmigrationHub() {
               {featured.map(p => (
                 <Link key={p.slug} href={`/immigration/blog/${p.slug}`} className="group bg-white rounded-xl overflow-hidden hover:shadow-md transition-shadow">
                   <div className="relative h-40 overflow-hidden">
-                    <BlogCardImage slug={p.slug} title={p.title} />
+                    <BlogCardImage slug={p.slug} title={p.title} image={p.image} imageAlt={p.imageAlt} />
                   </div>
                   <div className="p-5">
                     <span className="text-sm font-medium text-[#436175] mb-2 block">{p.category}</span>
@@ -116,7 +121,7 @@ export default function ImmigrationHub() {
             <h2 className="text-2xl font-bold text-[#436175] mb-4">Why Work With Navigator Immigration?</h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8 text-left">
               {[
-                '15+ years of visa and immigration expertise',
+                'Guidance on application planning and published requirements',
                 'Personalized study abroad roadmap',
                 'End-to-end visa application support',
               ].map((item) => (

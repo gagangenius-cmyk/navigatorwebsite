@@ -1,8 +1,9 @@
 'use client';
 
 import { useState, useEffect, useCallback, useRef } from 'react';
-import { Phone, Mail, Globe, Award, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Phone, Mail, Globe, Award, Facebook, Linkedin, Instagram } from 'lucide-react';
 import { brandPhoneDisplay, brandPhoneTel } from '@/lib/contactInfo';
+import TikTokIcon from './TikTokIcon';
 
 interface TopBarProps {}
 
@@ -15,14 +16,14 @@ const contactInfo = [
 
 const businessInfo = [
   { icon: Globe, text: 'Mon-Sat: 10AM-7PM Dubai' },
-  { icon: Award, text: '15+ Years Experience' },
+  { icon: Award, text: 'Dubai-Based Guidance' },
 ];
 
 const socialLinks = [
-  { icon: Facebook, href: 'https://www.facebook.com/navigatorimmigration', label: 'Facebook' },
-  { icon: Twitter, href: 'https://twitter.com/navigatorimm', label: 'Twitter' },
-  { icon: Linkedin, href: 'https://www.linkedin.com/company/navigator-immigration', label: 'LinkedIn' },
-  { icon: Instagram, href: 'https://www.instagram.com/navigatorimmigration', label: 'Instagram' },
+  { icon: Instagram, href: 'https://www.instagram.com/navigatorimmigrationconsultant/', label: 'Instagram' },
+  { icon: Facebook, href: 'https://www.facebook.com/profile.php?id=61588288162608', label: 'Facebook' },
+  { icon: Linkedin, href: 'https://www.linkedin.com/in/navigator-immigration-consultant-3747573ab/', label: 'LinkedIn' },
+  { icon: TikTokIcon, href: 'https://www.tiktok.com/@navigator.immigration', label: 'TikTok' },
 ];
 
 const TopBar: React.FC<TopBarProps> = () => {

@@ -15,6 +15,10 @@ const KNOWN_CATEGORIES = [
   'Europe Study',
   'Student Visas',
   'Visit Visas',
+  'UAE Immigration',
+  'Immigration Consultant Dubai',
+  'Skilled Immigration',
+  'Study Abroad',
   'Country Comparison',
   'Other Blogs',
 ];

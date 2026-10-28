@@ -1,7 +1,7 @@
-'use client'
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState } from 'react';
+import DeferredAutoplayVideo from '@/components/DeferredAutoplayVideo';
+import SectionAnchorNav from '@/components/SectionAnchorNav';
 import { ArrowRight, Globe, Clock, CheckCircle, FileText, Users, Shield, Award, Building } from 'lucide-react';
 import QuickAssessmentForm from '../../components/QuickAssessmentForm';
 import {
@@ -16,28 +16,6 @@ import { coreSeoPages } from '@/lib/marketingSeo';
 
 export default function WorkPermits() {
   const seoPage = coreSeoPages.workPermits;
-  const [activeSection, setActiveSection] = useState('overview');
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setActiveSection(sectionId);
-    }
-  };
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % 4);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + 4) % 4);
-  };
-
-  const goToSlide = (index: number) => {
-    setCurrentSlide(index);
-  };
 
   const anchorPoints = [
     { id: 'overview', label: 'Program Overview', icon: <Award className="w-4 h-4" /> },
@@ -85,6 +63,7 @@ export default function WorkPermits() {
               </Link>
               <Link
                 href="/immigration/blog"
+              aria-label="Read immigration guides for work permit applicants"
                 className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-[#436175] transform hover:scale-105 transition-all duration-300"
               >
                 Success Stories
@@ -95,34 +74,13 @@ export default function WorkPermits() {
       </section>
 
       {/* Sticky Anchor Navigation */}
-      <div className="sticky z-30 bg-[#f5f5dc] border-b border-[#436175]/20 shadow-sm top-48 lg:top-36">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between py-2 lg:py-4">
-            <div className="flex items-center overflow-x-auto gap-1 pb-2 lg:pb-0 scrollbar-hide">
-              {anchorPoints.map((anchor) => (
-                <button
-                  key={anchor.id}
-                  onClick={() => scrollToSection(anchor.id)}
-                  className={`flex-shrink-0 flex items-center gap-1 lg:gap-2 px-3 lg:px-4 py-1.5 lg:py-2 rounded-lg text-xs lg:text-sm font-medium transition-all duration-200 whitespace-nowrap ${activeSection === anchor.id
-                      ? 'bg-[#436175] text-white'
-                      : 'text-[#585a5e] hover:text-white hover:bg-[#436175]'
-                    }`}
-                >
-                  <span className="hidden sm:inline">{anchor.icon}</span>
-                  <span>{anchor.label}</span>
-                </button>
-              ))}
-            </div>
-            <Link
-              href="/contact"
-              className="flex-shrink-0 inline-flex items-center px-3 lg:px-4 py-1.5 lg:py-2 bg-gradient-to-r from-[#436175] to-[#585a5e] text-white font-medium rounded-lg hover:from-[#585a5e] hover:to-[#436175] transition-all duration-300 text-xs lg:text-sm"
-            >
-              Get Started
-              <ArrowRight className="ml-1 lg:ml-2 w-3 h-3 lg:w-4 lg:h-4" />
-            </Link>
-          </div>
-        </div>
-      </div>
+      <SectionAnchorNav
+        anchors={anchorPoints}
+        navClassName="sticky z-30 bg-[#f5f5dc] border-b border-[#436175]/20 shadow-sm top-48 lg:top-36"
+        activeClassName="bg-[#436175] text-white"
+        inactiveClassName="text-[#585a5e] hover:text-white hover:bg-[#436175]"
+        ctaClassName="flex-shrink-0 inline-flex items-center px-3 lg:px-4 py-1.5 lg:py-2 bg-gradient-to-r from-[#436175] to-[#585a5e] text-white font-medium rounded-lg hover:from-[#585a5e] hover:to-[#436175] transition-all duration-300 text-xs lg:text-sm"
+      />
 
 
       {/* Work Permit Overview Section */}
@@ -142,7 +100,7 @@ export default function WorkPermits() {
                   At Navigator Immigration, we help skilled professionals and global talent pursue European work permits with clearer route selection, document planning, and employer-linked application support from Dubai.
                 </p>
                 <p className="text-sm text-left text-black/90 mb-2 leading-relaxed">
-                  We provide end-to-end support for all European work permit pathways, including EU Blue Card, country-specific employment authorizations, and seasonal work visas. Our team assesses your profile, identifies the fastest route to eligibility, and crafts a customized application strategy to maximize your success.
+                  We provide end-to-end support for European work permit pathways, including EU Blue Card, country-specific employment authorizations, and seasonal work visas. Our team assesses your profile, compares suitable routes under the current rules, and crafts a customized application strategy without promising a government outcome.
                 </p>
                 <p className="text-sm text-left text-black/90 mb-2 leading-relaxed">
                   With Navigator Immigration, you benefit from a more structured process: precise documentation, proactive follow-ups, and expert guidance at every step. Our clients trust us for personalized solutions and practical support as they prepare to move to Europe with confidence.
@@ -154,19 +112,16 @@ export default function WorkPermits() {
 
               {/* Video on Right */}
               <div className="relative">
-                <video
+                <DeferredAutoplayVideo
+                  src="/videos/work-visa.mp4"
+                  sourceType="video/mp4"
                   className="w-full h-96 lg:h-[500px] object-cover rounded-2xl shadow-2xl"
                   controls
                   muted
                   loop
-                  autoPlay
                   playsInline
-                  preload="none"
                   poster="/videoScreenshots/work-visa.png"
-                >
-                  <source src="/videos/work-visa.mp4" type="video/mp4" />
-                  Your browser does not support video tag.
-                </video>
+                />
 
               
               </div>
@@ -191,7 +146,7 @@ export default function WorkPermits() {
                 src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 alt="Modern European Office"
                 fill
-                sizes="(max-width: 1024px) 100vw, 25vw"
+                sizes="(max-width: 639px) calc(100vw - 2rem), (max-width: 767px) 608px, (max-width: 1023px) 356px, (max-width: 1279px) 230px, 294px"
                 className="h-64 w-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -208,7 +163,7 @@ export default function WorkPermits() {
                 src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 alt="Tech Professionals"
                 fill
-                sizes="(max-width: 1024px) 100vw, 25vw"
+                sizes="(max-width: 639px) calc(100vw - 2rem), (max-width: 767px) 608px, (max-width: 1023px) 356px, (max-width: 1279px) 230px, 294px"
                 className="h-64 w-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -225,7 +180,7 @@ export default function WorkPermits() {
                 src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 alt="Healthcare Professionals"
                 fill
-                sizes="(max-width: 1024px) 100vw, 25vw"
+                sizes="(max-width: 639px) calc(100vw - 2rem), (max-width: 767px) 608px, (max-width: 1023px) 356px, (max-width: 1279px) 230px, 294px"
                 className="h-64 w-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -242,7 +197,7 @@ export default function WorkPermits() {
                 src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 alt="Engineering Work"
                 fill
-                sizes="(max-width: 1024px) 100vw, 25vw"
+                sizes="(max-width: 639px) calc(100vw - 2rem), (max-width: 767px) 608px, (max-width: 1023px) 356px, (max-width: 1279px) 230px, 294px"
                 className="h-64 w-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -259,7 +214,7 @@ export default function WorkPermits() {
                 src="/img/eu-permit/wp_4.jpg"
                 alt="Finance and Banking"
                 fill
-                sizes="(max-width: 1024px) 100vw, 25vw"
+                sizes="(max-width: 639px) calc(100vw - 2rem), (max-width: 767px) 608px, (max-width: 1023px) 356px, (max-width: 1279px) 230px, 294px"
                 className="h-64 w-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -276,7 +231,7 @@ export default function WorkPermits() {
                 src="/img/eu-permit/wp_3.jpg"
                 alt="Research Laboratory"
                 fill
-                sizes="(max-width: 1024px) 100vw, 25vw"
+                sizes="(max-width: 639px) calc(100vw - 2rem), (max-width: 767px) 608px, (max-width: 1023px) 356px, (max-width: 1279px) 230px, 294px"
                 className="h-64 w-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -293,7 +248,7 @@ export default function WorkPermits() {
                 src="/img/eu-permit/wp_2.jpg"
                 alt="Hospitality Industry"
                 fill
-                sizes="(max-width: 1024px) 100vw, 25vw"
+                sizes="(max-width: 639px) calc(100vw - 2rem), (max-width: 767px) 608px, (max-width: 1023px) 356px, (max-width: 1279px) 230px, 294px"
                 className="h-64 w-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -310,7 +265,7 @@ export default function WorkPermits() {
                 src="/img/eu-permit/wp_1.jpg"
                 alt="Remote Work"
                 fill
-                sizes="(max-width: 1024px) 100vw, 25vw"
+                sizes="(max-width: 639px) calc(100vw - 2rem), (max-width: 767px) 608px, (max-width: 1023px) 356px, (max-width: 1279px) 230px, 294px"
                 className="h-64 w-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -340,7 +295,7 @@ export default function WorkPermits() {
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-8 text-center">How to Get European Work Permit</h2>
             <p className="text-xl text-gray-600 mb-16 text-center max-w-3xl mx-auto">
-              Follow our proven 5-step process to secure your European work authorization efficiently
+              Use a structured five-step process to plan a European work authorization application
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
